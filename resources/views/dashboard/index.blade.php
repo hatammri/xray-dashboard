@@ -1,4 +1,7 @@
-@extends('layouts.admin')
+@extends('index')
+@section('csslink')
+
+@endsection
   @section('content')
   <div class="content-wrapper">
     <!-- Content -->
@@ -502,4 +505,7 @@
 
     <div class="content-backdrop fade"></div>
   </div>
+  @endsection
+  @section('scripts')
+
   @endsection

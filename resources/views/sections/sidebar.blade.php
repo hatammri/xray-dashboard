@@ -23,20 +23,33 @@
       <!-- Layouts -->
       <li class="menu-header small text-uppercase"><span class="menu-header-text">برنامه‌ها و صفحات</span></li>
       <li class="menu-item {{ request()->is('/') ? 'active' : '' }}" >
-        <a href="app-email.html" class="menu-link">
+        <a href="{{ route('dashboard') }}" class="menu-link">
           <i class="menu-icon tf-icons bx bx-home-circle"></i>
           <div >داشبورد</div>
         </a>
       </li>
       <!-- Apps & Pages -->
       <li class="menu-header small text-uppercase"><span class="menu-header-text">برنامه‌ها و صفحات</span></li>
-      <li class="menu-item">
-        <a href="app-email.html" class="menu-link">
-          <i class="menu-icon tf-icons bx bx-detail"></i>
+      <li class="menu-item {{ request()->is('personnels/list_centers') ? 'active open' : '' }} {{ request()->is('personnels/list_personnels') ? 'active open' : '' }} ">
+        <a href="javascript:void(0);" class="menu-link menu-toggle">
+          <i class="menu-icon tf-icons bx bx-group"></i>
           <div >پرسنل</div>
         </a>
+        <ul class="menu-sub">
+          <li class="menu-item  {{ request()->is('personnels/list_centers') ? 'active' : '' }}">
+            <a href="{{ route('personnels.list_centers') }}" class="menu-link ">
+              <div >لیست مراکز </div>
+            </a>
+          </li>
+          <li class="menu-item  {{ request()->is('personnels/list_personnels') ? 'active' : '' }}">
+            <a href="{{ route('personnels.list_personnels') }}" class="menu-link">
+              <div >لسیت پرسنل</div>
+            </a>
+          </li>
+
+        </ul>
       </li>
-      <li class="menu-item">
+      {{-- <li class="menu-item">
         <a href="app-chat.html" class="menu-link">
           <i class="menu-icon tf-icons bx bx-detail"></i>
           <div >تخصص</div>
@@ -208,6 +221,6 @@
           <i class="menu-icon tf-icons bx bx-file"></i>
           <div data-i18n="Documentation">مستندات</div>
         </a>
-      </li>
+      </li> --}}
     </ul>
   </aside>

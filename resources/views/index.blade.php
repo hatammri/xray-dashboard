@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="../../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css">
     <link rel="stylesheet" href="../../assets/vendor/libs/typeahead-js/typeahead.css">
     <link rel="stylesheet" href="../../assets/vendor/libs/apex-charts/apex-charts.css">
-
+     @yield('csslink')
     <!-- Page CSS -->
 
     <!-- Helpers -->
@@ -94,6 +94,8 @@
 
     <!-- Page JS -->
     <script src="../../assets/js/dashboards-analytics.js"></script>
+    @yield('scripts')
+
   </body>
 </html>
 
