@@ -7,7 +7,7 @@ use App\Http\Controllers\Auth\RegisterController;
 
 //require __DIR__ . '/auth.php';
 //Route::group(['prefix' => '/', 'middleware'=>'auth'], function () {
-Route::get('', function () {
+Route::get('/', function () {
     return view('dashboard.index');
 })->name('dashboard');
 Route::get('/personnels/list_centers', function () {

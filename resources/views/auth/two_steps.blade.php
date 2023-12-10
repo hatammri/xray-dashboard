@@ -78,6 +78,8 @@
                 </div>
                 <!-- Create a hidden field which is combined by 3 fields above -->
                 <input type="hidden" name="otp">
+                <input type="hidden" name="cellphone" value="{{$user->cellphone}}">
+
               </div>
               <button class="btn btn-primary d-grid w-100 mb-3" type="submit">ورود به داشبورد</button>
               <div  class="text-center">
@@ -124,13 +126,12 @@
     <script src="../../assets/js/pages-auth.js"></script>
     <script src="../../assets/js/pages-auth-two-steps.js"></script>
     <script>
-       let loginToken;
          $('#resendOTPButton').hide();
          var user = {!! json_encode($user->toArray()) !!};
          timer();
          console.log(typeof user.login_token);
        function timer() {
-        let time="0:05";
+        let time="2:00";
         let interval =setInterval(function() {
             let countdown=time.split(':');
             let minutes=parseInt(countdown[0],10);
@@ -153,11 +154,8 @@
             console.log("resendOTPButton");
          $.post("{{url('/resend_otp')}}",{
          '_token' :"{{csrf_token()}}",
-         'login_token':user.login_token
+         'cellphone':user.cellphone
       },function(response,status){
-        console.log("******");
-          console.log(response,status);
-          loginToken = response.login_token;
           $('#resendOTPButton').fadeOut();
           timer();
           $('#resendOTPTime').fadeIn();

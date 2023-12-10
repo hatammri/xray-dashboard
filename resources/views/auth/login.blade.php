@@ -61,7 +61,7 @@
                 </a>
               </div>
               <!-- /Logo -->
-              <h4 class="mb-3 secondary-font">به داشبورد مدیریتی صاایران خوش آمدید!</h4>
+              <h5 class="mb-3 secondary-font">به داشبورد مدیریتی صاایران خوش آمدید!</h5>
               <p class="mb-4">لطفا وارد حساب خود شوید</p>
 
               <form action="{{ route('login') }}" id="formAuthentication" class="mb-3" action="index.html" method="POST">

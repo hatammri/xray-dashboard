@@ -8,6 +8,7 @@ use App\Notifications\OTPSms;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Redirect;
 
 class AuthController extends Controller
 {
@@ -51,14 +52,15 @@ class AuthController extends Controller
     {
         $request->validate([
             'otp'=>'required|digits:5',
-            'login_token'=>'required'
+            'cellphone'=>'required'
         ]);
          try{
-      $user=User::where('login_token',$request->login_token)->firstOrFail();
+      $user=User::where('cellphone',$request->cellphone)->firstOrFail();
       if($user->otp==$request->otp)
       {
         auth()->login($user,$remember=true);
-        return response(['otp'=>'ورود با موفقیت انجام شد'],200);
+        return redirect('/');
+
 
       }else
       {
@@ -73,10 +75,10 @@ class AuthController extends Controller
     public function resendOtp(Request $request)
     {
         $request->validate([
-            'login_token'=>'required'
+            'cellphone'=>'required'
         ]);
         try{
-            $user=User::where('login_token',$request->login_token)->firstOrFail();
+            $user=User::where('cellphone',$request->cellphone)->firstOrFail();
             $OTPCode=mt_rand(10000,99999);
             $loginToken =Hash::make('DCDVFBVYJJ!@EDFRdgthjngrNHBVF');
           $user->update([

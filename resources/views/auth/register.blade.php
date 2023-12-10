@@ -61,7 +61,7 @@
                 </a>
               </div>
               <!-- /Logo -->
-              <h4 class="mb-3 secondary-font">ثبت نام جهت ورود الزامیست</h4>
+              <h5 class="mb-3 secondary-font">ثبت نام جهت ورود الزامیست</h5>
               <p class="mb-4">پس از ثبت نام منتظر تایید حساب کاربری خود باشید.</p>
 
               <form action="{{ route('register') }}" id="formAuthentication" class="mb-3"  method="POST">
