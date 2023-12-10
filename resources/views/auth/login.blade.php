@@ -64,28 +64,11 @@
               <h4 class="mb-3 secondary-font">به داشبورد مدیریتی صاایران خوش آمدید!</h4>
               <p class="mb-4">لطفا وارد حساب خود شوید</p>
 
-              <form id="formAuthentication" class="mb-3" action="index.html" method="POST">
+              <form action="{{ route('login') }}" id="formAuthentication" class="mb-3" action="index.html" method="POST">
+                @csrf
                 <div class="mb-3">
-                  <label for="email" class="form-label">ایمیل یا نام کاربری</label>
-                  <input type="text" class="form-control text-start" id="email" name="email-username" placeholder="ایمیل یا نام کاربری خود را وارد کنید" autofocus dir="ltr">
-                </div>
-                <div class="mb-3 form-password-toggle">
-                  <div class="d-flex justify-content-between">
-                    <label class="form-label" for="password">رمز عبور</label>
-                    <a href="auth-forgot-password-basic.html">
-                      <small>رمز عبور را فراموش کردید؟</small>
-                    </a>
-                  </div>
-                  <div class="input-group input-group-merge">
-                    <input type="password" id="password" class="form-control text-start" name="password" placeholder="············" aria-describedby="password" dir="ltr">
-                    <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
-                  </div>
-                </div>
-                <div class="mb-3">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="remember-me">
-                    <label class="form-check-label" for="remember-me"> به خاطر سپاری </label>
-                  </div>
+                  <label for="cellphone" class="form-label">شماره همراه</label>
+                  <input type="text" class="form-control text-start" id="cellphone" name="cellphone" placeholder="شماره همراه خود را وارد کنید" autofocus dir="ltr">
                 </div>
                 <div class="mb-3">
                   <button class="btn btn-primary d-grid w-100" type="submit">ورود</button>
@@ -94,28 +77,10 @@
 
               <p class="text-center">
                 <span>کاربر جدید هستید؟</span>
-                <a href="auth-register-basic.html">
+                <a href="{{ route('register') }}" >
                   <span>یک حساب بسازید</span>
                 </a>
               </p>
-
-              <div class="divider my-4">
-                <div class="divider-text">یا</div>
-              </div>
-
-              <div class="d-flex justify-content-center">
-                <a href="javascript:;" class="btn btn-icon btn-label-facebook me-3">
-                  <i class="tf-icons bx bxl-facebook"></i>
-                </a>
-
-                <a href="javascript:;" class="btn btn-icon btn-label-google-plus me-3">
-                  <i class="tf-icons bx bxl-google-plus"></i>
-                </a>
-
-                <a href="javascript:;" class="btn btn-icon btn-label-twitter">
-                  <i class="tf-icons bx bxl-twitter"></i>
-                </a>
-              </div>
             </div>
           </div>
           <!-- /Register -->
@@ -150,5 +115,7 @@
 
     <!-- Page JS -->
     <script src="{{ asset('/assets/js/pages-auth.js')}}"></script>
+
+
   </body>
 </html>

@@ -61,26 +61,30 @@
                 </a>
               </div>
               <!-- /Logo -->
-              <h4 class="mb-3 secondary-font">ماجراجویی اینجا شروع می‌شود</h4>
-              <p class="mb-4">مدیریت برنامه خود را آسان و جذاب کنید!</p>
+              <h4 class="mb-3 secondary-font">ثبت نام جهت ورود الزامیست</h4>
+              <p class="mb-4">پس از ثبت نام منتظر تایید حساب کاربری خود باشید.</p>
 
-              <form id="formAuthentication" class="mb-3" action="index.html" method="POST">
+              <form action="{{ route('register') }}" id="formAuthentication" class="mb-3"  method="POST">
+                @csrf
                 <div class="mb-3">
-                  <label for="username" class="form-label">نام کاربری</label>
-                  <input type="text" class="form-control text-start" id="username" name="username" placeholder="نام کاربری خود را وارد کنید" autofocus dir="ltr">
+                  <label for="name" class="form-label">نام و نام خانوادگی</label>
+                  <input type="text" class="form-control text-start" id="username" name="name" placeholder="نام و نام خانوادگی خود را وارد کنید" autofocus dir="ltr">
                 </div>
                 <div class="mb-3">
-                  <label for="email" class="form-label">ایمیل</label>
-                  <input type="text" class="form-control text-start" id="email" name="email" placeholder="ایمیل خود را وارد کنید" dir="ltr">
+                  <label for="cellphone" class="form-label">شماره همراه</label>
+                  <input type="text" class="form-control text-start" id="email" name="cellphone" placeholder="شماره همراه خود را وارد کنید" dir="ltr">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">ایمیل</label>
+                    <input type="text" class="form-control text-start" id="email" name="email" placeholder="ایمیل خود را وارد کنید" dir="ltr">
                 </div>
                 <div class="mb-3 form-password-toggle">
-                  <label class="form-label" for="password">رمز عبور</label>
-                  <div class="input-group input-group-merge">
-                    <input type="password" id="password" class="form-control text-start" name="password" placeholder="············" aria-describedby="password" dir="ltr">
-                    <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
+                    <label class="form-label" for="password">رمز عبور</label>
+                    <div class="input-group input-group-merge">
+                      <input type="password" id="password" class="form-control text-start" name="password" placeholder="············" aria-describedby="password" dir="ltr">
+                      <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
+                    </div>
                   </div>
-                </div>
-
                 <div class="mb-3">
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" id="terms-conditions" name="terms">
@@ -95,28 +99,11 @@
 
               <p class="text-center">
                 <span>حساب کاربری دارید؟</span>
-                <a href="auth-login-basic.html">
+                <a href="{{ route('login') }}">
                   <span>وارد شوید</span>
                 </a>
               </p>
 
-              <div class="divider my-4">
-                <div class="divider-text">یا</div>
-              </div>
-
-              <div class="d-flex justify-content-center">
-                <a href="javascript:;" class="btn btn-icon btn-label-facebook me-3">
-                  <i class="tf-icons bx bxl-facebook"></i>
-                </a>
-
-                <a href="javascript:;" class="btn btn-icon btn-label-google-plus me-3">
-                  <i class="tf-icons bx bxl-google-plus"></i>
-                </a>
-
-                <a href="javascript:;" class="btn btn-icon btn-label-twitter">
-                  <i class="tf-icons bx bxl-twitter"></i>
-                </a>
-              </div>
             </div>
           </div>
           <!-- Register Card -->
