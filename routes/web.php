@@ -23,9 +23,9 @@ Route::get('/personnels/list_centers', function () {
 Route::get('/personnels/list_personnels', function () {
     return view('personnel.list');
 })->name('personnels.list_personnels');
-// Route::get('/login', function () {
-//     return view('auth.login');
-// });
+Route::get('/login', function () {
+    return view('auth.login');
+});
 // Route::get('/register', function () {
 //     return view('auth.register');
 // });
