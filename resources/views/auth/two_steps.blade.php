@@ -60,25 +60,26 @@
               </a>
             </div>
             <!-- /Logo -->
-            <h4 class="mb-3 secondary-font">تایید شماره‌همراه</h4>
+            <h5 class="mb-3 secondary-font">تایید شماره‌ همراه</h5>
             <p class="text-start mb-4">
               ما یک کد تایید به موبایل شما ارسال کردیم. کد ارسال شده را در فیلد زیر وارد کنید.
               <span class="fw-bold d-block mt-2">شماره تلفن شما: {{ $user->cellphone}} </span>
             </p>
             <p class="mb-0 fw-semibold">کد 5 رقمی امنیتی را وارد کنید</p>
-            <form id="twoStepsForm" action="index.html" method="POST">
+            <form id="twoStepsForm" action="{{ route('checkOtp') }}" method="POST">
+                @csrf
               <div class="mb-3">
                 <div class="auth-input-wrapper d-flex align-items-center justify-content-sm-between numeral-mask-wrapper">
-                  <input type="text" class="form-control auth-input h-px-50 text-center numeral-mask text-center h-px-50 mx-1 my-2" maxlength="1" autofocus>
-                  <input type="text" class="form-control auth-input h-px-50 text-center numeral-mask text-center h-px-50 mx-1 my-2" maxlength="1">
-                  <input type="text" class="form-control auth-input h-px-50 text-center numeral-mask text-center h-px-50 mx-1 my-2" maxlength="1">
-                  <input type="text" class="form-control auth-input h-px-50 text-center numeral-mask text-center h-px-50 mx-1 my-2" maxlength="1">
-                  <input type="text" class="form-control auth-input h-px-50 text-center numeral-mask text-center h-px-50 mx-1 my-2" maxlength="1">
+                  <input  type="text" class="form-control auth-input h-px-50 text-center numeral-mask text-center h-px-50 mx-1 my-2" maxlength="1" autofocus>
+                  <input  type="text" class="form-control auth-input h-px-50 text-center numeral-mask text-center h-px-50 mx-1 my-2" maxlength="1">
+                  <input  type="text" class="form-control auth-input h-px-50 text-center numeral-mask text-center h-px-50 mx-1 my-2" maxlength="1">
+                  <input  type="text" class="form-control auth-input h-px-50 text-center numeral-mask text-center h-px-50 mx-1 my-2" maxlength="1">
+                  <input  type="text" class="form-control auth-input h-px-50 text-center numeral-mask text-center h-px-50 mx-1 my-2" maxlength="1">
                 </div>
                 <!-- Create a hidden field which is combined by 3 fields above -->
                 <input type="hidden" name="otp">
               </div>
-              <button class="btn btn-primary d-grid w-100 mb-3">تایید حساب</button>
+              <button class="btn btn-primary d-grid w-100 mb-3" type="submit">ورود به داشبورد</button>
               <div  class="text-center">
                 کد را دریافت نکردید؟
                 <a id="resendOTPButton" href="javascript:void(0);"> ارسال دوباره </a>
@@ -123,6 +124,7 @@
     <script src="../../assets/js/pages-auth.js"></script>
     <script src="../../assets/js/pages-auth-two-steps.js"></script>
     <script>
+       let loginToken;
          $('#resendOTPButton').hide();
          var user = {!! json_encode($user->toArray()) !!};
          timer();

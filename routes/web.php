@@ -27,5 +27,7 @@ Route::get('/personnels/list_personnels', function () {
 
 Route::any('/login',[AuthController::class,'login'])->name('login');
 Route::post('/resend_otp',[AuthController::class,'resendOtp']);
+Route::post('/check_otp',[AuthController::class,'checkOtp'])->name('checkOtp');;
+
 Route::any('/register', [RegisterController::class,'register'])->name('register');
 
