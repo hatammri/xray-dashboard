@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 
-    <title>ثبت نام  |  داشبورد مدیریت شرکت صنایع الکترونیک ایران</title>
+    <title>ثبت نام | داشبورد مدیریت شرکت صنایع الکترونیک ایران</title>
 
     <meta name="description" content="">
 
@@ -39,6 +39,7 @@
     <script src="../../assets/vendor/js/template-customizer.js"></script>
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="../../assets/js/config.js"></script>
+
   </head>
 
   <body>

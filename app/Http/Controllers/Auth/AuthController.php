@@ -9,6 +9,7 @@ use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Redirect;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class AuthController extends Controller
 {
@@ -33,6 +34,7 @@ class AuthController extends Controller
          $user->notify(new OTPSms($OTPCode));
          return view('auth.two_steps' , compact('user'));
        }else{
+
         dd("notfound");
         //شما ثبت نام نکرده اید و یا پیام شما دسترسی ندارید چاپ شود
         // $user=User::Create([
