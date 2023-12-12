@@ -114,7 +114,7 @@
       plotOptions: {
         bar: {
           horizontal: false,
-          columnWidth: '20%',
+          columnWidth: '35%',
           borderRadius: 3,
           startingShape: 'rounded'
         }
@@ -125,11 +125,11 @@
       colors: [config.colors.primary, config.colors_label.primary],
       series: [
         {
-          name: '1400',
+          name: '1401',
           data: [8, 9, 15, 20, 14, 22, 29, 27, 13]
         },
         {
-          name: '1401',
+          name: '1400',
           data: [5, 7, 12, 17, 9, 17, 26, 21, 10]
         }
       ],
@@ -169,7 +169,7 @@
       tooltip: {
         y: {
           formatter: function (val) {
-            return val + ' هزار تومان';
+            return val + ' عدد خودروی متخلف';
           }
         }
       }
