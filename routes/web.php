@@ -25,9 +25,10 @@ Route::get('/personnels/list_personnels', function () {
 // Route::post('/check-otp',[AuthController::class,'checkOtp']);
 // Route::post('/resend-otp',[AuthController::class,'resendOtp']);
 
-Route::any('/login',[AuthController::class,'login'])->name('login');
-Route::post('/resend_otp',[AuthController::class,'resendOtp']);
-Route::post('/check_otp',[AuthController::class,'checkOtp'])->name('checkOtp');;
+Route::any('/login',[AuthController::class,'login'])->middleware('guest')->name('login');
+Route::post('/resend_otp',[AuthController::class,'resendOtp'])->middleware('guest')->name('resendOtp');
+Route::post('/check_otp',[AuthController::class,'checkOtp'])->middleware('guest')->name('checkOtp');
 
-Route::any('/register', [RegisterController::class,'register'])->name('register');
+Route::any('/register', [RegisterController::class,'register'])->middleware('guest')->name('register');
+
 

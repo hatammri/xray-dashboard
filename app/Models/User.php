@@ -22,6 +22,8 @@ class User extends Authenticatable
         'password',
         'otp',
         'cellphone',
+        'role',
+        'position',
         'login_token'
     ];
 

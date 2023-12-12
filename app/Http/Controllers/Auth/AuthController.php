@@ -60,7 +60,8 @@ class AuthController extends Controller
       if($user->otp==$request->otp)
       {
         auth()->login($user,$remember=true);
-        return redirect('/');
+       // return redirect('/');
+       return redirect()->route('dashboard');
 
 
       }else
