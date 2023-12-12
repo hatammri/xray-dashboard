@@ -17,6 +17,8 @@ Route::get('/personnels/list_centers', function () {
 Route::get('/personnels/list_personnels', function () {
     return view('personnel.list');
 })->name('personnels.list_personnels');
+Route::get('/logout', function(){auth()->logout();  return redirect()->route('login');
+})->name('logout');
 
 
 });
