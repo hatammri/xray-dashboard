@@ -260,7 +260,7 @@
                     <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);"
                         data-bs-toggle="dropdown">
                         <div class="avatar avatar-online">
-                            <img src="../../assets/img/avatars/1.png" alt class="rounded-circle">
+                            <img src="{{ asset(env('USER_IMAGES_IMAGES_PATH') . Auth::user()->avatar) }}" alt class="rounded-circle">
                         </div>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end">
@@ -269,12 +269,12 @@
                                 <div class="d-flex align-items-center">
                                     <div class="flex-shrink-0 me-3">
                                         <div class="avatar avatar-online">
-                                            <img src="../../assets/img/avatars/1.png" alt class="rounded-circle">
+                                            <img src="{{ asset(env('USER_IMAGES_IMAGES_PATH') . Auth::user()->avatar) }}" alt class="rounded-circle">
                                         </div>
                                     </div>
                                     <div class="flex-grow-1">
-                                        <span class="fw-semibold d-block">محمدرضا حاتمیان</span>
-                                        <small>مدیر</small>
+                                        <span class="fw-semibold d-block">{{ Auth::user()->name }}</span>
+                                        <small>{{ Auth::user()->position }}</small>
                                     </div>
                                 </div>
                             </a>
