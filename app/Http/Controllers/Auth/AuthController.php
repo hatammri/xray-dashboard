@@ -34,7 +34,6 @@ class AuthController extends Controller
          $user->notify(new OTPSms($OTPCode));
          return view('auth.two_steps' , compact('user'));
        }else{
-
         dd("notfound");
         //شما ثبت نام نکرده اید و یا پیام شما دسترسی ندارید چاپ شود
         // $user=User::Create([

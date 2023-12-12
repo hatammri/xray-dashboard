@@ -25,8 +25,10 @@ return new class extends Migration
             $table->string('login_token');
             $table->integer('otp');
             $table->string('role');
+            $table->string('position');
             $table->rememberToken();
             $table->timestamps();
+
         });
     }
 
