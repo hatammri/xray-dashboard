@@ -13,12 +13,12 @@
                 <div class="card-body">
                   <div class="d-flex align-items-start justify-content-between">
                     <div class="content-left">
-                      <span class="secondary-font fw-medium">جلسه</span>
+                      <span class="secondary-font fw-medium">تعدا رانندگان متخلف</span>
                       <div class="d-flex align-items-baseline mt-2">
-                        <h4 class="mb-0 me-2">21,459</h4>
+                        <h4 class="mb-0 me-2">26</h4>
                         <small class="text-success">(+29%)</small>
                       </div>
-                      <small>مجموع کاربران</small>
+                      <small>مجموع رانندگان</small>
                     </div>
                     <span class="badge bg-label-primary rounded p-2">
                       <i class="bx bx-user bx-sm"></i>
@@ -32,12 +32,12 @@
                 <div class="card-body">
                   <div class="d-flex align-items-start justify-content-between">
                     <div class="content-left">
-                      <span class="secondary-font fw-medium">کاربران ویژه</span>
+                      <span class="secondary-font fw-medium">خودروهای فعال </span>
                       <div class="d-flex align-items-baseline mt-2">
-                        <h4 class="mb-0 me-2">4,567</h4>
+                        <h4 class="mb-0 me-2">83</h4>
                         <small class="text-success">(+18%)</small>
                       </div>
-                      <small>تحلیل هفته اخیر </small>
+                      <small>تحلیل امروز</small>
                     </div>
                     <span class="badge bg-label-danger rounded p-2">
                       <i class="bx bx-user-plus bx-sm"></i>
@@ -51,9 +51,9 @@
                 <div class="card-body">
                   <div class="d-flex align-items-start justify-content-between">
                     <div class="content-left">
-                      <span class="secondary-font fw-medium">کاربران فعال</span>
+                      <span class="secondary-font fw-medium">تعداد خودروهای فعال</span>
                       <div class="d-flex align-items-baseline mt-2">
-                        <h4 class="mb-0 me-2">19,860</h4>
+                        <h4 class="mb-0 me-2">506</h4>
                         <small class="text-danger">(-14%)</small>
                       </div>
                       <small>تحلیل هفته اخیر</small>
@@ -70,9 +70,9 @@
                 <div class="card-body">
                   <div class="d-flex align-items-start justify-content-between">
                     <div class="content-left">
-                      <span class="secondary-font fw-medium">کاربران در انتظار</span>
+                      <span class="secondary-font fw-medium">تعداد مغایرت بار</span>
                       <div class="d-flex align-items-baseline mt-2">
-                        <h4 class="mb-0 me-2">237</h4>
+                        <h4 class="mb-0 me-2">4</h4>
                         <small class="text-success">(+42%)</small>
                       </div>
                       <small>تحلیل هفته اخیر</small>
@@ -213,6 +213,7 @@
                 </div>
               </div>
             </div>
+
           </div>
         </div>
         <!--/ Referral, conversion, impression & income charts -->
@@ -576,6 +577,7 @@
           </div>
         </div>
         <!--/ Activity Timeline -->
+
       </div>
     </div>
     <!-- / Content -->
