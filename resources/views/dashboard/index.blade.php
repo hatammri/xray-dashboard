@@ -141,7 +141,7 @@
               <div class="card h-100">
                 <div class="card-body text-center">
                   <h2 class="mb-1">32,690</h2>
-                  <span class="text-muted">ارجاع 40%</span>
+                  <span class="text-muted">null 40%</span>
                   <div id="referralLineChart"></div>
                 </div>
               </div>
@@ -151,7 +151,7 @@
               <div class="card h-100">
                 <div class="card-header d-flex justify-content-between pb-3">
                   <div class="conversion-title">
-                    <h5 class="card-title mb-1">تبدیل</h5>
+                    <h5 class="card-title mb-1">null</h5>
                     <p class="mb-0 text-muted primary-font">
                       60%
                       <i class="bx bx-chevron-up text-success"></i>
@@ -185,7 +185,7 @@
                           </div>
                           <div class="card-info">
                             <h5 class="card-title mb-0 me-2 primary-font">38,566</h5>
-                            <small class="text-muted">تبدیل</small>
+                            <small class="text-muted">null</small>
                           </div>
                         </div>
                         <div id="conversationChart"></div>
@@ -203,7 +203,7 @@
                           </div>
                           <div class="card-info">
                             <h5 class="card-title mb-0 me-2 primary-font">53,659</h5>
-                            <small class="text-muted">درآمد</small>
+                            <small class="text-muted">null</small>
                           </div>
                         </div>
                         <div id="incomeChart"></div>
@@ -219,7 +219,7 @@
         <!--/ Referral, conversion, impression & income charts -->
 
         <!-- Activity -->
-        <div class="col-md-6 col-lg-6 col-xl-6 col-xxl-3 mb-4">
+        {{-- <div class="col-md-6 col-lg-6 col-xl-6 col-xxl-3 mb-4">
           <div class="card h-100">
             <div class="card-header">
               <h5 class="card-title mb-0">فعالیت</h5>
@@ -285,11 +285,11 @@
               </ul>
             </div>
           </div>
-        </div>
+        </div> --}}
         <!--/ Activity -->
 
         <!-- Profit Report & Registration -->
-        <div class="col-md-6 col-lg-6 col-xl-6 col-xxl-3">
+        {{-- <div class="col-md-6 col-lg-6 col-xl-6 col-xxl-3">
           <div class="row">
             <div class="col-12 col-sm-6 col-md-12 mb-4">
               <div class="card h-100">
@@ -336,11 +336,11 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> --}}
         <!--/ Profit Report & Registration -->
 
         <!-- Sales -->
-        <div class="col-md-6 col-lg-6 col-xl-6 col-xxl-3 mb-4">
+        {{-- <div class="col-md-6 col-lg-6 col-xl-6 col-xxl-3 mb-4">
           <div class="card h-100">
             <div class="card-header d-flex align-items-start justify-content-between">
               <div class="card-title mb-0">
@@ -384,11 +384,11 @@
               </ul>
             </div>
           </div>
-        </div>
+        </div> --}}
         <!--/ Sales -->
 
         <!-- Growth Chart-->
-        <div class="col-md-6 col-lg-6 col-xl-6 col-xxl-3 mb-4">
+        {{-- <div class="col-md-6 col-lg-6 col-xl-6 col-xxl-3 mb-4">
           <div class="card h-100">
             <div class="card-body text-center">
               <div class="dropdown mb-3 mt-2">
@@ -405,11 +405,11 @@
               <h6 class="mb-0">62% رشد در سال 1401</h6>
             </div>
           </div>
-        </div>
+        </div> --}}
         <!-- Growth Chart-->
 
         <!-- Finance Summary -->
-        <div class="col-md-7 col-lg-7 mb-4 mb-md-0">
+        {{-- <div class="col-md-7 col-lg-7 mb-4 mb-md-0">
           <div class="card h-100">
             <div class="card-header d-flex align-items-center justify-content-between">
               <div class="d-flex align-items-center me-3">
@@ -484,11 +484,11 @@
               </ul>
             </div>
           </div>
-        </div>
+        </div> --}}
         <!-- Finance Summary -->
 
         <!-- Activity Timeline -->
-        <div class="col-md-5 col-lg-5 mb-0">
+        {{-- <div class="col-md-5 col-lg-5 mb-0">
           <div class="card h-100">
             <div class="card-header d-flex align-items-center justify-content-between mb-3">
               <h5 class="card-title m-0 me-2">خط زمانی فعالیت</h5>
@@ -575,7 +575,7 @@
               <!-- /Activity Timeline -->
             </div>
           </div>
-        </div>
+        </div> --}}
         <!--/ Activity Timeline -->
 
       </div>

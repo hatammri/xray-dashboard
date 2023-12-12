@@ -333,7 +333,7 @@
         }
       },
       series: [80, 30, 60],
-      labels: ['اجتماعی', 'ایمیل', 'جستجو'],
+      labels: ['NULL', 'NULL', 'NULL'],
       stroke: {
         width: 0,
         lineCap: 'round'
@@ -361,7 +361,7 @@
               },
               total: {
                 show: true,
-                label: 'بازدید',
+                label: 'NULL',
                 color: legendColor,
                 formatter: function (w) {
                   return w.globals.seriesTotals.reduce(function (a, b) {
