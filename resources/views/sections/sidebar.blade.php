@@ -5,7 +5,7 @@
           <img width="35px" height="35px" viewbox="0 0 30 30" version="1.1" src="{{ asset('/assets/img/logo/sapa.png')}}">
 
         </span>
-        <span class="app-brand-text demo menu-text fw-bold ms-2">SAPA</span>
+        <span class="app-brand-text demo menu-text fw-bold ms-2">صاایران</span>
       </a>
 
       <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
