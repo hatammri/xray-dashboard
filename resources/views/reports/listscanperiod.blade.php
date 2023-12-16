@@ -3,7 +3,7 @@
     <link rel="stylesheet" href="../../assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css">
     <link rel="stylesheet" href="../../assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css">
     <link rel="stylesheet" href="../../assets/vendor/libs/flatpickr/flatpickr.css">
-    
+
 @endsection
 @section('content')
     <!-- Content wrapper -->
@@ -55,29 +55,21 @@
                                         </select>
                                     </div>
                                     <div class="col-12 col-sm-6 col-lg-4">
-                                        <label for="flatpickr-human-friendly" class="form-label">انتخاب‌گر تاریخ
-                                            کاربرپسند</label>
-                                        <input type="text" class="form-control" placeholder="DD Month YYYY"
-                                            id="flatpickr-human-friendly">
-                                    </div>
-                                    <div class="col-12 col-sm-6 col-lg-4">
-                                        <label class="form-label">از تاریخ:</label>
+                                        <label class="form-label">تاریخ:</label>
                                         <div class="mb-0">
-                                            <input type="text" class="form-control" placeholder="DD Month YYYY"
-                                                id="flatpickr-human-friendly">
-                                            {{-- <input type="hidden" class="form-control dt-date start_date dt-input" data-column="5" data-column-index="4" name="value_from_start_date"> --}}
-                                            {{-- <input type="hidden" class="form-control dt-date end_date dt-input" name="value_from_end_date" data-column="5" data-column-index="4"> --}}
+                                          <input type="text" class="form-control dt-date flatpickr-range dt-input" data-column="5" placeholder="تاریخ شروع تا پایان" data-column-index="4" name="dt_date">
+                                          <input type="hidden" class="form-control dt-date start_date dt-input" data-column="5" data-column-index="4" name="value_from_start_date">
+                                          <input type="hidden" class="form-control dt-date end_date dt-input" name="value_from_end_date" data-column="5" data-column-index="4">
                                         </div>
-                                    </div>
+                                      </div>
                                     <div class="col-12 col-sm-6 col-lg-4">
-                                        <label class="form-label">تا تاریخ:</label>
+                                        <label class="form-label">تاریخ:</label>
                                         <div class="mb-0">
-                                            <input type="text" class="form-control" placeholder="DD Month YYYY"
-                                                id="flatpickr-human-friendly">
-                                            {{-- <input type="hidden" class="form-control dt-date start_date dt-input" data-column="5" data-column-index="4" name="value_from_start_date"> --}}
-                                            {{-- <input type="hidden" class="form-control dt-date end_date dt-input" name="value_from_end_date" data-column="5" data-column-index="4"> --}}
+                                          <input type="text" class="form-control dt-date flatpickr-range dt-input" data-column="5" placeholder="تاریخ شروع تا پایان" data-column-index="4" name="dt_date">
+                                          <input type="hidden" class="form-control dt-date start_date dt-input" data-column="5" data-column-index="4" name="value_from_start_date">
+                                          <input type="hidden" class="form-control dt-date end_date dt-input" name="value_from_end_date" data-column="5" data-column-index="4">
                                         </div>
-                                    </div>
+                                      </div>
 
                                 </div>
                             </div>
@@ -144,4 +136,5 @@
 
     <!-- Page JS -->
     <script src="../../assets/js/tables-datatables-advanced.js"></script>
+
 @endsection
