@@ -29,7 +29,90 @@
         </a>
       </li>
       <!-- Apps & Pages -->
-      <li class="menu-header small text-uppercase"><span class="menu-header-text">برنامه‌ها و صفحات</span></li>
+      <li class="menu-item {{ request()->is('personnels/list_centers') ? 'active open' : '' }} {{ request()->is('personnels/list_personnels') ? 'active open' : '' }} ">
+        <a href="javascript:void(0);" class="menu-link menu-toggle">
+          <i class="menu-icon tf-icons bx bx-group"></i>
+          <div >گزارش‌گیری </div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item  {{ request()->is('personnels/list_centers') ? 'active' : '' }}">
+            <a href="{{ route('reports.list_scan_period') }}" class="menu-link ">
+              <div >لیست دوره‌های اسکن شده </div>
+            </a>
+          </li>
+          <li class="menu-item  {{ request()->is('personnels/list_personnels') ? 'active' : '' }}">
+            <a href="{{ route('reports.testtable') }}" class="menu-link">
+              <div >تست جدول</div>
+            </a>
+          </li>
+           {{-- <li class="menu-item  {{ request()->is('personnels/list_personnels') ? 'active' : '' }}">
+            <a href="{{ route('personnels.list_personnels') }}" class="menu-link">
+              <div >لسیت مغایرت‌های بارنامه</div>
+            </a>
+          </li> --}}
+          {{-- <li class="menu-item  {{ request()->is('personnels/list_personnels') ? 'active' : '' }}">
+            <a href="{{ route('personnels.list_personnels') }}" class="menu-link">
+              <div >محموله‌های‌ اسکن شده</div>
+            </a>
+          </li>
+          <li class="menu-item  {{ request()->is('personnels/list_personnels') ? 'active' : '' }}">
+            <a href="{{ route('personnels.list_personnels') }}" class="menu-link">
+              <div >گزارش پراکندگی خودرو</div>
+            </a>
+          </li> --}}
+        </ul>
+      </li>
+      {{-- <li class="menu-item {{ request()->is('/') ? 'active' : '' }}" >
+        <a href="{{ route('dashboard') }}" class="menu-link">
+          <i class="menu-icon tf-icons bx bx-home-circle"></i>
+          <div >تنظیمات</div>
+        </a>
+      </li>
+      <li class="menu-item {{ request()->is('personnels/list_centers') ? 'active open' : '' }} {{ request()->is('personnels/list_personnels') ? 'active open' : '' }} ">
+        <a href="javascript:void(0);" class="menu-link menu-toggle">
+          <i class="menu-icon tf-icons bx bx-group"></i>
+          <div >سطوح دسترسی </div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item  {{ request()->is('personnels/list_centers') ? 'active' : '' }}">
+            <a href="{{ route('reports.list_scan_period') }}" class="menu-link ">
+              <div >null</div>
+            </a>
+          </li>
+          <li class="menu-item  {{ request()->is('personnels/list_personnels') ? 'active' : '' }}">
+            <a href="{{ route('personnels.list_personnels') }}" class="menu-link">
+              <div>null</div>
+            </a>
+          </li>
+
+        </ul>
+      </li>
+      <li class="menu-item {{ request()->is('personnels/list_centers') ? 'active open' : '' }} {{ request()->is('personnels/list_personnels') ? 'active open' : '' }} ">
+        <a href="javascript:void(0);" class="menu-link menu-toggle">
+          <i class="menu-icon tf-icons bx bx-group"></i>
+          <div >اطلاعات رانندگان</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item  {{ request()->is('personnels/list_centers') ? 'active' : '' }}">
+            <a href="{{ route('reports.list_scan_period') }}" class="menu-link ">
+              <div >null</div>
+            </a>
+          </li>
+          <li class="menu-item  {{ request()->is('personnels/list_personnels') ? 'active' : '' }}">
+            <a href="{{ route('personnels.list_personnels') }}" class="menu-link">
+              <div >null</div>
+            </a>
+          </li>
+
+        </ul>
+      </li>
+      <li class="menu-item {{ request()->is('/') ? 'active' : '' }}" >
+        <a href="{{ route('dashboard') }}" class="menu-link">
+          <i class="menu-icon tf-icons bx bx-home-circle"></i>
+          <div >خروج</div>
+        </a>
+      </li> --}}
+      {{-- <li class="menu-header small text-uppercase"><span class="menu-header-text">برنامه‌ها و صفحات</span></li>
       <li class="menu-item {{ request()->is('personnels/list_centers') ? 'active open' : '' }} {{ request()->is('personnels/list_personnels') ? 'active open' : '' }} ">
         <a href="javascript:void(0);" class="menu-link menu-toggle">
           <i class="menu-icon tf-icons bx bx-group"></i>
@@ -48,7 +131,7 @@
           </li>
 
         </ul>
-      </li>
+      </li> --}}
       {{-- <li class="menu-item">
         <a href="app-chat.html" class="menu-link">
           <i class="menu-icon tf-icons bx bx-detail"></i>
