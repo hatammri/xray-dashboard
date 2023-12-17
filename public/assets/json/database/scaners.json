@@ -1,0 +1,17 @@
+{
+    "data": [
+      {
+        "id": 1,
+        "avatar": "10.png",
+        "name": "میرجاوه",
+        "Scanning_device":"بهیار۱",
+        "city": "سیستان و بلوچستان",
+        "start_date": "1401/09/01",
+        "date": "1401/09/10",
+        "operators":"علی زمانی",
+        "Numberـofـscans": "61",
+        "Contradiction":"3",
+        "status": 1
+      }
+    ]
+}
