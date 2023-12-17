@@ -12,6 +12,19 @@
         "Numberـofـscans": "61",
         "Contradiction":"3",
         "status": 1
+      },
+      {
+        "id": 1,
+        "avatar": "10.png",
+        "name": "لطف آباد",
+        "Scanning_device":"بهیار۲",
+        "city": "خراسان رضوی",
+        "start_date": "1401/06/01",
+        "date": "1401/09/25",
+        "operators":"محمد حیدری",
+        "Numberـofـscans": "31",
+        "Contradiction":"7",
+        "status": 1
       }
     ]
 }

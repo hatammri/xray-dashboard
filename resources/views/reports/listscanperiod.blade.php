@@ -15,60 +15,6 @@
         <span class="text-muted fw-light">جدول‌های داده /</span> پیشرفته
       </h4>
 
-      <!-- Ajax Sourced Server-side -->
-      <div class="card">
-        <h5 class="card-header heading-color">منبع با Ajax از سمت سرور</h5>
-        <div class="card-datatable text-nowrap">
-          <table class="datatables-ajax table table-bordered">
-            <thead>
-              <tr>
-                <th>نام کامل</th>
-                <th>ایمیل</th>
-                <th>شغل</th>
-                <th>دفتر</th>
-                <th>تاریخ شروع</th>
-                <th>حقوق</th>
-              </tr>
-            </thead>
-          </table>
-        </div>
-      </div>
-      <!--/ Ajax Sourced Server-side -->
-
-      <hr class="my-5">
-
-      <!-- Column Search -->
-      <div class="card">
-        <h5 class="card-header heading-color">جستجوی ستون</h5>
-        <div class="card-datatable text-nowrap">
-          <table class="dt-column-search table table-bordered">
-            <thead>
-              <tr>
-                <th>نام</th>
-                <th>ایمیل</th>
-                <th>شغل</th>
-                <th>شهر</th>
-                <th>تاریخ</th>
-                <th>حقوق</th>
-              </tr>
-            </thead>
-            <tfoot>
-              <tr>
-                <th>نام</th>
-                <th>ایمیل</th>
-                <th>شغل</th>
-                <th>شهر</th>
-                <th>تاریخ</th>
-                <th>حقوق</th>
-              </tr>
-            </tfoot>
-          </table>
-        </div>
-      </div>
-      <!--/ Column Search -->
-
-      <hr class="my-5">
-
       <!-- Advanced Search -->
       <div class="card">
         <h5 class="card-header heading-color">جستجوی پیشرفته</h5>
@@ -80,8 +26,16 @@
                 <div class="row g-3">
                   <div class="col-12 col-sm-6 col-lg-4">
                     <label class="form-label">نام:</label>
-                    <input type="text" class="form-control dt-input dt-full-name" data-column="1" placeholder="جان اسنو" data-column-index="0">
-                  </div>
+                    {{-- <input type="text" class="form-control dt-input dt-full-name" data-column="1" placeholder="جان اسنو" data-column-index="0"> --}}
+                    <select id="name" class="select2 form-select" data-column="1" data-column-index="0">
+                        <option value="">همه موارد</option>
+                        <option value="Australia">میرجاوه</option>
+                        <option value="Bangladesh">جلفا</option>
+                        <option value="Belarus">لطف آباد</option>
+                        <option value="Brazil">بازرگان</option>
+                        <option value="Canada">پرویزخان</option>
+                    </select>
+                    </div>
                   <div class="col-12 col-sm-6 col-lg-4">
                     <label class="form-label">ایمیل:</label>
                     <input type="text" class="form-control dt-input" data-column="2" placeholder="demo@example.com" data-column-index="1">
@@ -119,10 +73,8 @@
                 <th></th>
                 <th>نام گمرک</th>
                 <th>نام دستگاه</th>
-                <th>شهر</th>
                 <th>تاریخ نصب</th>
                 <th>تاریخ</th>
-                <th>اپراتور</th>
                 <th>اسکن</th>
                 <th>مغایرت</th>
                 <th>وضعیت</th>
@@ -133,10 +85,8 @@
                 <th></th>
                 <th>نام گمرک</th>
                 <th>نام دستگاه</th>
-                <th>شهر</th>
                 <th>تاریخ نصب</th>
                 <th>تاریخ</th>
-                <th>اپراتور</th>
                 <th>اسکن</th>
                 <th>مغایرت</th>
                 <th>وضعیت</th>
@@ -146,67 +96,7 @@
         </div>
       </div>
       <!--/ Advanced Search -->
-
-      <hr class="my-5">
-
-      <!-- Responsive Datatable -->
-      <div class="card">
-        <h5 class="card-header heading-color">جدول‌داده واکنش‌گرا</h5>
-        <div class="card-datatable table-responsive">
-          <table class="dt-responsive table table-bordered">
-            <thead>
-              <tr>
-                <th></th>
-                <th>نام</th>
-                <th>ایمیل</th>
-                <th>شغل</th>
-                <th>شهر</th>
-                <th>تاریخ</th>
-                <th>حقوق</th>
-                <th>سن</th>
-                <th>تجربه شغلی</th>
-                <th>وضعیت</th>
-              </tr>
-            </thead>
-            <tfoot>
-              <tr>
-                <th></th>
-                <th>نام</th>
-                <th>ایمیل</th>
-                <th>شغل</th>
-                <th>شهر</th>
-                <th>تاریخ</th>
-                <th>حقوق</th>
-                <th>سن</th>
-                <th>تجربه شغلی</th>
-                <th>وضعیت</th>
-              </tr>
-            </tfoot>
-          </table>
-        </div>
-      </div>
-      <!--/ Responsive Datatable -->
     </div>
-    <!-- / Content -->
-
-    <!-- Footer -->
-    <footer class="content-footer footer bg-footer-theme">
-      <div class="container-fluid d-flex flex-wrap justify-content-between py-3 flex-md-row flex-column">
-        <div class="mb-2 mb-md-0">
-          طراحی شده با ❤️ ارائه شده در وب‌سایت
-          <a href="https://rtl-theme.com" target="_blank" class="footer-link fw-semibold">راست‌چین</a>
-        </div>
-        <div>
-          <a href="https://rtl-theme.com" class="footer-link me-4" target="_blank">لایسنس</a>
-          <a href="https://rtl-theme.com" target="_blank" class="footer-link me-4">قالب‌های بیشتر</a>
-
-          <a href="https://v3dboy.ir/previews/html/frest/documentation" target="_blank" class="footer-link me-4">مستندات</a>
-
-          <a href="https://rtl-theme.com" target="_blank" class="footer-link d-none d-sm-inline-block">پشتیبانی</a>
-        </div>
-      </div>
-    </footer>
-    <!-- / Footer -->
 
     <div class="content-backdrop fade"></div>
   </div>
