@@ -7,8 +7,26 @@
 $(function () {
     var dt_adv_filter_table = $(".dt-advanced-search"),
         startDateEle = $(".start_date"),
-        endDateEle = $(".end_date");
+        endDateEle = $(".end_date"),
+        nameselect = $(".dt-name"),
+        Scanningdeviceselect= $(".dt-Scanning_device")
+    // Filter column with select name function
+    nameselect.change(function () {
+        dt_adv_filter_table
+            .DataTable()
+            .column(1)
+            .search($(this).val(), false, true)
+            .draw();
+    });
+        // Filter column with select Scanningdevice function
 
+    Scanningdeviceselect.change(function () {
+        dt_adv_filter_table
+            .DataTable()
+            .column(2)
+            .search($(this).val(), false, true)
+            .draw();
+    });
     // Advanced Search Functions Starts
     // --------------------------------------------------------------------
 
@@ -184,7 +202,7 @@ $(function () {
                     display: $.fn.dataTable.Responsive.display.modal({
                         header: function (row) {
                             var data = row.data();
-                            return "جزئیات " + data["full_name"];
+                            return "جزئیات " + data["name"];
                         },
                     }),
                     type: "column",
