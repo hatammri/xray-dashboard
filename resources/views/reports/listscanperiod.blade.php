@@ -78,6 +78,8 @@
                 <th>اسکن</th>
                 <th>مغایرت</th>
                 <th>وضعیت</th>
+                <th>عمل</th>
+
               </tr>
             </thead>
             <tfoot>
@@ -90,6 +92,8 @@
                 <th>اسکن</th>
                 <th>مغایرت</th>
                 <th>وضعیت</th>
+                <th>عمل</th>
+
               </tr>
             </tfoot>
           </table>

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 
-    <title>انتخاب‌گرها - فرم‌ها | فرست - قالب مدیریت بوت‌استرپ</title>
+    <title>جدول‌های داده - جدول‌ها | فرست - قالب مدیریت بوت‌استرپ</title>
 
     <meta name="description" content="">
 
@@ -25,11 +25,15 @@
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="../../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css">
     <link rel="stylesheet" href="../../assets/vendor/libs/typeahead-js/typeahead.css">
+    <link rel="stylesheet" href="../../assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css">
+    <link rel="stylesheet" href="../../assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css">
+    <link rel="stylesheet" href="../../assets/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.css">
+    <link rel="stylesheet" href="../../assets/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.css">
     <link rel="stylesheet" href="../../assets/vendor/libs/flatpickr/flatpickr.css">
-    <link rel="stylesheet" href="../../assets/vendor/libs/bootstrap-datepicker/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="../../assets/vendor/libs/bootstrap-daterangepicker/bootstrap-daterangepicker.css">
-    <link rel="stylesheet" href="../../assets/vendor/libs/jquery-timepicker/jquery-timepicker.css">
-    <link rel="stylesheet" href="../../assets/vendor/libs/pickr/pickr-themes.css">
+    <!-- Row Group CSS -->
+    <link rel="stylesheet" href="../../assets/vendor/libs/datatables-rowgroup-bs5/rowgroup.bootstrap5.css">
+    <!-- Form Validation -->
+    <link rel="stylesheet" href="../../assets/vendor/libs/formvalidation/dist/css/formValidation.min.css">
 
     <!-- Page CSS -->
 
@@ -804,7 +808,7 @@
             <!-- Forms & Tables -->
             <li class="menu-header small text-uppercase"><span class="menu-header-text">فرم‌ها و جدول‌ها</span></li>
             <!-- Forms -->
-            <li class="menu-item active open">
+            <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-detail"></i>
                 <div data-i18n="Form Elements">المان‌های فرم</div>
@@ -835,7 +839,7 @@
                     <div data-i18n="File Upload">ارسال فایل</div>
                   </a>
                 </li>
-                <li class="menu-item active">
+                <li class="menu-item">
                   <a href="forms-pickers.html" class="menu-link">
                     <div data-i18n="Pickers">انتخاب‌گرها</div>
                   </a>
@@ -916,13 +920,13 @@
                 <div data-i18n="Tables">جدول‌ها</div>
               </a>
             </li>
-            <li class="menu-item">
+            <li class="menu-item active open">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-grid"></i>
                 <div data-i18n="Datatables">جدول‌های داده</div>
               </a>
               <ul class="menu-sub">
-                <li class="menu-item">
+                <li class="menu-item active">
                   <a href="tables-datatables-basic.html" class="menu-link">
                     <div data-i18n="Basic">پایه</div>
                   </a>
@@ -1426,220 +1430,169 @@
             <!-- Content -->
 
             <div class="container-xxl flex-grow-1 container-p-y">
-              <h4 class="py-3 breadcrumb-wrapper mb-4"><span class="text-muted fw-light">فرم‌ها /</span> انتخاب‌گرها</h4>
+              <h4 class="py-3 breadcrumb-wrapper mb-4"><span class="text-muted fw-light">جدول‌های داده /</span> پایه</h4>
 
-              <div class="row">
-                <!-- Flat Picker -->
-                <div class="col-12 mb-4">
-                  <div class="card">
-                    <h5 class="card-header heading-color">انتخاب‌گر تاریخ Flatpickr (شمسی)</h5>
-                    <div class="card-body">
-                      <div class="row">
-                        <!-- Date Picker-->
-                        <div class="col-md-6 col-12 mb-4">
-                          <label for="flatpickr-date" class="form-label">انتخاب‌گر تاریخ</label>
-                          <input type="text" class="form-control" placeholder="YYYY/MM/DD" id="flatpickr-date">
-                        </div>
-                        <!-- /Date Picker -->
-
-                        <!-- Time Picker-->
-                        <div class="col-md-6 col-12 mb-4">
-                          <label for="flatpickr-time" class="form-label">انتخاب‌گر زمان</label>
-                          <input type="text" class="form-control" placeholder="HH:MM" id="flatpickr-time">
-                        </div>
-                        <!-- /Time Picker -->
-
-                        <!-- Datetime Picker-->
-                        <div class="col-md-6 col-12 mb-4">
-                          <label for="flatpickr-datetime" class="form-label">انتخاب‌گر تاریخ و زمان</label>
-                          <input type="text" class="form-control" placeholder="YYYY/MM/DD - HH:MM" id="flatpickr-datetime">
-                        </div>
-                        <!-- /Datetime Picker-->
-
-                        <!-- Multiple Dates Picker-->
-                        <div class="col-md-6 col-12 mb-4">
-                          <label for="flatpickr-multi" class="form-label">انتخاب‌گر تاریخ چندگانه</label>
-                          <input type="text" class="form-control" placeholder="YYYY/MM/DD - HH:MM" id="flatpickr-multi">
-                        </div>
-                        <!-- /Multiple Dates Picker-->
-
-                        <!-- Range Picker-->
-                        <div class="col-md-6 col-12 mb-4">
-                          <label for="flatpickr-range" class="form-label">انتخاب‌گر بازه</label>
-                          <input type="text" class="form-control" placeholder="YYYY/MM/DD تا YYYY/MM/DD" id="flatpickr-range">
-                        </div>
-                        <!-- /Range Picker-->
-
-                        <!-- Human Friendly Date Picker-->
-                        <div class="col-md-6 col-12 mb-4">
-                          <label for="flatpickr-human-friendly" class="form-label">انتخاب‌گر تاریخ کاربرپسند</label>
-                          <input type="text" class="form-control" placeholder="DD Month YYYY" id="flatpickr-human-friendly">
-                        </div>
-                        <!-- /Human Friendly Date Picker-->
-
-                        <!-- Disabled Range-->
-                        <div class="col-md-6 col-12 mb-md-0 mb-4">
-                          <label for="flatpickr-disabled-range" class="form-label">بازه غیرفعال</label>
-                          <input type="text" class="form-control" placeholder="YYYY/MM/DD" id="flatpickr-disabled-range">
-                        </div>
-                        <!-- /Disabled Range-->
-
-                        <!-- Inline Picker-->
-                        <div class="col-md-6 col-12">
-                          <label for="flatpickr-inline" class="form-label">انتخاب‌گر درون‌خطی</label>
-                          <input type="text" class="form-control mb-1" placeholder="YYYY/MM/DD" id="flatpickr-inline">
-                        </div>
-                        <!-- /Inline Picker-->
-                      </div>
-                    </div>
-                  </div>
+              <!-- DataTable with Buttons -->
+              <div class="card">
+                <div class="card-datatable table-responsive pt-0">
+                  <table class="datatables-basic table table-bordered">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th></th>
+                        <th>شناسه</th>
+                        <th>نام</th>
+                        <th>ایمیل</th>
+                        <th>تاریخ</th>
+                        <th>حقوق</th>
+                        <th>وضعیت</th>
+                        <th>عمل</th>
+                      </tr>
+                    </thead>
+                  </table>
                 </div>
-                <!-- /Flatpickr -->
-
-                <!-- Bootstrap Datepicker -->
-                <div class="col-12 mb-4">
-                  <div class="card">
-                    <h5 class="card-header heading-color">انتخاب‌گر تاریخ بوت‌استرپ</h5>
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="col-md-6 col-12 mb-4">
-                          <label for="bs-datepicker-basic" class="form-label">پایه</label>
-                          <input type="text" id="bs-datepicker-basic" placeholder="YYYY/MM/DD" class="form-control">
-                        </div>
-                        <div class="col-md-6 col-12 mb-4">
-                          <label for="bs-datepicker-format" class="form-label">قالب</label>
-                          <input type="text" id="bs-datepicker-format" placeholder="DD/MM/YYYY" class="form-control">
-                        </div>
-                        <div class="col-md-6 col-12 mb-4">
-                          <label for="dateRangePicker" class="form-label">بازه تاریخی</label>
-                          <div class="input-group input-daterange" id="bs-datepicker-daterange">
-                            <input type="text" id="dateRangePicker" placeholder="YYYY/MM/DD" class="form-control">
-                            <span class="input-group-text">تا</span>
-                            <input type="text" placeholder="YYYY/MM/DD" class="form-control">
-                          </div>
-                        </div>
-                        <div class="col-md-6 col-12 mb-4">
-                          <label for="bs-datepicker-disabled-days" class="form-label">روزهای غیرفعال</label>
-                          <input type="text" id="bs-datepicker-disabled-days" placeholder="YYYY/MM/DD" class="form-control">
-                        </div>
-                        <div class="col-md-6 col-12 mb-4">
-                          <label for="bs-datepicker-multidate" class="form-label">چند روزی</label>
-                          <input type="text" id="bs-datepicker-multidate" placeholder="YYYY/MM/DD, YYYY/MM/DD" class="form-control">
-                        </div>
-                        <div class="col-md-6 col-12 mb-4">
-                          <label for="bs-datepicker-options" class="form-label">گزینه‌ها</label>
-                          <input type="text" id="bs-datepicker-options" placeholder="YYYY/MM/DD" class="form-control">
-                        </div>
-                        <div class="col-md-6 col-12 mb-md-0 mb-4">
-                          <label for="bs-datepicker-autoclose" class="form-label">بسته شدن خودکار</label>
-                          <input type="text" id="bs-datepicker-autoclose" placeholder="YYYY/MM/DD" class="form-control">
-                        </div>
-                        <div class="col-md-6 col-12">
-                          <label class="form-label">درون‌خطی</label>
-                          <div id="bs-datepicker-inline"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- /Bootstrap Datepicker -->
-
-                <!-- Bootstrap Daterangepicker -->
-                <div class="col-12 mb-4">
-                  <div class="card">
-                    <h5 class="card-header heading-color">انتخاب‌گر بازه تاریخی بوت‌استرپ</h5>
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="col-md-6 col-12 mb-4">
-                          <label for="bs-rangepicker-basic" class="form-label">پایه</label>
-                          <input type="text" id="bs-rangepicker-basic" class="form-control text-start" dir="ltr">
-                        </div>
-                        <div class="col-md-6 col-12 mb-4">
-                          <label for="bs-rangepicker-single" class="form-label">انتخاب‌گر تکی</label>
-                          <input type="text" id="bs-rangepicker-single" class="form-control text-start" dir="ltr">
-                        </div>
-                        <div class="col-md-6 col-12 mb-4">
-                          <label for="bs-rangepicker-time" class="form-label">با انتخاب‌گر زمان</label>
-                          <input type="text" id="bs-rangepicker-time" class="form-control text-start" dir="ltr">
-                        </div>
-                        <div class="col-md-6 col-12 mb-4">
-                          <label for="bs-rangepicker-range" class="form-label">بازه‌ها</label>
-                          <input type="text" id="bs-rangepicker-range" class="form-control text-start" dir="ltr">
-                        </div>
-                        <div class="col-md-6 col-12 mb-md-0 mb-4">
-                          <label for="bs-rangepicker-week-num" class="form-label">شماره‌های هفته</label>
-                          <input type="text" id="bs-rangepicker-week-num" class="form-control text-start" dir="ltr">
-                        </div>
-                        <div class="col-md-6 col-12">
-                          <label for="bs-rangepicker-dropdown" class="form-label">منوی کشویی ماه و سال</label>
-                          <input type="text" id="bs-rangepicker-dropdown" class="form-control text-start" dir="ltr">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- /Bootstrap Daterangepicker -->
-
-                <!-- jQuery Timepicker -->
-                <div class="col-12 mb-4">
-                  <div class="card">
-                    <h5 class="card-header heading-color">انتخاب‌گر زمان jQuery</h5>
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="col-md-6 col-12 mb-4">
-                          <label for="timepicker-basic" class="form-label">پایه</label>
-                          <input type="text" id="timepicker-basic" placeholder="HH:MM am" class="form-control">
-                        </div>
-                        <div class="col-md-6 col-12 mb-4">
-                          <label for="timepicker-min-max" class="form-label">حداقل-حداکثر</label>
-                          <input type="text" id="timepicker-min-max" placeholder="HH:MM am" class="form-control">
-                        </div>
-                        <div class="col-md-6 col-12 mb-4">
-                          <label for="timepicker-disabled-times" class="form-label">زمان‌های غیرفعال</label>
-                          <input type="text" id="timepicker-disabled-times" placeholder="HH:MM am" class="form-control">
-                        </div>
-                        <div class="col-md-6 col-12 mb-4">
-                          <label for="timepicker-format" class="form-label">قالب</label>
-                          <input type="text" id="timepicker-format" placeholder="HH:MM:SS" class="form-control">
-                        </div>
-                        <div class="col-md-6 col-12 mb-md-0 mb-4">
-                          <label for="timepicker-step" class="form-label">قدم</label>
-                          <input type="text" id="timepicker-step" placeholder="HH:MM am" class="form-control">
-                        </div>
-                        <div class="col-md-6 col-12">
-                          <label for="timepicker-24hours" class="form-label">قالب 24 ساعتی</label>
-                          <input type="text" id="timepicker-24hours" placeholder="20:00:00" class="form-control">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- /jQuery Timepicker -->
-
-                <!-- Color Picker -->
-                <div class="col-12">
-                  <div class="card">
-                    <h5 class="card-header heading-color">انتخاب‌گر رنگ</h5>
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="classic col col-sm-3 col-lg-2">
-                          <p>کلاسیک</p>
-                          <div id="color-picker-classic"></div>
-                        </div>
-                        <div class="monolith col col-sm-3 col-lg-2">
-                          <p>یکپارچه</p>
-                          <div id="color-picker-monolith"></div>
-                        </div>
-                        <div class="nano col col-sm-3 col-lg-2">
-                          <p>نانو</p>
-                          <div id="color-picker-nano"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- /Color Picker-->
               </div>
+              <!-- Modal to add new record -->
+              <div class="offcanvas offcanvas-end" id="add-new-record">
+                <div class="offcanvas-header border-bottom">
+                  <h5 class="offcanvas-title" id="exampleModalLabel">رکورد جدید</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body flex-grow-1">
+                  <form class="add-new-record pt-0 row g-2" id="form-add-new-record" onsubmit="return false">
+                    <div class="col-sm-12">
+                      <label class="form-label" for="basicFullname">نام کامل</label>
+                      <div class="input-group input-group-merge">
+                        <span id="basicFullname2" class="input-group-text"><i class="bx bx-user"></i></span>
+                        <input type="text" id="basicFullname" class="form-control dt-full-name" name="basicFullname" placeholder="جان اسنو" aria-label="John Doe" aria-describedby="basicFullname2">
+                      </div>
+                    </div>
+                    <div class="col-sm-12">
+                      <label class="form-label" for="basicPost">مطلب</label>
+                      <div class="input-group input-group-merge">
+                        <span id="basicPost2" class="input-group-text"><i class="bx bxs-briefcase"></i></span>
+                        <input type="text" id="basicPost" name="basicPost" class="form-control dt-post" placeholder="توسعه دهنده وب" aria-label="Web Developer" aria-describedby="basicPost2">
+                      </div>
+                    </div>
+                    <div class="col-sm-12">
+                      <label class="form-label" for="basicEmail">ایمیل</label>
+                      <div class="input-group input-group-merge">
+                        <span class="input-group-text"><i class="bx bx-envelope"></i></span>
+                        <input type="text" id="basicEmail" name="basicEmail" class="form-control dt-email text-start" placeholder="john.doe@example.com" aria-label="john.doe@example.com" dir="ltr">
+                      </div>
+                      <div class="form-text">می‌توانید از حروف، اعداد و نقطه استفاده کنید</div>
+                    </div>
+                    <div class="col-sm-12">
+                      <label class="form-label" for="basicDate">تاریخ عضویت</label>
+                      <div class="input-group input-group-merge">
+                        <span id="basicDate2" class="input-group-text"><i class="bx bx-calendar"></i></span>
+                        <input type="text" class="form-control dt-date" id="basicDate" name="basicDate" aria-describedby="basicDate2" placeholder="YYYY/MM/DD" aria-label="MM/DD/YYYY">
+                      </div>
+                    </div>
+                    <div class="col-sm-12">
+                      <label class="form-label" for="basicSalary">حقوق</label>
+                      <div class="input-group input-group-merge">
+                        <span id="basicSalary2" class="input-group-text">تومان</span>
+                        <input type="number" id="basicSalary" name="basicSalary" class="form-control dt-salary" placeholder="12000" aria-label="12000" aria-describedby="basicSalary2">
+                      </div>
+                    </div>
+                    <div class="col-sm-12">
+                      <button type="submit" class="btn btn-primary data-submit me-sm-3 me-1">ثبت</button>
+                      <button type="reset" class="btn btn-outline-secondary" data-bs-dismiss="offcanvas">انصراف</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <!--/ DataTable with Buttons -->
+
+              <hr class="my-5">
+
+              <!-- Complex Headers -->
+              <div class="card">
+                <h5 class="card-header heading-color">سرتیترهای پیچیده</h5>
+                <div class="card-datatable text-nowrap">
+                  <table class="dt-complex-header table table-bordered">
+                    <thead>
+                      <tr>
+                        <th rowspan="2">نام</th>
+                        <th colspan="2">تماس</th>
+                        <th colspan="3">اطلاعات HR</th>
+                        <th rowspan="2">عمل</th>
+                      </tr>
+                      <tr>
+                        <th>ایمیل</th>
+                        <th>شهر</th>
+                        <th>شغل</th>
+                        <th>حقوق</th>
+                        <th class="border-1">وضعیت</th>
+                      </tr>
+                    </thead>
+                  </table>
+                </div>
+              </div>
+              <!--/ Complex Headers -->
+
+              <hr class="my-5">
+
+              <!-- Row grouping -->
+              <div class="card">
+                <h5 class="card-header heading-color">گروه بندی سطری</h5>
+                <div class="card-datatable table-responsive">
+                  <table class="dt-row-grouping table table-bordered">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>نام</th>
+                        <th>شغل</th>
+                        <th>ایمیل</th>
+                        <th>شهر</th>
+                        <th>تاریخ</th>
+                        <th>حقوق</th>
+                        <th>وضعیت</th>
+                        <th>عمل</th>
+                      </tr>
+                    </thead>
+                    <tfoot>
+                      <tr>
+                        <th></th>
+                        <th>نام</th>
+                        <th>شغل</th>
+                        <th>ایمیل</th>
+                        <th>شهر</th>
+                        <th>تاریخ</th>
+                        <th>حقوق</th>
+                        <th>وضعیت</th>
+                        <th>عمل</th>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </div>
+              </div>
+              <!--/ Row grouping -->
+
+              <hr class="my-5">
+
+              <!-- Multilingual -->
+              <div class="card">
+                <h5 class="card-header heading-color">قابلیت چند زبانی</h5>
+                <div class="card-datatable table-responsive">
+                  <table class="dt-multilingual table table-bordered">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>نام</th>
+                        <th>شغل</th>
+                        <th>ایمیل</th>
+                        <th>تاریخ</th>
+                        <th>حقوق</th>
+                        <th>وضعیت</th>
+                        <th>عمل</th>
+                      </tr>
+                    </thead>
+                  </table>
+                </div>
+              </div>
+              <!--/ Multilingual -->
             </div>
             <!-- / Content -->
 
@@ -1693,19 +1646,22 @@
     <!-- endbuild -->
 
     <!-- Vendors JS -->
+    <script src="../../assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
+    <script src="../../assets/vendor/libs/datatables-bs5/i18n/fa.js"></script>
+    <!-- Flat Picker -->
     <script src="../../assets/vendor/libs/moment/moment.js"></script>
     <script src="../../assets/vendor/libs/jdate/jdate.js"></script>
     <script src="../../assets/vendor/libs/flatpickr/flatpickr-jdate.js"></script>
     <script src="../../assets/vendor/libs/flatpickr/l10n/fa-jdate.js"></script>
-    <script src="../../assets/vendor/libs/bootstrap-datepicker/bootstrap-datepicker.js"></script>
-    <script src="../../assets/vendor/libs/bootstrap-daterangepicker/bootstrap-daterangepicker.js"></script>
-    <script src="../../assets/vendor/libs/jquery-timepicker/jquery-timepicker.js"></script>
-    <script src="../../assets/vendor/libs/pickr/pickr.js"></script>
+    <!-- Form Validation -->
+    <script src="../../assets/vendor/libs/formvalidation/dist/js/FormValidation.min.js"></script>
+    <script src="../../assets/vendor/libs/formvalidation/dist/js/plugins/Bootstrap5.min.js"></script>
+    <script src="../../assets/vendor/libs/formvalidation/dist/js/plugins/AutoFocus.min.js"></script>
 
     <!-- Main JS -->
     <script src="../../assets/js/main.js"></script>
 
     <!-- Page JS -->
-    <script src="../../assets/js/forms-pickers.js"></script>
+    <script src="../../assets/js/tables-datatables-basic.js"></script>
   </body>
 </html>
