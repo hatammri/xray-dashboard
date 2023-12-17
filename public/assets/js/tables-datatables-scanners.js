@@ -9,7 +9,9 @@ $(function () {
         startDateEle = $(".start_date"),
         endDateEle = $(".end_date"),
         nameselect = $(".dt-name"),
-        Scanningdeviceselect= $(".dt-Scanning_device")
+        Scanningdeviceselect= $(".dt-Scanning_device"),
+        statusselect= $(".dt-status");
+
     // Filter column with select name function
     nameselect.change(function () {
         dt_adv_filter_table
@@ -18,12 +20,21 @@ $(function () {
             .search($(this).val(), false, true)
             .draw();
     });
-        // Filter column with select Scanningdevice function
+    // Filter column with select Scanningdevice function
 
     Scanningdeviceselect.change(function () {
         dt_adv_filter_table
             .DataTable()
             .column(2)
+            .search($(this).val(), false, true)
+            .draw();
+    });
+   // Filter column with select Scanningdevice function
+
+   statusselect.change(function () {
+        dt_adv_filter_table
+            .DataTable()
+            .column(7)
             .search($(this).val(), false, true)
             .draw();
     });
