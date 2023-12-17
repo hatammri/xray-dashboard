@@ -14,7 +14,7 @@
         "status": 1
       },
       {
-        "id": 1,
+        "id": 2,
         "avatar": "10.png",
         "name": "لطف آباد",
         "Scanning_device":"بهیار۲",
@@ -25,6 +25,62 @@
         "Numberـofـscans": "31",
         "Contradiction":"7",
         "status": 1
+      }
+      ,
+      {
+        "id": 3,
+        "avatar": "10.png",
+        "name": "لطف آباد",
+        "Scanning_device":"بهیار۱",
+        "city": "خراسان رضوی",
+        "start_date": "1401/06/01",
+        "date": "1401/09/25",
+        "operators":"محمد حیدری",
+        "Numberـofـscans": "31",
+        "Contradiction":"7",
+        "status": 2
+      }
+      ,
+      {
+        "id": 4,
+        "avatar": "10.png",
+        "name": "لطف آباد",
+        "Scanning_device":"ساپا۱",
+        "city": "خراسان رضوی",
+        "start_date": "1401/06/01",
+        "date": "1401/09/25",
+        "operators":"محمد حیدری",
+        "Numberـofـscans": "31",
+        "Contradiction":"7",
+        "status": 3
+      }
+      ,
+      {
+        "id": 5,
+        "avatar": "10.png",
+        "name": "میرجاوه",
+        "Scanning_device":"ناک تک ۱",
+        "city": "سیستان و بلوچستان",
+        "start_date": "1401/09/01",
+        "date": "1401/09/10",
+        "operators":"علی زمانی",
+        "Numberـofـscans": "61",
+        "Contradiction":"3",
+        "status": 4
+      }
+      ,
+      {
+        "id": 6,
+        "avatar": "10.png",
+        "name": "بازرگان",
+        "Scanning_device":"ناک تک ۱",
+        "city": "سیستان و بلوچستان",
+        "start_date": "1401/09/01",
+        "date": "1401/09/10",
+        "operators":"علی زمانی",
+        "Numberـofـscans": "61",
+        "Contradiction":"3",
+        "status": 5
       }
     ]
 }

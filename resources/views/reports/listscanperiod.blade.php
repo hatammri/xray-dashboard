@@ -36,6 +36,7 @@
                                             <option value="پرویزخان">پرویزخان</option>
                                         </select>
                                     </div>
+
                                     <div class="col-12 col-sm-6 col-lg-4">
                                         <label class="form-label">نام دستگاه:</label>
                                         {{-- <input type="text" class="form-control dt-input" data-column="2" placeholder="demo@example.com" data-column-index="1"> --}}
@@ -50,7 +51,20 @@
                                         </select>
                                     </div>
                                     <div class="col-12 col-sm-6 col-lg-4">
-                                        <label class="form-label">تاریخ:</label>
+                                        <label class="form-label">وضعیت دستگاه:</label>
+                                        {{-- <input type="text" class="form-control dt-input" data-column="2" placeholder="demo@example.com" data-column-index="1"> --}}
+                                        <select class="select2 form-select dt-input dt-status" data-column="1"
+                                            data-column-index="0">
+                                            <option value="">همه موارد</option>
+                                            <option value="فعال">فعال</option>
+                                            <option value="غیرفعال">غیرفعال</option>
+                                            <option value="خراب">خراب</option>
+                                            <option value="درحال‌تعمیر">درحال تعمیر</option>
+                                            <option value="نامشخص">نامشخص</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-lg-4">
+                                        <label class="form-label">تاریخ نصب: </label>
                                         <div class="mb-0">
                                             <input type="text" class="form-control dt-date flatpickr-range dt-input"
                                                 data-column="5" placeholder="تاریخ شروع تا پایان" data-column-index="4"
@@ -62,21 +76,18 @@
                                         </div>
                                     </div>
                                     <div class="col-12 col-sm-6 col-lg-4">
-                                        <label class="form-label">مقام:</label>
-                                        <input type="text" class="form-control dt-input" data-column="3"
-                                            placeholder="طراح وب" data-column-index="2">
-                                    </div>
-                                    <div class="col-12 col-sm-6 col-lg-4">
-                                        <label class="form-label">شهر:</label>
-                                        <input type="text" class="form-control dt-input" data-column="4"
-                                            placeholder="تبریز" data-column-index="3">
+                                        <label class="form-label">تاریخ : </label>
+                                        <div class="mb-0">
+                                            <input type="text" class="form-control dt-date flatpickr-range dt-input"
+                                                data-column="5" placeholder="تاریخ شروع تا پایان" data-column-index="4"
+                                                name="dt_date">
+                                            <input type="hidden" class="form-control dt-date start_date dt-input"
+                                                data-column="5" data-column-index="4" name="value_from_start_date">
+                                            <input type="hidden" class="form-control dt-date end_date dt-input"
+                                                name="value_from_end_date" data-column="5" data-column-index="4">
+                                        </div>
                                     </div>
 
-                                    <div class="col-12 col-sm-6 col-lg-4">
-                                        <label class="form-label">حقوق:</label>
-                                        <input type="text" class="form-control dt-input" data-column="6"
-                                            placeholder="10000" data-column-index="5">
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -95,7 +106,7 @@
                                 <th>اسکن</th>
                                 <th>مغایرت</th>
                                 <th>وضعیت</th>
-                                <th>عمل</th>
+                                <th>نمایش جزئیات</th>
 
                             </tr>
                         </thead>
@@ -109,7 +120,7 @@
                                 <th>اسکن</th>
                                 <th>مغایرت</th>
                                 <th>وضعیت</th>
-                                <th>عمل</th>
+                                <th>نمایش جزئیات</th>
 
                             </tr>
                         </tfoot>

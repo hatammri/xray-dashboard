@@ -150,17 +150,17 @@ $(function () {
                     render: function (data, type, full, meta) {
                         var $status_number = full["status"];
                         var $status = {
-                            1: { title: "Current", class: "bg-label-primary" },
+                            1: { title: "فعال", class: "bg-label-success" },
                             2: {
-                                title: "Professional",
-                                class: " bg-label-success",
-                            },
-                            3: { title: "Rejected", class: " bg-label-danger" },
-                            4: {
-                                title: "Resigned",
+                                title: "غیرفعال",
                                 class: " bg-label-warning",
                             },
-                            5: { title: "Applied", class: " bg-label-info" },
+                            3: { title: "خراب", class: " bg-label-danger" },
+                            4: {
+                                title: "درحال‌تعمیر",
+                                class: " bg-label-primary",
+                            },
+                            5: { title: "نامشخص", class: " bg-label-secondary" },
                         };
                         if (typeof $status[$status_number] === "undefined") {
                             return data;
@@ -177,7 +177,7 @@ $(function () {
                 {
                     // Actions
                     targets: -1,
-                    title: "Actions",
+                    title: "نمایش جزئیات",
                     orderable: false,
                     searchable: false,
                     render: function (data, type, full, meta) {
