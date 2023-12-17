@@ -26,15 +26,15 @@
                 <div class="row g-3">
                   <div class="col-12 col-sm-6 col-lg-4">
                     <label class="form-label">نام:</label>
-                    {{-- <input type="text" class="form-control dt-input dt-full-name" data-column="1" placeholder="جان اسنو" data-column-index="0"> --}}
-                    <select id="name" class="select2 form-select" data-column="1" data-column-index="0">
+                    <input type="text" class="form-control dt-input dt-full-name" data-column="1" placeholder="جان اسنو" data-column-index="0">
+                    {{-- <select id="name" class="select2 form-select" data-column="1" data-column-index="0">
                         <option value="">همه موارد</option>
                         <option value="Australia">میرجاوه</option>
                         <option value="Bangladesh">جلفا</option>
                         <option value="Belarus">لطف آباد</option>
                         <option value="Brazil">بازرگان</option>
                         <option value="Canada">پرویزخان</option>
-                    </select>
+                    </select> --}}
                     </div>
                   <div class="col-12 col-sm-6 col-lg-4">
                     <label class="form-label">ایمیل:</label>
