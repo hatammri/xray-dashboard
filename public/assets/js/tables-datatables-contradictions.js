@@ -9,8 +9,8 @@ $(function () {
         startDateEle = $(".start_date"),
         endDateEle = $(".end_date"),
         nameselect = $(".dt-name"),
-        Scanningdeviceselect= $(".dt-Scanning_device"),
-        statusselect= $(".dt-status");
+        Scanningdeviceselect = $(".dt-Scanning_device"),
+        statusselect = $(".dt-status");
 
     // Filter column with select name function
     nameselect.change(function () {
@@ -29,9 +29,9 @@ $(function () {
             .search($(this).val(), false, true)
             .draw();
     });
-   // Filter column with select Scanningdevice function
+    // Filter column with select Scanningdevice function
 
-   statusselect.change(function () {
+    statusselect.change(function () {
         dt_adv_filter_table
             .DataTable()
             .column(7)
@@ -133,16 +133,15 @@ $(function () {
     if (dt_adv_filter_table.length) {
         var dt_adv_filter = dt_adv_filter_table.DataTable({
             dom: "<'row'<'col-sm-12'tr>><'row'<'col-sm-12 col-md-6'i><'col-sm-12 col-md-6 dataTables_pager'p>>",
-            ajax: assetsPath + "json/database/scaners.json",
+            ajax: assetsPath + "json/database/contradiction.json",
             columns: [
                 { data: "" },
-                { data: "name" },
+                { data: "shomarebar" },
                 { data: "Scanning_device" },
-                { data: "start_date" },
+                { data: "operator" },
+                { data: "driver" },
                 { data: "date" },
-                { data: "Numberـofـscans" },
-                { data: "Contradiction" },
-                { data: "status" },
+                { data: "description" },
                 { data: "" },
             ],
 
@@ -156,38 +155,134 @@ $(function () {
                     },
                 },
                 {
-                    // Label
-                    targets: -2,
+                    // Avatar image/badge, Name and post
+                    targets: 3,
+                    responsivePriority: 4,
                     render: function (data, type, full, meta) {
-                        var $status_number = full["status"];
-                        var $status = {
-                            1: { title: "فعال", class: "bg-label-success" },
-                            2: {
-                                title: "غیرفعال",
-                                class: " bg-label-warning",
-                            },
-                            3: { title: "خراب", class: " bg-label-danger" },
-                            4: {
-                                title: "درحال‌تعمیر",
-                                class: " bg-label-primary",
-                            },
-                            5: { title: "نامشخص", class: " bg-label-secondary" },
-                        };
-                        if (typeof $status[$status_number] === "undefined") {
-                            return data;
+                        var $user_img = full["operator_avatar"],
+                            $name = full["operator_name"],
+                            $post = full["operator_post"];
+                        if ($user_img) {
+                            // For Avatar image
+                            var $output =
+                                '<img src="' +
+                                assetsPath +
+                                "img/avatars/" +
+                                $user_img +
+                                '" alt="آواتار" class="rounded-circle">';
+                        } else {
+                            // For Avatar badge
+                            var stateNum = Math.floor(Math.random() * 6);
+                            var states = [
+                                "success",
+                                "danger",
+                                "warning",
+                                "info",
+                                "dark",
+                                "primary",
+                                "secondary",
+                            ];
+                            var $state = states[stateNum],
+                                $name = full["full_name"],
+                                $initials =
+                                    $name
+                                        .split(" ")
+                                        .slice(0, 2)
+                                        .map((word) => word[0])
+                                        .join("‌") || "";
+                            $output =
+                                '<span class="avatar-initial rounded-circle bg-label-' +
+                                $state +
+                                '">' +
+                                $initials +
+                                "</span>";
                         }
-                        return (
-                            '<span class="badge rounded-pill ' +
-                            $status[$status_number].class +
-                            '">' +
-                            $status[$status_number].title +
-                            "</span>"
-                        );
+                        // Creates full output for row
+                        var $row_output =
+                            '<div class="d-flex justify-content-start align-items-center user-name">' +
+                            '<div class="avatar-wrapper">' +
+                            '<div class="avatar me-2">' +
+                            $output +
+                            "</div>" +
+                            "</div>" +
+                            '<div class="d-flex flex-column">' +
+                            '<span class="emp_name text-truncate">' +
+                            $name +
+                            "</span>" +
+                            '<small class="emp_post text-truncate text-muted">' +
+                            $post +
+                            "</small>" +
+                            "</div>" +
+                            "</div>";
+                        return $row_output;
+                    },
+                },
+                {
+                    // Avatar image/badge, Name and post
+                    targets: 4,
+                    responsivePriority: 4,
+                    render: function (data, type, full, meta) {
+                        var $user_img = full["operator_avatar"],
+                            $name = full["driver_name"],
+                            $post = full["driver_code"];
+                        if ($user_img) {
+                            // For Avatar image
+                            var $output =
+                                '<img src="' +
+                                assetsPath +
+                                "img/avatars/" +
+                                $user_img +
+                                '" alt="آواتار" class="rounded-circle">';
+                        } else {
+                            // For Avatar badge
+                            var stateNum = Math.floor(Math.random() * 6);
+                            var states = [
+                                "success",
+                                "danger",
+                                "warning",
+                                "info",
+                                "dark",
+                                "primary",
+                                "secondary",
+                            ];
+                            var $state = states[stateNum],
+                                $name = full["full_name"],
+                                $initials =
+                                    $name
+                                        .split(" ")
+                                        .slice(0, 2)
+                                        .map((word) => word[0])
+                                        .join("‌") || "";
+                            $output =
+                                '<span class="avatar-initial rounded-circle bg-label-' +
+                                $state +
+                                '">' +
+                                $initials +
+                                "</span>";
+                        }
+                        // Creates full output for row
+                        var $row_output =
+                            '<div class="d-flex justify-content-start align-items-center user-name">' +
+                            '<div class="avatar-wrapper">' +
+                            '<div class="avatar me-2">' +
+                            $output +
+                            "</div>" +
+                            "</div>" +
+                            '<div class="d-flex flex-column">' +
+                            '<span class="emp_name text-truncate">' +
+                            $name +
+                            "</span>" +
+                            '<small class="emp_post text-truncate text-muted">' +
+                            $post +
+                            "</small>" +
+                            "</div>" +
+                            "</div>";
+                        return $row_output;
                     },
                 },
                 {
                     // Actions
-                    targets: -1,
+                    targets: 7,
                     title: "نمایش جزئیات",
                     orderable: false,
                     searchable: false,
@@ -196,11 +291,9 @@ $(function () {
                             '<div class="d-inline-block">' +
                             '<a href="javascript:;" class="btn btn-sm btn-icon dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="bx bx-dots-vertical-rounded"></i></a>' +
                             '<div class="dropdown-menu dropdown-menu-end m-0">' +
-                            '<a href="/reports/list_contradiction" class="dropdown-item">مشاهده مغایرت ها</a>' +
-                            '<a href="/reports/list_personnel" class="dropdown-item">لیست پرسنل</a>' +
-                            '<a href="/reports/list_scans" class="dropdown-item">لیست اسکن ها</a>' +
-                            '</div>' +
-                            '</div>' +
+                            '<a href="/reports/show_all_details" class="dropdown-item">مشاهده جزئیات مغایرت </a>' +
+                            "</div>" +
+                            "</div>" +
                             '<a  href="/reports/show_all_details" class="btn btn-sm btn-icon item-edit"><i class="bx bxs-show"></i></a>'
                         );
                     },

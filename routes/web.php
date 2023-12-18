@@ -22,8 +22,28 @@ Route::group(['prefix' => '/', 'middleware' => 'auth'], function () {
         return redirect()->route('login');
     })->name('logout');
     Route::get('/reports/list_scan_period', function () {
-        return view('reports.listscanperiod');
+        return view('reports.listScans.listscanperiod');
     })->name('reports.list_scan_period');
+
+    Route::get('/reports/list_contradiction', function () {
+        return view('reports.listScans.listcontradiction');
+    })->name('reports.list_contradiction');
+
+    Route::get('/reports/list_personnel', function () {
+        return view('reports.listScans.listpersonnel');
+    })->name('reports.list_personnel');
+
+    Route::get('/reports/list_scans', function () {
+        return view('reports.listScans.listscans');
+    })->name('reports.list_scans');
+
+    Route::get('/reports/show_contradiction_details', function () {
+        return view('reports.listScans.showalldetails');
+    })->name('reports.show_all_details');
+    Route::get('/reports/show_all_details', function () {
+        return view('reports.listScans.contradictiondetails');
+    })->name('reports.contradictiondetails');
+
     Route::get('/reports/testtable', function () {
         return view('reports.testtable');
     })->name('reports.testtable');
