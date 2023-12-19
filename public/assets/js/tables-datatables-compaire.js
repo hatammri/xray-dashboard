@@ -155,56 +155,56 @@ $(function () {
                         return "";
                     },
                 },
-                {
-                    // Label
-                    targets: -2,
-                    render: function (data, type, full, meta) {
-                        var $status_number = full["status"];
-                        var $status = {
-                            1: { title: "فعال", class: "bg-label-success" },
-                            2: {
-                                title: "غیرفعال",
-                                class: " bg-label-warning",
-                            },
-                            3: { title: "خراب", class: " bg-label-danger" },
-                            4: {
-                                title: "درحال‌تعمیر",
-                                class: " bg-label-primary",
-                            },
-                            5: { title: "نامشخص", class: " bg-label-secondary" },
-                        };
-                        if (typeof $status[$status_number] === "undefined") {
-                            return data;
-                        }
-                        return (
-                            '<span class="badge rounded-pill ' +
-                            $status[$status_number].class +
-                            '">' +
-                            $status[$status_number].title +
-                            "</span>"
-                        );
-                    },
-                },
-                {
-                    // Actions
-                    targets: -1,
-                    title: "نمایش جزئیات",
-                    orderable: false,
-                    searchable: false,
-                    render: function (data, type, full, meta) {
-                        return (
-                            '<div class="d-inline-block">' +
-                            '<a href="javascript:;" class="btn btn-sm btn-icon dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="bx bx-dots-vertical-rounded"></i></a>' +
-                            '<div class="dropdown-menu dropdown-menu-end m-0">' +
-                            '<a href="/reports/list_contradiction" class="dropdown-item">مشاهده مغایرت ها</a>' +
-                            '<a href="/reports/list_personnel" class="dropdown-item">لیست پرسنل</a>' +
-                            '<a href="/reports/list_scans" class="dropdown-item">لیست اسکن ها</a>' +
-                            '</div>' +
-                            '</div>' +
-                            '<a  href="/reports/show_all_details" class="btn btn-sm btn-icon item-edit"><i class="bx bxs-show"></i></a>'
-                        );
-                    },
-                },
+                // {
+                //     // Label
+                //     targets: -2,
+                //     render: function (data, type, full, meta) {
+                //         var $status_number = full["status"];
+                //         var $status = {
+                //             1: { title: "فعال", class: "bg-label-success" },
+                //             2: {
+                //                 title: "غیرفعال",
+                //                 class: " bg-label-warning",
+                //             },
+                //             3: { title: "خراب", class: " bg-label-danger" },
+                //             4: {
+                //                 title: "درحال‌تعمیر",
+                //                 class: " bg-label-primary",
+                //             },
+                //             5: { title: "نامشخص", class: " bg-label-secondary" },
+                //         };
+                //         if (typeof $status[$status_number] === "undefined") {
+                //             return data;
+                //         }
+                //         return (
+                //             '<span class="badge rounded-pill ' +
+                //             $status[$status_number].class +
+                //             '">' +
+                //             $status[$status_number].title +
+                //             "</span>"
+                //         );
+                //     },
+                // },
+                // {
+                //     // Actions
+                //     targets: -1,
+                //     title: "نمایش جزئیات",
+                //     orderable: false,
+                //     searchable: false,
+                //     render: function (data, type, full, meta) {
+                //         return (
+                //             '<div class="d-inline-block">' +
+                //             '<a href="javascript:;" class="btn btn-sm btn-icon dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="bx bx-dots-vertical-rounded"></i></a>' +
+                //             '<div class="dropdown-menu dropdown-menu-end m-0">' +
+                //             '<a href="/reports/list_contradiction" class="dropdown-item">مشاهده مغایرت ها</a>' +
+                //             '<a href="/reports/list_personnel" class="dropdown-item">لیست پرسنل</a>' +
+                //             '<a href="/reports/list_scans" class="dropdown-item">لیست اسکن ها</a>' +
+                //             '</div>' +
+                //             '</div>' +
+                //             '<a  href="/reports/show_all_details" class="btn btn-sm btn-icon item-edit"><i class="bx bxs-show"></i></a>'
+                //         );
+                //     },
+                // },
             ],
             orderCellsTop: true,
             responsive: {
