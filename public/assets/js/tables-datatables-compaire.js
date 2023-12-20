@@ -155,36 +155,30 @@ $(function () {
                         return "";
                     },
                 },
-                // {
-                //     // Label
-                //     targets: -2,
-                //     render: function (data, type, full, meta) {
-                //         var $status_number = full["status"];
-                //         var $status = {
-                //             1: { title: "فعال", class: "bg-label-success" },
-                //             2: {
-                //                 title: "غیرفعال",
-                //                 class: " bg-label-warning",
-                //             },
-                //             3: { title: "خراب", class: " bg-label-danger" },
-                //             4: {
-                //                 title: "درحال‌تعمیر",
-                //                 class: " bg-label-primary",
-                //             },
-                //             5: { title: "نامشخص", class: " bg-label-secondary" },
-                //         };
-                //         if (typeof $status[$status_number] === "undefined") {
-                //             return data;
-                //         }
-                //         return (
-                //             '<span class="badge rounded-pill ' +
-                //             $status[$status_number].class +
-                //             '">' +
-                //             $status[$status_number].title +
-                //             "</span>"
-                //         );
-                //     },
-                // },
+                {
+                    // Label
+                    targets: 6,
+                    render: function (data, type, full, meta) {
+                        var $status_number = full["result"];
+                        var $status = {
+                            1: { title: "وجود مغایرت", class: "bg-label-danger" },
+                            0: {
+                                title: "عدم مغایرت",
+                                class: " bg-label-success",
+                            },
+                        };
+                        if (typeof $status[$status_number] === "undefined") {
+                            return data;
+                        }
+                        return (
+                            '<span class="badge rounded-pill ' +
+                            $status[$status_number].class +
+                            '">' +
+                            $status[$status_number].title +
+                            "</span>"
+                        );
+                    },
+                },
                 // {
                 //     // Actions
                 //     targets: -1,

@@ -27,8 +27,9 @@
         "x_ray": "ندارد",
         "dog_behavair": "--",
         "user_observations": "ندارد",
-        "description": "ناهمگنی بار مشاهده شده است."
-      },
+        "description": "ناهمگنی بار مشاهده شده است.",
+        "result":0
+    },
       {
         "id": 4,
         "item_attribute":"سوخت",
