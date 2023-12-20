@@ -21,7 +21,6 @@
     <ul class="menu-inner py-1">
 
       <!-- Layouts -->
-      <li class="menu-header small text-uppercase"><span class="menu-header-text">برنامه‌ها و صفحات</span></li>
       <li class="menu-item {{ request()->is('/') ? 'active' : '' }}" >
         <a href="{{ route('dashboard') }}" class="menu-link">
           <i class="menu-icon tf-icons bx bx-home-circle"></i>
@@ -29,90 +28,80 @@
         </a>
       </li>
       <!-- Apps & Pages -->
-      <li class="menu-item {{ request()->is('personnels/list_centers') ? 'active open' : '' }} {{ request()->is('personnels/list_personnels') ? 'active open' : '' }} ">
+      <li class="menu-item {{ request()->is('reports/list_scan_period') ? 'active open' : '' }}">
         <a href="javascript:void(0);" class="menu-link menu-toggle">
-          <i class="menu-icon tf-icons bx bx-group"></i>
+          <i class="menu-icon tf-icons bx bxs-report"></i>
           <div >گزارش‌گیری </div>
         </a>
         <ul class="menu-sub">
-          <li class="menu-item  {{ request()->is('personnels/list_centers') ? 'active' : '' }}">
+          <li class="menu-item  {{ request()->is('reports/list_scan_period') ? 'active' : '' }}">
             <a href="{{ route('reports.list_scan_period') }}" class="menu-link ">
               <div >لیست دوره‌های اسکن شده </div>
             </a>
           </li>
-          <li class="menu-item  {{ request()->is('personnels/list_personnels') ? 'active' : '' }}">
+          {{-- <li class="menu-item  {{ request()->is('personnels/list_personnels') ? 'active' : '' }}">
             <a href="{{ route('reports.testtable') }}" class="menu-link">
               <div >تست جدول</div>
             </a>
-          </li>
-           {{-- <li class="menu-item  {{ request()->is('personnels/list_personnels') ? 'active' : '' }}">
-            <a href="{{ route('personnels.list_personnels') }}" class="menu-link">
+          </li> --}}
+           <li class="menu-item">
+            <a href="#" class="menu-link">
               <div >لسیت مغایرت‌های بارنامه</div>
             </a>
-          </li> --}}
-          {{-- <li class="menu-item  {{ request()->is('personnels/list_personnels') ? 'active' : '' }}">
-            <a href="{{ route('personnels.list_personnels') }}" class="menu-link">
-              <div >محموله‌های‌ اسکن شده</div>
-            </a>
           </li>
-          <li class="menu-item  {{ request()->is('personnels/list_personnels') ? 'active' : '' }}">
-            <a href="{{ route('personnels.list_personnels') }}" class="menu-link">
+          <li class="menu-item">
+            <a href="#" class="menu-link">
               <div >گزارش پراکندگی خودرو</div>
             </a>
-          </li> --}}
+          </li>
         </ul>
       </li>
-      {{-- <li class="menu-item {{ request()->is('/') ? 'active' : '' }}" >
-        <a href="{{ route('dashboard') }}" class="menu-link">
-          <i class="menu-icon tf-icons bx bx-home-circle"></i>
+      <li class="menu-item" >
+        <a href="#" class="menu-link">
+          <i class="menu-icon tf-icons bx bx-cog"></i>
           <div >تنظیمات</div>
         </a>
       </li>
-      <li class="menu-item {{ request()->is('personnels/list_centers') ? 'active open' : '' }} {{ request()->is('personnels/list_personnels') ? 'active open' : '' }} ">
-        <a href="javascript:void(0);" class="menu-link menu-toggle">
-          <i class="menu-icon tf-icons bx bx-group"></i>
+      <li class="menu-item">
+        <a href="#" class="menu-link menu-toggle">
+          <i class="menu-icon tf-icons bx bx-universal-access"></i>
           <div >سطوح دسترسی </div>
         </a>
         <ul class="menu-sub">
-          <li class="menu-item  {{ request()->is('personnels/list_centers') ? 'active' : '' }}">
-            <a href="{{ route('reports.list_scan_period') }}" class="menu-link ">
+          <li class="menu-item">
+            <a href="#" class="menu-link ">
               <div >null</div>
             </a>
           </li>
-          <li class="menu-item  {{ request()->is('personnels/list_personnels') ? 'active' : '' }}">
-            <a href="{{ route('personnels.list_personnels') }}" class="menu-link">
+          <li class="menu-item">
+            <a href="#" class="menu-link">
               <div>null</div>
             </a>
           </li>
 
         </ul>
       </li>
-      <li class="menu-item {{ request()->is('personnels/list_centers') ? 'active open' : '' }} {{ request()->is('personnels/list_personnels') ? 'active open' : '' }} ">
-        <a href="javascript:void(0);" class="menu-link menu-toggle">
+      <li class="menu-item">
+        <a href="#" class="menu-link menu-toggle">
           <i class="menu-icon tf-icons bx bx-group"></i>
           <div >اطلاعات رانندگان</div>
         </a>
         <ul class="menu-sub">
-          <li class="menu-item  {{ request()->is('personnels/list_centers') ? 'active' : '' }}">
-            <a href="{{ route('reports.list_scan_period') }}" class="menu-link ">
-              <div >null</div>
-            </a>
-          </li>
-          <li class="menu-item  {{ request()->is('personnels/list_personnels') ? 'active' : '' }}">
-            <a href="{{ route('personnels.list_personnels') }}" class="menu-link">
+            <li class="menu-item">
+                <a href="#" class="menu-link">
+                  <div >null</div>
+                </a>
+              </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link">
               <div >null</div>
             </a>
           </li>
 
         </ul>
       </li>
-      <li class="menu-item {{ request()->is('/') ? 'active' : '' }}" >
-        <a href="{{ route('dashboard') }}" class="menu-link">
-          <i class="menu-icon tf-icons bx bx-home-circle"></i>
-          <div >خروج</div>
-        </a>
-      </li> --}}
-      {{-- <li class="menu-header small text-uppercase"><span class="menu-header-text">برنامه‌ها و صفحات</span></li>
+
+      <li class="menu-header small text-uppercase"><span class="menu-header-text">اطلاعات ایستگاه و مراکز اسکن</span></li>
       <li class="menu-item {{ request()->is('personnels/list_centers') ? 'active open' : '' }} {{ request()->is('personnels/list_personnels') ? 'active open' : '' }} ">
         <a href="javascript:void(0);" class="menu-link menu-toggle">
           <i class="menu-icon tf-icons bx bx-group"></i>
@@ -120,152 +109,57 @@
         </a>
         <ul class="menu-sub">
           <li class="menu-item  {{ request()->is('personnels/list_centers') ? 'active' : '' }}">
-            <a href="{{ route('personnels.list_centers') }}" class="menu-link ">
+            <a href="#" class="menu-link ">
               <div >لیست مراکز </div>
             </a>
           </li>
           <li class="menu-item  {{ request()->is('personnels/list_personnels') ? 'active' : '' }}">
-            <a href="{{ route('personnels.list_personnels') }}" class="menu-link">
+            <a href="#" class="menu-link">
               <div >لسیت پرسنل</div>
             </a>
           </li>
 
         </ul>
-      </li> --}}
-      {{-- <li class="menu-item">
-        <a href="app-chat.html" class="menu-link">
+      </li>
+      <li class="menu-item">
+        <a href="#" class="menu-link">
           <i class="menu-icon tf-icons bx bx-detail"></i>
           <div >تخصص</div>
         </a>
       </li>
 
       <li class="menu-item">
-        <a href="app-kanban.html" class="menu-link">
+        <a href="#" class="menu-link">
           <i class="menu-icon tf-icons bx bx-detail"></i>
           <div >سگ‌های‌ موادیاب</div>
         </a>
       </li>
+
+      <li class="menu-header small text-uppercase"><span class="menu-header-text">متفرقه</span></li>
       <li class="menu-item">
-        <a href="javascript:void(0);" class="menu-link menu-toggle">
-          <i class="menu-icon tf-icons bx bx-detail"></i>
-          <div >گزارشات</div>
+        <a href="#" target="_blank" class="menu-link">
+          <i class="menu-icon tf-icons bx bx-support"></i>
+          <div data-i18n="Support">پشتیبانی</div>
         </a>
-        <ul class="menu-sub">
-          <li class="menu-item">
-            <a href="app-invoice-list.html" class="menu-link">
-              <div data-i18n="List">لیست</div>
-            </a>
-          </li>
-          <li class="menu-item">
-            <a href="app-invoice-preview.html" class="menu-link">
-              <div data-i18n="Preview">پیش‌نمایش</div>
-            </a>
-          </li>
-          <li class="menu-item">
-            <a href="app-invoice-edit.html" class="menu-link">
-              <div data-i18n="Edit">ویرایش</div>
-            </a>
-          </li>
-          <li class="menu-item">
-            <a href="app-invoice-add.html" class="menu-link">
-              <div data-i18n="Add">افزودن</div>
-            </a>
-          </li>
-        </ul>
       </li>
       <li class="menu-item">
-        <a href="javascript:void(0);" class="menu-link menu-toggle">
-          <i class="menu-icon tf-icons bx bx-user"></i>
-          <div data-i18n="Users">کاربران</div>
+        <a href="#" target="_blank" class="menu-link">
+          <i class="menu-icon tf-icons bx bx-file"></i>
+          <div data-i18n="Documentation">مستندات</div>
         </a>
-        <ul class="menu-sub">
-          <li class="menu-item">
-            <a href="app-user-list.html" class="menu-link">
-              <div data-i18n="List">لیست</div>
-            </a>
-          </li>
-          <li class="menu-item">
-            <a href="javascript:void(0);" class="menu-link menu-toggle">
-              <div data-i18n="View">نمایش</div>
-            </a>
-            <ul class="menu-sub">
-              <li class="menu-item">
-                <a href="app-user-view-account.html" class="menu-link">
-                  <div data-i18n="Account">حساب</div>
-                </a>
-              </li>
-              <li class="menu-item">
-                <a href="app-user-view-security.html" class="menu-link">
-                  <div data-i18n="Security">امنیت</div>
-                </a>
-              </li>
-              <li class="menu-item">
-                <a href="app-user-view-billing.html" class="menu-link">
-                  <div data-i18n="Billing & Plans">صورتحساب و پلن‌ها</div>
-                </a>
-              </li>
-              <li class="menu-item">
-                <a href="app-user-view-notifications.html" class="menu-link">
-                  <div data-i18n="Notifications">اعلان‌ها</div>
-                </a>
-              </li>
-              <li class="menu-item">
-                <a href="app-user-view-connections.html" class="menu-link">
-                  <div data-i18n="Connections">اتصالات</div>
-                </a>
-              </li>
-            </ul>
-          </li>
-        </ul>
       </li>
-      <li class="menu-item">
-          <a href="javascript:void(0);" class="menu-link menu-toggle">
-            <i class="menu-icon tf-icons bx bx-user"></i>
-            <div >رانندگان</div>
-          </a>
-          <ul class="menu-sub">
-            <li class="menu-item">
-              <a href="app-user-list.html" class="menu-link">
-                <div data-i18n="List">لیست</div>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <div data-i18n="View">نمایش</div>
-              </a>
-              <ul class="menu-sub">
-                <li class="menu-item">
-                  <a href="app-user-view-account.html" class="menu-link">
-                    <div data-i18n="Account">حساب</div>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="app-user-view-security.html" class="menu-link">
-                    <div data-i18n="Security">امنیت</div>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="app-user-view-billing.html" class="menu-link">
-                    <div data-i18n="Billing & Plans">صورتحساب و پلن‌ها</div>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="app-user-view-notifications.html" class="menu-link">
-                    <div data-i18n="Notifications">اعلان‌ها</div>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="app-user-view-connections.html" class="menu-link">
-                    <div data-i18n="Connections">اتصالات</div>
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
+      <li class="menu-item" >
+        <a href="{{ route('logout') }}" class="menu-link">
+          <i class="menu-icon tf-icons bx bx-log-out-circle"></i>
+          <div >خروج</div>
+        </a>
+      </li>
+
+
+
 
       <!-- Charts & Maps -->
-      <li class="menu-header small text-uppercase"><span class="menu-header-text">نمودارها و نقشه‌ها</span></li>
+      {{-- <li class="menu-header small text-uppercase"><span class="menu-header-text">نمودارها و نقشه‌ها</span></li>
       <li class="menu-item">
         <a href="javascript:void(0);" class="menu-link menu-toggle">
           <i class="menu-icon tf-icons bx bx-chart"></i>
@@ -283,27 +177,14 @@
             </a>
           </li>
         </ul>
-      </li>
-      <li class="menu-item">
+      </li> --}}
+      {{-- <li class="menu-item">
         <a href="maps-leaflet.html" class="menu-link">
           <i class="menu-icon tf-icons bx bx-map-alt"></i>
           <div data-i18n="Leaflet Maps">نقشه‌های Leaflet</div>
         </a>
-      </li>
+      </li> --}}
 
       <!-- Misc -->
-      <li class="menu-header small text-uppercase"><span class="menu-header-text">متفرقه</span></li>
-      <li class="menu-item">
-        <a href="#" target="_blank" class="menu-link">
-          <i class="menu-icon tf-icons bx bx-support"></i>
-          <div data-i18n="Support">پشتیبانی</div>
-        </a>
-      </li>
-      <li class="menu-item">
-        <a href="#" target="_blank" class="menu-link">
-          <i class="menu-icon tf-icons bx bx-file"></i>
-          <div data-i18n="Documentation">مستندات</div>
-        </a>
-      </li> --}}
     </ul>
   </aside>
