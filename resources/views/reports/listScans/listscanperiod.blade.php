@@ -11,7 +11,7 @@
 
         <div class="container-xxl flex-grow-1 container-p-y">
             <h4 class="py-3 breadcrumb-wrapper mb-4">
-                <span class="text-muted fw-light">جدول‌های داده /</span> پیشرفته
+                <span class="text-muted fw-light">جدول‌داده /</span> دوره‌های اسکن شده
             </h4>
 
             <!-- Advanced Search -->

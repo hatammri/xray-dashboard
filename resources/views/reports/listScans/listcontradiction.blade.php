@@ -11,88 +11,12 @@
 
         <div class="container-xxl flex-grow-1 container-p-y">
             <h4 class="py-3 breadcrumb-wrapper mb-4">
-                <span class="text-muted fw-light">جدول‌های داده /</span> پیشرفته
+                <span class="text-muted fw-light">جدول‌  /</span> ‌ مغایرت بارنامه‌ها
             </h4>
 
             <!-- Advanced Search -->
             <div class="card">
-                <h5 class="card-header heading-color">جستجوی پیشرفته</h5>
-                <!--Search Form -->
-                <div class="card-body">
-                    <form class="dt_adv_search" method="POST">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="row g-3">
-                                    <div class="col-12 col-sm-6 col-lg-4">
-                                        <label class="form-label">نام گمرک:</label>
-                                        {{-- <input type="text" class="form-control dt-input dt-full-name" data-column="1" placeholder="جان اسنو" data-column-index="0"> --}}
-                                        <select class="select2 form-select dt-input dt-name" data-column="1"
-                                            data-column-index="0">
-                                            <option value="">همه موارد</option>
-                                            <option value="میرجاوه">میرجاوه</option>
-                                            <option value="جلفا">جلفا</option>
-                                            <option value="لطف آباد">لطف آباد</option>
-                                            <option value="بازرگان">بازرگان</option>
-                                            <option value="پرویزخان">پرویزخان</option>
-                                        </select>
-                                    </div>
 
-                                    <div class="col-12 col-sm-6 col-lg-4">
-                                        <label class="form-label">نام دستگاه:</label>
-                                        {{-- <input type="text" class="form-control dt-input" data-column="2" placeholder="demo@example.com" data-column-index="1"> --}}
-                                        <select class="select2 form-select dt-input dt-Scanning_device" data-column="1"
-                                            data-column-index="0">
-                                            <option value="">همه موارد</option>
-                                            <option value="بهیار۱">بهیار۱</option>
-                                            <option value="بهیار۲">بهیار۲</option>
-                                            <option value="ساپا1">ساپا 1</option>
-                                            <option value="ساپا2">ساپا ۲</option>
-                                            <option value="ساپا3">ساپا ۳</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-12 col-sm-6 col-lg-4">
-                                        <label class="form-label">وضعیت دستگاه:</label>
-                                        {{-- <input type="text" class="form-control dt-input" data-column="2" placeholder="demo@example.com" data-column-index="1"> --}}
-                                        <select class="select2 form-select dt-input dt-status" data-column="1"
-                                            data-column-index="0">
-                                            <option value="">همه موارد</option>
-                                            <option value="فعال">فعال</option>
-                                            <option value="غیرفعال">غیرفعال</option>
-                                            <option value="خراب">خراب</option>
-                                            <option value="درحال‌تعمیر">درحال تعمیر</option>
-                                            <option value="نامشخص">نامشخص</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-12 col-sm-6 col-lg-4">
-                                        <label class="form-label">تاریخ نصب: </label>
-                                        <div class="mb-0">
-                                            <input type="text" class="form-control dt-date flatpickr-range dt-input"
-                                                data-column="5" placeholder="تاریخ شروع تا پایان" data-column-index="4"
-                                                name="dt_date">
-                                            <input type="hidden" class="form-control dt-date start_date dt-input"
-                                                data-column="5" data-column-index="4" name="value_from_start_date">
-                                            <input type="hidden" class="form-control dt-date end_date dt-input"
-                                                name="value_from_end_date" data-column="5" data-column-index="4">
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-sm-6 col-lg-4">
-                                        <label class="form-label">تاریخ : </label>
-                                        <div class="mb-0">
-                                            <input type="text" class="form-control dt-date flatpickr-range dt-input"
-                                                data-column="5" placeholder="تاریخ شروع تا پایان" data-column-index="4"
-                                                name="dt_date">
-                                            <input type="hidden" class="form-control dt-date start_date dt-input"
-                                                data-column="5" data-column-index="4" name="value_from_start_date">
-                                            <input type="hidden" class="form-control dt-date end_date dt-input"
-                                                name="value_from_end_date" data-column="5" data-column-index="4">
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
                 <hr class="mt-0">
                 <div class="card-datatable table-responsive">
                     <table class="dt-advanced-search table table-bordered">

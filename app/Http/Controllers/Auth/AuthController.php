@@ -36,7 +36,7 @@ class AuthController extends Controller
        }else{
 
         return redirect()->back()->with('errors',"شما اجازه ورود ندارید." );
-      
+
        }
 
         }catch(\Exception $ex){
@@ -62,11 +62,11 @@ class AuthController extends Controller
 
       }else
       {
-        return response(['errors'=>['otp'=>['کد تاییدیه نادرست است']]],422);
+        return view('auth.two_steps' , compact('user'));
 
       }
     }catch(\Exception $ex){
-        return response(['errors'=>$ex->getMessage()],422);
+        return redirect()->back()->with('errors',"خطا درهنگام ورود با پشتیبانی تماس بگیرید." );
 
     }
     }

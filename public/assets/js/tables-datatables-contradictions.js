@@ -222,51 +222,11 @@ $(function () {
                     targets: 4,
                     responsivePriority: 4,
                     render: function (data, type, full, meta) {
-                        var $user_img = full["operator_avatar"],
-                            $name = full["driver_name"],
+                        var $name = full["driver_name"],
                             $post = full["driver_code"];
-                        if ($user_img) {
-                            // For Avatar image
-                            var $output =
-                                '<img src="' +
-                                assetsPath +
-                                "img/avatars/" +
-                                $user_img +
-                                '" alt="آواتار" class="rounded-circle">';
-                        } else {
-                            // For Avatar badge
-                            var stateNum = Math.floor(Math.random() * 6);
-                            var states = [
-                                "success",
-                                "danger",
-                                "warning",
-                                "info",
-                                "dark",
-                                "primary",
-                                "secondary",
-                            ];
-                            var $state = states[stateNum],
-                                $name = full["full_name"],
-                                $initials =
-                                    $name
-                                        .split(" ")
-                                        .slice(0, 2)
-                                        .map((word) => word[0])
-                                        .join("‌") || "";
-                            $output =
-                                '<span class="avatar-initial rounded-circle bg-label-' +
-                                $state +
-                                '">' +
-                                $initials +
-                                "</span>";
-                        }
-                        // Creates full output for row
                         var $row_output =
                             '<div class="d-flex justify-content-start align-items-center user-name">' +
                             '<div class="avatar-wrapper">' +
-                            '<div class="avatar me-2">' +
-                            $output +
-                            "</div>" +
                             "</div>" +
                             '<div class="d-flex flex-column">' +
                             '<span class="emp_name text-truncate">' +
