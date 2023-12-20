@@ -44,6 +44,7 @@
 
   <body>
     <!-- Content -->
+    @include('sweetalert::alert')
 
     <div class="container-xxl">
       <div class="authentication-wrapper authentication-basic container-p-y">
@@ -69,7 +70,7 @@
                 @csrf
                 <div class="mb-3">
                   <label for="cellphone" class="form-label">شماره همراه</label>
-                  <input type="text" class="form-control text-start" id="cellphone" name="cellphone" placeholder="شماره همراه خود را وارد کنید" autofocus dir="ltr">
+                  <input type="text" class="form-control text-start" id="cellphone" name="cellphone" placeholder="شماره همراه خود را وارد کنید" autofocus dir="ltr" value="{{ old('cellphone') }}">
                 </div>
                 <div class="mb-3">
                   <button class="btn btn-primary d-grid w-100" type="submit">ورود</button>
@@ -87,7 +88,13 @@
         </div>
       </div>
     </div>
+    {{-- @if(session()->has('jsAlert'))
+    <script>
 
+       // console.log("jsAlert");
+        alert({{ session()->get('jsAlert') }});
+    </script>
+     @endif --}}
     <!-- / Content -->
 
     <!-- Core JS -->

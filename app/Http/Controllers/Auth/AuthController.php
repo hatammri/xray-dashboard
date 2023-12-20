@@ -34,17 +34,13 @@ class AuthController extends Controller
          $user->notify(new OTPSms($OTPCode));
          return view('auth.two_steps' , compact('user'));
        }else{
-        dd("notfound");
-        //شما ثبت نام نکرده اید و یا پیام شما دسترسی ندارید چاپ شود
-        // $user=User::Create([
-        //     'cellphone' =>$request->cellphone,
-        //     'otp'=>$OTPCode,
-        //     'login_token' =>$loginToken
-        //  ]);
+
+        return redirect()->back()->with('errors',"شما اجازه ورود ندارید." );
+      
        }
 
         }catch(\Exception $ex){
-            return response(['errors'=>$ex->getMessage()],422);
+            return redirect()->back()->with('errors',"خطا چنانچه امکان ورود ندارید با پیشتیبانی در تماس باشید." );
 
         }
 
