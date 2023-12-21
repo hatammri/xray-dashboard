@@ -7,7 +7,7 @@
         "x_ray": "34",
         "dog_behavair": "--",
         "user_observations": "34",
-        "description": "ناهمگنی بار مشاهده شده است.",
+        "description":"مغایرت در وزن بار",
         "result":1
       },
       {
@@ -17,7 +17,7 @@
         "x_ray": "اسکانیا",
         "dog_behavair": "--",
         "user_observations": "اسکانیا",
-        "description": "ناهمگنی بار مشاهده شده است.",
+        "description": "--",
         "result":0
       },
       {
@@ -27,7 +27,7 @@
         "x_ray": "ندارد",
         "dog_behavair": "--",
         "user_observations": "ندارد",
-        "description": "ناهمگنی بار مشاهده شده است.",
+        "description": "--",
         "result":0
     },
       {
@@ -37,7 +37,7 @@
         "x_ray": "--",
         "dog_behavair": "--",
         "user_observations": "--",
-        "description": "ناهمگنی بار مشاهده شده است.",
+        "description": "--",
         "result":0
 
       },
@@ -48,7 +48,7 @@
         "x_ray": "20cc",
         "dog_behavair": "--",
         "user_observations": "20cc",
-        "description": "ناهمگنی بار مشاهده شده است.",
+        "description": "--",
         "result":0
 
       },
@@ -57,9 +57,9 @@
         "item_attribute":"موادمخدر",
         "qr_code":"ندارد",
         "x_ray": "ندارد",
-        "dog_behavair": "عکس العملی نداشته",
+        "dog_behavair":"ندارد",
         "user_observations": "ندارد",
-        "description": "ناهمگنی بار مشاهده شده است.",
+        "description": "--",
         "result":0
 
       }

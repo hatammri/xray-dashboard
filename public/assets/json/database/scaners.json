@@ -395,8 +395,8 @@
         "start_date": "1399/08/01",
         "date": "1402/09/29",
         "operators":"علی زمانی",
-        "Numberـofـscans": "80",
-        "Contradiction":"4",
+        "Numberـofـscans": "39",
+        "Contradiction":"3",
         "status": 1
       }
       ,
@@ -436,8 +436,8 @@
         "start_date": "1400/02/01",
         "date": "1402/09/01",
         "operators":"علی زمانی",
-        "Numberـofـscans": "61",
-        "Contradiction":"3",
+        "Numberـofـscans": "34",
+        "Contradiction":"2",
         "status": 1
       },
       {
@@ -570,9 +570,9 @@
         "start_date": "1400/02/01",
         "date": "1402/09/11",
         "operators":"علی زمانی",
-        "Numberـofـscans": "0",
-        "Contradiction":"0",
-        "status": 3
+        "Numberـofـscans": "50",
+        "Contradiction":"2",
+        "status": 1
       }
       ,
       {
@@ -822,7 +822,7 @@
         "start_date": "1400/02/01",
         "date": "1402/09/29",
         "operators":"علی زمانی",
-        "Numberـofـscans": "80",
+        "Numberـofـscans": "81",
         "Contradiction":"4",
         "status": 1
       }
@@ -863,8 +863,8 @@
         "start_date": "1401/02/01",
         "date": "1402/09/01",
         "operators":"علی زمانی",
-        "Numberـofـscans": "61",
-        "Contradiction":"3",
+        "Numberـofـscans": "16",
+        "Contradiction":"1",
         "status": 1
       },
       {
@@ -1249,7 +1249,7 @@
         "start_date": "1401/02/01",
         "date": "1402/09/29",
         "operators":"علی زمانی",
-        "Numberـofـscans": "80",
+        "Numberـofـscans": "73",
         "Contradiction":"4",
         "status": 1
       }
@@ -1290,8 +1290,8 @@
         "start_date": "1401/06/01",
         "date": "1402/09/01",
         "operators":"علی زمانی",
-        "Numberـofـscans": "61",
-        "Contradiction":"3",
+        "Numberـofـscans": "37",
+        "Contradiction":"2",
         "status": 1
       },
       {
@@ -1480,9 +1480,9 @@
         "start_date": "1401/06/01",
         "date": "1402/09/15",
         "operators":"علی زمانی",
-        "Numberـofـscans": "72",
-        "Contradiction":"6",
-        "status": 1
+        "Numberـofـscans": "0",
+        "Contradiction":"0",
+        "status": 5
       }
       ,
       {
@@ -1620,9 +1620,9 @@
         "start_date": "1401/06/01",
         "date": "1402/09/25",
         "operators":"علی زمانی",
-        "Numberـofـscans": "29",
-        "Contradiction":"2",
-        "status": 1
+        "Numberـofـscans": "0",
+        "Contradiction":"0",
+        "status": 5
       }
       ,
       {
@@ -1676,8 +1676,8 @@
         "start_date": "1401/06/01",
         "date": "1402/09/29",
         "operators":"علی زمانی",
-        "Numberـofـscans": "80",
-        "Contradiction":"4",
+        "Numberـofـscans": "78",
+        "Contradiction":"1",
         "status": 1
       }
       ,
@@ -1717,8 +1717,8 @@
         "start_date": "1401/06/01",
         "date": "1402/09/01",
         "operators":"علی زمانی",
-        "Numberـofـscans": "61",
-        "Contradiction":"3",
+        "Numberـofـscans": "52",
+        "Contradiction":"2",
         "status": 1
       },
       {
@@ -1851,9 +1851,9 @@
         "start_date": "1401/06/01",
         "date": "1402/09/11",
         "operators":"علی زمانی",
-        "Numberـofـscans": "0",
-        "Contradiction":"0",
-        "status": 3
+        "Numberـofـscans": "41",
+        "Contradiction":"3",
+        "status": 1
       }
       ,
       {
@@ -2103,8 +2103,8 @@
         "start_date": "1401/06/01",
         "date": "1402/09/29",
         "operators":"علی زمانی",
-        "Numberـofـscans": "80",
-        "Contradiction":"4",
+        "Numberـofـscans": "69",
+        "Contradiction":"2",
         "status": 1
       }
       ,
@@ -2144,8 +2144,8 @@
         "start_date": "1401/06/01",
         "date": "1402/09/01",
         "operators":"علی زمانی",
-        "Numberـofـscans": "61",
-        "Contradiction":"3",
+        "Numberـofـscans": "65",
+        "Contradiction":"2",
         "status": 1
       },
       {
@@ -2278,9 +2278,9 @@
         "start_date": "1401/06/01",
         "date": "1402/09/11",
         "operators":"علی زمانی",
-        "Numberـofـscans": "0",
-        "Contradiction":"0",
-        "status": 3
+        "Numberـofـscans": "30",
+        "Contradiction":"2",
+        "status": 1
       }
       ,
       {
@@ -2531,7 +2531,7 @@
         "date": "1402/09/29",
         "operators":"علی زمانی",
         "Numberـofـscans": "80",
-        "Contradiction":"4",
+        "Contradiction":"2",
         "status": 1
       }
       ,
@@ -2571,8 +2571,8 @@
         "start_date": "1399/03/01",
         "date": "1402/09/01",
         "operators":"علی زمانی",
-        "Numberـofـscans": "61",
-        "Contradiction":"3",
+        "Numberـofـscans": "49",
+        "Contradiction":"1",
         "status": 1
       },
       {
@@ -2705,9 +2705,9 @@
         "start_date": "1399/03/01",
         "date": "1402/09/11",
         "operators":"علی زمانی",
-        "Numberـofـscans": "0",
-        "Contradiction":"0",
-        "status": 3
+        "Numberـofـscans": "53",
+        "Contradiction":"1",
+        "status": 1
       }
       ,
       {
@@ -2957,8 +2957,8 @@
         "start_date": "1399/03/01",
         "date": "1402/09/29",
         "operators":"علی زمانی",
-        "Numberـofـscans": "80",
-        "Contradiction":"4",
+        "Numberـofـscans": "56",
+        "Contradiction":"2",
         "status": 1
       }
       ,
@@ -2998,8 +2998,8 @@
         "start_date": "1399/03/01",
         "date": "1402/09/01",
         "operators":"علی زمانی",
-        "Numberـofـscans": "61",
-        "Contradiction":"3",
+        "Numberـofـscans": "56",
+        "Contradiction":"2",
         "status": 1
       },
       {
@@ -3384,8 +3384,8 @@
         "start_date": "1399/03/01",
         "date": "1402/09/29",
         "operators":"علی زمانی",
-        "Numberـofـscans": "80",
-        "Contradiction":"4",
+        "Numberـofـscans": "23",
+        "Contradiction":"2",
         "status": 1
       }
       ,
@@ -3425,8 +3425,8 @@
         "start_date": "1398/06/05",
         "date": "1402/09/01",
         "operators":"علی زمانی",
-        "Numberـofـscans": "61",
-        "Contradiction":"3",
+        "Numberـofـscans": "62",
+        "Contradiction":"2",
         "status": 1
       },
       {
@@ -3547,7 +3547,7 @@
         "operators":"علی زمانی",
         "Numberـofـscans": "0",
         "Contradiction":"0",
-        "status": 2
+        "status": 4
       }
       ,
       {
@@ -3811,7 +3811,7 @@
         "start_date": "1398/06/05",
         "date": "1402/09/29",
         "operators":"علی زمانی",
-        "Numberـofـscans": "80",
+        "Numberـofـscans": "62",
         "Contradiction":"4",
         "status": 1
       }

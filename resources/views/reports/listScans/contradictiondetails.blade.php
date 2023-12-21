@@ -16,7 +16,7 @@
 
             <!-- Advanced Search -->
             <div class="card">
-                <h5 class="card-header heading-color">جستجوی پیشرفته</h5>
+                <h5 class="card-header heading-color">جزئیات مغایرت بارنامه BR9654</h5>
                 <!--Search Form -->
                 <div class="card-datatable table-responsive">
                     <table class="dt-advanced-search table table-bordered">

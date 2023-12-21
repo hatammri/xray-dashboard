@@ -16,6 +16,7 @@
 
             <!-- Advanced Search -->
             <div class="card">
+                <h5 class="card-header heading-color">لیست مغایرت‌های ثبت شده</h5>
 
                 <hr class="mt-0">
                 <div class="card-datatable table-responsive">
