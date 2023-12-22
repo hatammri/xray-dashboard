@@ -2,6 +2,10 @@
 @section('csslink')
     <link rel="stylesheet" href="../../assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css">
     <link rel="stylesheet" href="../../assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css">
+    <link rel="stylesheet" href="../../assets/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.css">
+    <link rel="stylesheet" href="../../assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css">
+    <link rel="stylesheet" href="../../assets/vendor/css/pages/page-profile.css">
+    <link rel="stylesheet" href="../../assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css">
     <link rel="stylesheet" href="../../assets/vendor/libs/flatpickr/flatpickr.css">
 @endsection
 @section('content')
@@ -14,7 +18,42 @@
                 <span class="text-muted fw-light">جدول‌  /</span> ‌ مغایرت بارنامه‌ها
             </h4>
 
+              <!-- Header -->
+              <div class="row">
+                <div class="col-12">
+                  <div class="card mb-4">
+                    <div class="user-profile-header-banner">
+                      <img src="../../assets/img/pages/mirjave.png" alt="Banner image" class="rounded-top">
+                    </div>
+                    <div class="user-profile-header d-flex flex-column flex-sm-row text-sm-start text-center mb-4">
+                      <div class="flex-shrink-0 mt-n2 mx-sm-0 mx-auto">
+                        <img src="../../assets/img/sascan/behyar1.png" alt="user image" class="d-block h-auto ms-0 ms-sm-4 rounded-3 user-profile-img">
+                      </div>
+
+                      <div class="flex-grow-1 mt-3 mt-sm-5">
+                        <div class="d-flex align-items-md-end align-items-sm-start align-items-center justify-content-md-between justify-content-start mx-4 flex-md-row flex-column gap-4">
+                          <div class="user-profile-info">
+                            <h4>پایانه مرزی گمرک میرجاوه</h4>
+                            <ul class="list-inline mb-0 d-flex align-items-center flex-wrap justify-content-sm-start justify-content-center gap-2">
+                              <li class="list-inline-item fw-semibold"><i class="bx bx-pen"></i>دستگاه بهیار 1 </li>
+                              <li class="list-inline-item fw-semibold"><i class="bx bx-map"></i>استان سیستان و بلوچستان</li>
+                              <li class="list-inline-item fw-semibold">
+                                <i class="bx bx-calendar-alt"></i> شروع فعالیت با اسکنر 1399/08/01
+                              </li>
+                            </ul>
+                          </div>
+                          <a href="javascript:void(0)" class="btn btn-primary text-nowrap">
+                            <i class="bx bx-user-check me-1"></i>متصل
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--/ Header -->
             <!-- Advanced Search -->
+
             <div class="card">
                 <h5 class="card-header heading-color">لیست مغایرت‌های ثبت شده</h5>
 
@@ -58,6 +97,7 @@
     <!-- Content wrapper -->
 @endsection
 @section('scripts')
+
     <script src="../../assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
     <script src="../../assets/vendor/libs/datatables-bs5/i18n/fa.js"></script>
     <!-- Flat Picker -->
