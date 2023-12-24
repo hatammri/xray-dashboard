@@ -29,9 +29,9 @@
       {
         "id": 3,
         "shomarebar":"BR4785",
-        "name": "میرجاوه",
+        "name": "بازرگان",
         "Scanning_device":"بهیار۱",
-        "operator_avatar": "13.png",
+        "operator_avatar": "2.png",
         "operator_name": "محمدرضاعزیزی",
         "operator_post": "اپراتور سگ موادیاب",
         "driver_name": "احسان اسدی",
@@ -43,8 +43,8 @@
       {
         "id": 3,
         "shomarebar":"BR4752",
-        "name": "میرجاوه",
-        "Scanning_device":"بهیار۱",
+        "name": "لطف‌آباد",
+        "Scanning_device":"ساپا1",
         "operator_avatar": "9.png",
         "operator_name": "جلال صادقی",
         "operator_post": "اپراتور اسکنر",
@@ -61,11 +61,11 @@
         "Scanning_device":"بهیار2",
         "operator_avatar": "10.png",
         "operator_name": "علی مهدیان",
-        "operator_post": "اپراتور اسکنر",
+        "operator_post": "اپراتور بازرسی",
         "driver_name": "محمد جواد شهرامی",
         "driver_code": "zpx3234",
         "date": "1401/09/01",
-        "description": "ناهمگنی بار مشاهده شده است."
+        "description": "حجم باک مغایرت دارد."
       }
       ,
       {
@@ -89,11 +89,11 @@
         "Scanning_device":"ساپا1",
         "operator_avatar": "19.png",
         "operator_name": "علی عابدزاده",
-        "operator_post": "اپراتور اسکنر",
+        "operator_post": "اپراتور بازرسی",
         "driver_name": "ژاکوب حناساب",
         "driver_code": "zpx3985",
         "date": "1401/09/01",
-        "description": "ناهمگنی بار مشاهده شده است."
+        "description": "نوع خودرو مغایرت دارد"
       }
       ,
       {
@@ -117,11 +117,11 @@
         "Scanning_device":"بهیار۱",
         "operator_avatar": "3.png",
         "operator_name": "جلال صادقی",
-        "operator_post": "اپراتور اسکنر",
+        "operator_post": "اپراتور سگ موادیاب",
         "driver_name": "محسن زمانی",
         "driver_code": "zpx3452",
         "date": "1401/09/01",
-        "description": "ناهمگنی بار مشاهده شده است."
+        "description": "وجود مواد مخدر در بار با تشخیص سگ"
       }
       ,
       {
@@ -148,7 +148,7 @@
         "operator_post": "اپراتور اسکنر",
         "driver_name": "محسن زمانی",
         "driver_code": "zpx3452",
-        "date": "1401/09/01",
+        "date": "1401/09/02",
         "description": "ناهمگنی بار مشاهده شده است."
       }
       ,
@@ -162,7 +162,7 @@
         "operator_post": "اپراتور اسکنر",
         "driver_name": "محسن زمانی",
         "driver_code": "zpx3452",
-        "date": "1401/09/01",
+        "date": "1401/09/02",
         "description": "وزن بار مغایرت دارد"
       }
       ,
@@ -176,7 +176,7 @@
         "operator_post": "اپراتور سگ موادیاب",
         "driver_name": "محسن زمانی",
         "driver_code": "zpx3452",
-        "date": "1401/09/01",
+        "date": "1401/09/02",
         "description": "وجود مواد مخدر در بار با تشخیص سگ"
       }
       ,
@@ -190,7 +190,7 @@
         "operator_post": "اپراتور اسکنر",
         "driver_name": "محسن زمانی",
         "driver_code": "zpx3452",
-        "date": "1401/09/01",
+        "date": "1401/09/02",
         "description": "ناهمگنی بار مشاهده شده است."
       }
       ,
