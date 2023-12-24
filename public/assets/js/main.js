@@ -161,7 +161,7 @@ if (document.getElementById('layout-menu')) {
     .then(function (t) {
       localize();
     });
-      
+
     // Language Dropdown
     let languageDropdown = document.getElementsByClassName('dropdown-language');
 
@@ -192,7 +192,7 @@ if (document.getElementById('layout-menu')) {
         });
       }
     }
-    
+
     // Localize Function
     function localize() {
       let i18nList = document.querySelectorAll('[data-i18n]');
@@ -600,3 +600,4 @@ if (typeof $ !== 'undefined') {
     }
   });
 }
+

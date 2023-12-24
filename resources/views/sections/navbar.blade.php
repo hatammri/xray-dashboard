@@ -21,6 +21,7 @@
 
             <ul class="navbar-nav flex-row align-items-center ms-auto">
 
+                <li class="nav-item me-2 me-xl-0 d-none d-lg-block"><a class="nav-link nav-link-expand"><i class="ficon bx bx-fullscreen"></i></a></li>
 
                 <!-- Style Switcher -->
                 <li class="nav-item me-2 me-xl-0">
