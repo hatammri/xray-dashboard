@@ -28,7 +28,7 @@
         </a>
       </li>
       <!-- Apps & Pages -->
-      <li class="menu-item {{ request()->is('reports/list_scan_period') ? 'active open' : '' }}">
+      <li class="menu-item {{ request()->is('reports/list_scan_period') ? 'active open' : '' }} {{ request()->is('reports/listContradictions') ? 'active open' : '' }}">
         <a href="javascript:void(0);" class="menu-link menu-toggle">
           <i class="menu-icon tf-icons bx bxs-report"></i>
           <div >گزارش‌گیری </div>
@@ -44,14 +44,34 @@
               <div >تست جدول</div>
             </a>
           </li> --}}
-           <li class="menu-item">
-            <a href="#" class="menu-link">
-              <div >لسیت مغایرت‌های بارنامه</div>
+           <li class="menu-item {{ request()->is('reports/listContradictions') ? 'active' : '' }}" >
+            <a href="{{ route('reports.listContradictions.listcontradictions')}}" class="menu-link">
+              <div >لیست مغایرت‌های بارنامه</div>
             </a>
           </li>
           <li class="menu-item">
             <a href="#" class="menu-link">
-              <div >گزارش پراکندگی خودرو</div>
+              <div >گزارش مغایرت های بارنامه در مبدا و مقصد</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link">
+              <div >گزارش  عملکرد سگ های موادیاب</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link">
+              <div >گزارش خودروهای متخلف</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link">
+              <div >لیست پراکندگی خودرو</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link">
+              <div >لیست گزارشات پرسنل</div>
             </a>
           </li>
         </ul>

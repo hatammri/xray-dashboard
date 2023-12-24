@@ -37,6 +37,10 @@ Route::group(['prefix' => '/', 'middleware' => 'auth'], function () {
         return view('reports.listScans.listscans');
     })->name('reports.list_scans');
 
+    Route::get('/reports/listContradictions', function () {
+        return view('reports.listContradictions.listcontradictions');
+    })->name('reports.listContradictions.listcontradictions');
+
     Route::get('/reports/show_contradiction_details', function () {
         return view('reports.listScans.showalldetails');
     })->name('reports.show_all_details');
@@ -47,6 +51,10 @@ Route::group(['prefix' => '/', 'middleware' => 'auth'], function () {
     Route::get('/reports/testtable', function () {
         return view('reports.testtable');
     })->name('reports.testtable');
+
+
+
+
 });
 
 Route::any('/login', [AuthController::class, 'login'])->middleware('guest')->name('login');
