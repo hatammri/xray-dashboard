@@ -1658,6 +1658,6 @@
     <script src="../../assets/js/main.js"></script>
 
     <!-- Page JS -->
-    <script src="../../assets/js/tables-datatables-advanced.js"></script>
+    <script src="../../assets/js/tables-datatables-ajax.js"></script>
   </body>
 </html>
