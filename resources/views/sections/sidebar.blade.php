@@ -76,12 +76,6 @@
           </li>
         </ul>
       </li>
-      <li class="menu-item" >
-        <a href="#" class="menu-link">
-          <i class="menu-icon tf-icons bx bx-cog"></i>
-          <div >تنظیمات</div>
-        </a>
-      </li>
       <li class="menu-item">
         <a href="#" class="menu-link menu-toggle">
           <i class="menu-icon tf-icons bx bx-universal-access"></i>
@@ -90,12 +84,12 @@
         <ul class="menu-sub">
           <li class="menu-item">
             <a href="#" class="menu-link ">
-              <div >null</div>
+              <div >سطوح دسترسی مراکز</div>
             </a>
           </li>
           <li class="menu-item">
             <a href="#" class="menu-link">
-              <div>null</div>
+              <div>سطوح دسترسی پرسنل</div>
             </a>
           </li>
 
@@ -109,18 +103,33 @@
         <ul class="menu-sub">
             <li class="menu-item">
                 <a href="#" class="menu-link">
-                  <div >null</div>
+                  <div >لیست رانندگان</div>
                 </a>
               </li>
           <li class="menu-item">
             <a href="#" class="menu-link">
-              <div >null</div>
+              <div >اضافه کردن رانندگان</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link">
+              <div >ویرایش کردن اطلاعات رانندگان</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link">
+              <div >بارکدخوان</div>
             </a>
           </li>
 
         </ul>
       </li>
-
+      <li class="menu-item" >
+        <a href="#" class="menu-link">
+          <i class="menu-icon tf-icons bx bx-cog"></i>
+          <div >تنظیمات</div>
+        </a>
+      </li>
       <li class="menu-header small text-uppercase"><span class="menu-header-text">اطلاعات ایستگاه و مراکز اسکن</span></li>
       <li class="menu-item {{ request()->is('personnels/list_centers') ? 'active open' : '' }} {{ request()->is('personnels/list_personnels') ? 'active open' : '' }} ">
         <a href="javascript:void(0);" class="menu-link menu-toggle">

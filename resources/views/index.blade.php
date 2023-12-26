@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html lang="fa" class="light-style layout-navbar-fixed layout-menu-fixed" dir="rtl" data-theme="theme-default" data-assets-path="../../assets/" data-template="vertical-menu-template">
-  <head>
+<html lang="fa" class="light-style layout-navbar-fixed layout-menu-fixed" dir="rtl" data-theme="theme-default"
+    data-assets-path="../../assets/" data-template="vertical-menu-template">
+
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 
     <title>داشبورد - تجزیه و تحلیل | فرست - قالب مدیریت بوت‌استرپ</title>
 
@@ -26,7 +29,7 @@
     <link rel="stylesheet" href="../../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css">
     <link rel="stylesheet" href="../../assets/vendor/libs/typeahead-js/typeahead.css">
     <link rel="stylesheet" href="../../assets/vendor/libs/apex-charts/apex-charts.css">
-     @yield('csslink')
+    @yield('csslink')
     <!-- Page CSS -->
 
     <!-- Helpers -->
@@ -37,39 +40,39 @@
     <script src="../../assets/vendor/js/template-customizer.js"></script>
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="../../assets/js/config.js"></script>
-  </head>
+</head>
 
-  <body>
+<body>
     <!-- Layout wrapper -->
-<!-- Layout wrapper -->
-<div class="layout-wrapper layout-content-navbar">
-    <div class="layout-container">
-      <!-- Menu -->
-       @include('sections.sidebar')
-      <!-- / Menu -->
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+        <div class="layout-container">
+            <!-- Menu -->
+            @include('sections.sidebar')
+            <!-- / Menu -->
 
-      <!-- Layout container -->
-      <div class="layout-page">
-        <!-- Navbar -->
+            <!-- Layout container -->
+            <div class="layout-page">
+                <!-- Navbar -->
 
-        @include('sections.navbar')
+                @include('sections.navbar')
 
-        <!-- / Navbar -->
+                <!-- / Navbar -->
 
-        <!-- Content wrapper -->
-         @yield('content')
-        <!-- Content wrapper -->
-      </div>
-      <!-- / Layout page -->
+                <!-- Content wrapper -->
+                @yield('content')
+                <!-- Content wrapper -->
+            </div>
+            <!-- / Layout page -->
+        </div>
+
+        <!-- Overlay -->
+        <div class="layout-overlay layout-menu-toggle"></div>
+
+        <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+        <div class="drag-target"></div>
     </div>
-
-    <!-- Overlay -->
-    <div class="layout-overlay layout-menu-toggle"></div>
-
-    <!-- Drag Target Area To SlideIn Menu On Small Screens -->
-    <div class="drag-target"></div>
-  </div>
-  <!-- / Layout wrapper -->
+    <!-- / Layout wrapper -->
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
@@ -96,33 +99,39 @@
     <script src="../../assets/js/dashboards-analytics.js"></script>
     <script>
         // Page full screen
-$(".nav-link-expand").on("click", function (e) {
+        $(".nav-link-expand").on("click", function(e) {
 
-if ((document.fullScreenElement && document.fullScreenElement !== null) ||
-    (!document.mozFullScreen && !document.webkitIsFullScreen)) {
-    if (document.documentElement.requestFullScreen) {
-        document.documentElement.requestFullScreen();
-    } else if (document.documentElement.mozRequestFullScreen) {
-        document.documentElement.mozRequestFullScreen();
-    } else if (document.documentElement.webkitRequestFullScreen) {
-        document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
-    }
-} else {
-    if (document.cancelFullScreen) {
-        document.cancelFullScreen();
-    } else if (document.mozCancelFullScreen) {
-        document.mozCancelFullScreen();
-    } else if (document.webkitCancelFullScreen) {
-        document.webkitCancelFullScreen();
-    }
-}
-})
+            if ((document.fullScreenElement && document.fullScreenElement !== null) ||
+                (!document.mozFullScreen && !document.webkitIsFullScreen)) {
+                    console.log("p1")
+                if (document.documentElement.requestFullScreen) {
+                    console.log("p2")
+                    document.documentElement.requestFullScreen();
+                } else if (document.documentElement.mozRequestFullScreen) {
+                    console.log("p3")
 
+                    document.documentElement.mozRequestFullScreen();
+                } else if (document.documentElement.webkitRequestFullScreen) {
+                    console.log("p4")
+
+                    document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+                }
+            } else {
+                if (document.cancelFullScreen) {
+                    console.log("p5")
+                    document.cancelFullScreen();
+                } else if (document.mozCancelFullScreen) {
+                    console.log("p6")
+                    document.mozCancelFullScreen();
+                } else if (document.webkitCancelFullScreen) {
+                    console.log("p7")
+                    document.webkitCancelFullScreen();
+                }
+            }
+        })
     </script>
     @yield('scripts')
 
-  </body>
+</body>
+
 </html>
-
-
-
