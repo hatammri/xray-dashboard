@@ -53,7 +53,19 @@ Route::group(['prefix' => '/', 'middleware' => 'auth'], function () {
     })->name('reports.testtable');
 
 
+    Route::get('/accesslevel/listStation', function () {
+        return view('accesslevel.index');
+    })->name('accesslevel.index');
+    Route::get('/accesslevel/accessroles', function () {
+        return view('accesslevel.accessroles');
+    })->name('accesslevel.accessroles');
+    Route::get('/accesslevel/accesspermission', function () {
+        return view('accesslevel.accesspermission');
+    })->name('accesslevel.accesspermission');
 
+    Route::get('/accesslevel/appuserview', function () {
+        return view('accesslevel.appuserview');
+    })->name('accesslevel.appuserview');
 
 });
 

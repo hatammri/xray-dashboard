@@ -24,7 +24,7 @@
       <li class="menu-item {{ request()->is('/') ? 'active' : '' }}" >
         <a href="{{ route('dashboard') }}" class="menu-link">
           <i class="menu-icon tf-icons bx bx-home-circle"></i>
-          <div >داشبورد</div>
+          <div >صفحه‌ی اصلی</div>
         </a>
       </li>
       <!-- Apps & Pages -->
@@ -83,13 +83,13 @@
         </a>
         <ul class="menu-sub">
           <li class="menu-item">
-            <a href="#" class="menu-link ">
+            <a href="{{ route('accesslevel.index')}}" class="menu-link ">
               <div >سطوح دسترسی مراکز</div>
             </a>
           </li>
           <li class="menu-item">
-            <a href="#" class="menu-link">
-              <div>سطوح دسترسی پرسنل</div>
+            <a href="{{ route('accesslevel.accesspermission')}}" class="menu-link">
+              <div>لیست مجوزها</div>
             </a>
           </li>
 
