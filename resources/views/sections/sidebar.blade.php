@@ -134,6 +134,25 @@
       <li class="menu-item {{ request()->is('personnels/list_centers') ? 'active open' : '' }} {{ request()->is('personnels/list_personnels') ? 'active open' : '' }} ">
         <a href="javascript:void(0);" class="menu-link menu-toggle">
           <i class="menu-icon tf-icons bx bx-group"></i>
+          <div >لیست مراکز و گمرک</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item  {{ request()->is('personnels/list_centers') ? 'active' : '' }}">
+            <a href="#" class="menu-link ">
+              <div >لیست مراکز </div>
+            </a>
+          </li>
+          <li class="menu-item  {{ request()->is('personnels/list_personnels') ? 'active' : '' }}">
+            <a href="#" class="menu-link">
+              <div >لسیت پرسنل</div>
+            </a>
+          </li>
+
+        </ul>
+      </li>
+      <li class="menu-item {{ request()->is('personnels/list_centers') ? 'active open' : '' }} {{ request()->is('personnels/list_personnels') ? 'active open' : '' }} ">
+        <a href="javascript:void(0);" class="menu-link menu-toggle">
+          <i class="menu-icon tf-icons bx bx-group"></i>
           <div >پرسنل</div>
         </a>
         <ul class="menu-sub">
