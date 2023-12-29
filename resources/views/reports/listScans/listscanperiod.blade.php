@@ -16,7 +16,7 @@
 
                    <!-- Column Search -->
                    <div class="card">
-                    <h5 class="card-header heading-color">جستجوی ستون</h5>
+                    <h5 class="card-header heading-color">لیست دوره های اسکن شده</h5>
                     <div class="card-datatable text-nowrap">
                       <table class="dt-column-search table table-bordered">
 
