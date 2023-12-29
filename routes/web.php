@@ -48,6 +48,11 @@ Route::group(['prefix' => '/', 'middleware' => 'auth'], function () {
         return view('reports.listScans.contradictiondetails');
     })->name('reports.contradictiondetails');
 
+    Route::get('/reports/itemdetail', function () {
+        return view('reports.itemdetail');
+    })->name('reports.itemdetail');
+
+
     Route::get('/reports/testtable', function () {
         return view('reports.testtable');
     })->name('reports.testtable');

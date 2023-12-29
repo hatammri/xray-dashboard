@@ -19,7 +19,9 @@
                     <h5 class="card-header heading-color">جستجوی ستون</h5>
                     <div class="card-datatable text-nowrap">
                       <table class="dt-column-search table table-bordered">
+
                         <thead>
+
                           <tr>
                             <th>نام گمرک</th>
                             <th>نام دستگاه</th>

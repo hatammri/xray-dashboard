@@ -768,7 +768,7 @@ html[dir=rtl] .offset-11 {
   html .drag-target {
     width: 30px;
   }
-  
+
 	html[dir=rtl] .drag-target {
 		right: 0;
 		left: auto;
@@ -1102,4 +1102,8 @@ html .ql-editor.ql-blank::before {
 
 html .sticky-wrapper.is-sticky .card-header.sticky-element {
   border-radius: 0;
+}
+
+.selecttable{
+    min-width: fit-content;
 }

@@ -98,12 +98,13 @@
     <!-- Page JS -->
     <script src="../../assets/js/dashboards-analytics.js"></script>
     <script>
+
         // Page full screen
         $(".nav-link-expand").on("click", function(e) {
 
             if ((document.fullScreenElement && document.fullScreenElement !== null) ||
                 (!document.mozFullScreen && !document.webkitIsFullScreen)) {
-                    console.log("p1")
+
                 if (document.documentElement.requestFullScreen) {
                     console.log("p2")
                     document.documentElement.requestFullScreen();
