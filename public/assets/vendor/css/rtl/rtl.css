@@ -1105,5 +1105,5 @@ html .sticky-wrapper.is-sticky .card-header.sticky-element {
 }
 
 .selecttable{
-    min-width: fit-content;
+    min-width: max-content;
 }
