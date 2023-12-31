@@ -195,7 +195,7 @@ $(function () {
                             '<a href="/reports/list_scans" class="dropdown-item"> </a>' +
                             '</div>' +
                             '</div>' +
-                            '<a  href="/reports/show_all_details" class="btn btn-sm btn-icon item-edit"><i class="bx bxs-show"></i></a>'
+                            '<a  href="/reports/itemdetail" class="btn btn-sm btn-icon item-edit"><i class="bx bxs-show"></i></a>'
                         );
                     },
                 },

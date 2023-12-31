@@ -2,14 +2,107 @@
 @section('csslink')
     <link rel="stylesheet" href="../../assets/vendor/libs/swiper/swiper.css">
     <link rel="stylesheet" href="../../assets/vendor/css/pages/ui-carousel.css">
+    <link rel="stylesheet" href="../../assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css">
+    <link rel="stylesheet" href="../../assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css">
+    <link rel="stylesheet" href="../../assets/vendor/libs/flatpickr/flatpickr.css">
 @endsection
 @section('content')
     <div class="content-wrapper">
         <!-- Content -->
         <div class="container-xxl flex-grow-1 container-p-y">
             <h4 class="py-3 breadcrumb-wrapper mb-4">
-                <span class="text-muted fw-light">المان‌های رابط کاربری /</span> گردونه
+                <span class="text-muted fw-light"> گزارش/</span> مغایرت بارنامه در ایستگاه مبدا
             </h4>
+            <div class="row">
+
+                <!-- Finance Summary -->
+                <div class="col-md-12 col-lg-12 mb-4 order-2 order-lg-0">
+                    <div class="card h-100">
+                        <div class="card-header d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center me-3">
+                                <img src="../../assets/img/avatars/12.png" alt="آواتار" class="rounded-circle me-3"
+                                    width="54">
+                                <div class="card-title mb-0">
+                                    <h5 class="mb-0">گزارش مغایرت در بارنامه گمرک میرجاوه </h5>
+                                    <small class="text-muted primary-font">جلال صادقی اپراتور اسکنر بهیار 1</small>
+                                </div>
+                            </div>
+                            <div class="dropdown btn-pinned primary-font">
+                                <button class="btn p-0" type="button" id="financoalReport" data-bs-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <i class="bx bx-dots-vertical-rounded"></i>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="financoalReport">
+                                    <a class="dropdown-item" href="javascript:void(0);">انتخاب همه</a>
+                                    <a class="dropdown-item" href="javascript:void(0);">تازه سازی</a>
+                                    <a class="dropdown-item" href="javascript:void(0);">اشتراک گذاری</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex flex-wrap gap-4 mb-5 mt-4">
+                                <div class="d-flex flex-column me-2">
+                                    <h6>تاریخ شروع</h6>
+                                    <span class="badge bg-label-success">2 آذر 1402</span>
+                                </div>
+                                <div class="d-flex flex-column me-2">
+                                    <h6>تاریخ پایان</h6>
+                                    <span class="badge bg-label-danger">2 آذر 1402</span>
+                                </div>
+                                <div class="d-flex flex-column me-2">
+                                    <h6>اعضا</h6>
+                                    <ul class="list-unstyled me-2 d-flex align-items-center avatar-group mb-0">
+                                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top"
+                                            title="محمدرضا عزیزی" class="avatar avatar-xs pull-up">
+                                            <img class="rounded-circle" src="../../assets/img/avatars/5.png" alt="آواتار">
+                                        </li>
+                                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top"
+                                            title="احسان اسدی" class="avatar avatar-xs pull-up">
+                                            <img class="rounded-circle" src="../../assets/img/avatars/12.png"
+                                                alt="آواتار">
+                                        </li>
+                                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top"
+                                            title="رضا عبدالهی" class="avatar avatar-xs pull-up">
+                                            <img class="rounded-circle" src="../../assets/img/avatars/6.png" alt="آواتار">
+                                        </li>
+                                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top"
+                                            title="جلال صادقی" class="avatar avatar-xs pull-up">
+                                            <img class="rounded-circle" src="../../assets/img/avatars/14.png"
+                                                alt="آواتار">
+                                        </li>
+                                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top"
+                                            title="محسن زمانی" class="avatar avatar-xs pull-up">
+                                            <img class="rounded-circle" src="../../assets/img/avatars/10.png"
+                                                alt="آواتار">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="d-flex flex-column me-2">
+                                    <h6>نوع مغایرت</h6>
+                                    <span>مغایرت در بار</span>
+                                </div>
+                                <div class="d-flex flex-column me-2">
+                                    <h6>کد بارنامه</h6>
+                                    <span>Br9654</span>
+                                </div>
+                                <div class="d-flex flex-column me-2">
+                                    <h6>نام راننده</h6>
+                                    <span>عباس مقارن عسگری</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        {{-- <div class="card-footer border-top">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item"><i class="bx bx-check"></i> 74 وظیفه</li>
+                                <li class="list-inline-item"><i class="bx bx-chat"></i> 678 دیدگاه</li>
+                            </ul>
+                        </div> --}}
+                    </div>
+                </div>
+                <!-- Finance Summary -->
+
+            </div>
 
             <div class="row">
                 <!-- Gallery effect-->
@@ -19,11 +112,7 @@
                         <!-- Pricing Plans -->
                         <div class="pb-sm-5 pb-2 rounded-top">
                             <div class="container py-5">
-                                <h2 class="text-center mb-3 secondary-font">پلن مناسب را برای سایت خود پیدا کنید</h2>
-                                <p class="text-center">
-                                    با ما شروع کنید - گزینه‌ای عالی برای افراد و تیم‌ها. یک پلن اشتراک متناسب با نیازهای خود
-                                    انتخاب کنید.
-                                </p>
+                                <h2 class="text-center mb-3 secondary-font">جزئیات مغایرت بارنامه BR9654</h2>
                                 <h6 class="text-muted mt-3">گالری تصاویر اسکن شده</h6>
                                 <div id="swiper-gallery">
                                     <div class="swiper gallery-top">
@@ -57,35 +146,31 @@
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide"
                                                 style="background-image: url(../../assets/img/backgrounds/6.jpg)">
-                                                اسلاید 1
+                                                تصویر 1
                                             </div>
                                             <div class="swiper-slide"
                                                 style="background-image: url(../../assets/img/backgrounds/5.jpg)">
-                                                اسلاید 2
+                                                تصویر 2
                                             </div>
                                             <div class="swiper-slide"
                                                 style="background-image: url(../../assets/img/backgrounds/7.jpg)">
-                                                اسلاید 3
+                                                تصویر 3
                                             </div>
                                             <div class="swiper-slide"
                                                 style="background-image: url(../../assets/img/backgrounds/10.jpg)">
-                                                اسلاید 4
+                                                تصویر 4
                                             </div>
                                             <div class="swiper-slide"
                                                 style="background-image: url(../../assets/img/backgrounds/16.jpg)">
-                                                اسلاید 5
+                                                تصویر 5
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <hr>
-
+                                {{--
                                 <div class="d-flex align-items-center justify-content-center flex-wrap gap-2 py-5">
                                     <h2 class="text-center mb-3 secondary-font">پلن مناسب را برای سایت خود پیدا کنید</h2>
-                                    <p class="text-center">
-                                        با ما شروع کنید - گزینه‌ای عالی برای افراد و تیم‌ها. یک پلن اشتراک متناسب با نیازهای خود
-                                        انتخاب کنید.
-                                    </p>
                                 </div>
 
                                 <div class="row mx-0 gy-3">
@@ -102,15 +187,17 @@
                                                 <div class="text-center position-relative mt-n1 mb-4 pb-3">
                                                     <div class="d-flex align-items-center">
                                                         <h4 class="price-toggle text-info price-yearly mb-0">
-                                                            <small>نام مرکز: گمرک میرجاوه</small></h4>
+                                                            <small>نام مرکز: گمرک میرجاوه</small>
+                                                        </h4>
                                                         <h4 class="price-toggle text-info price-monthly mb-0 d-none">
-                                                            <small>نام مرکز: گمرک میرجاوه</small></h4>
-                                                       </h4>
+                                                            <small>نام مرکز: گمرک میرجاوه</small>
+                                                        </h4>
+                                                        </h4>
                                                     </div>
                                                     <small
                                                         class="position-absolute start-0 m-auto price-yearly price-yearly-toggle text-muted">
                                                         شماره بارنامه / BR3547</small>
-                                                    </div>
+                                                </div>
 
                                                 <p>تمامی موارد پایه برای کسب و کار های در حال شروع</p>
 
@@ -162,7 +249,7 @@
                                                 </ul>
 
                                                 <a href="auth-register-basic.html"
-                                                    class="btn btn-label-info d-grid w-100">شروع کنید</a>
+                                                    class="btn btn-info d-grid w-100">مشاهده جزئیات</a>
                                             </div>
                                         </div>
                                     </div>
@@ -179,16 +266,17 @@
 
                                                 <div class="text-center position-relative mt-n1 mb-4 pb-3">
                                                     <div class="d-flex align-items-center">
-                                                        <h1 class="price-toggle text-primary price-yearly mb-0">
-                                                            <small>تومان</small> 99</h1>
-                                                        <h1 class="price-toggle text-primary price-monthly mb-0 d-none">
-                                                            <small>تومان</small> 199</h1>
-                                                        <sub class="h5 text-muted pricing-duration mb-1 mb-md-0 ms-1"> /
-                                                            ماهانه</sub>
+                                                        <h4 class="price-toggle text-primary price-yearly mb-0">
+                                                            <small>نام مرکز: گمرک میرجاوه</small>
+                                                        </h4>
+                                                        <h4 class="price-toggle text-primary price-monthly mb-0 d-none">
+                                                            <small>نام مرکز: گمرک میرجاوه</small>
+                                                        </h4>
+                                                        </h4>
                                                     </div>
                                                     <small
-                                                        class="position-absolute start-0 m-auto price-yearly price-yearly-toggle text-muted">1,188
-                                                        تومان / سال</small>
+                                                        class="position-absolute start-0 m-auto price-yearly price-yearly-toggle text-muted">
+                                                        شماره بارنامه / BR3547</small>
                                                 </div>
                                                 <p>گزینه‌ای مناسب برای کسب و کارهای در حال رشد</p>
 
@@ -200,7 +288,7 @@
                                                             class="badge badge-center w-px-20 h-px-20 rounded-pill bg-label-primary me-2">
                                                             <i class="bx bx-check bx-xs"></i>
                                                         </span>
-                                                        تا 10 کاربر
+                                                        تا 20 کاربر
                                                     </li>
                                                     <li class="mb-2">
                                                         <span
@@ -240,22 +328,16 @@
                                                 </ul>
 
                                                 <a href="auth-register-basic.html"
-                                                    class="btn btn-primary d-grid w-100">شروع کنید</a>
+                                                    class="btn btn-primary d-grid w-100">مشاهده جزئیات</a>
                                             </div>
                                         </div>
                                     </div>
-
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
-                        <div class="pricing-plans-comparison">
+                        {{-- <div class="pricing-plans-comparison">
                             <div class="container py-5 mt-0 my-md-4">
-                                <div class="row">
-                                    <div class="col-12 text-center mb-4">
-                                        <h2 class="mb-2 secondary-font">یک پلن متناسب با خودتان را انتخاب کنید</h2>
-                                        <p>خیالتان راحت باشد، ما ضمانت بازگشت وجه 48 ساعته داریم!</p>
-                                    </div>
-                                </div>
+
                                 <div class="row mx-0">
                                     <div class="col-12">
                                         <div class="table-responsive">
@@ -264,11 +346,11 @@
                                                     <tr>
                                                         <th scope="col">
                                                             <p class="h5 mb-2">ویژگی‌ها</p>
-                                                            <span class="text-body">ویژگی هایی منحصر به فرد</span>
+                                                            <span class="text-body">وزن</span>
                                                         </th>
                                                         <th scope="col">
                                                             <p class="h5 mb-2">برای شروع</p>
-                                                            <span class="text-body">رایگان</span>
+                                                            <span class="text-body">نوع</span>
                                                         </th>
                                                         <th scope="col" class="pt-3">
                                                             <p class="h5 mb-2 position-relative">
@@ -287,7 +369,7 @@
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td>14 روز آزمایش رایگان</td>
+                                                        <td>نوع ماشین</td>
                                                         <td>
                                                             <i class="bx bx-check text-success bx-sm"></i>
                                                         </td>
@@ -299,7 +381,7 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>بدون محدودیت کاربر</td>
+                                                        <td>همگنی‌ بار</td>
                                                         <td>
                                                             <i class="bx bx-x text-secondary bx-sm"></i>
                                                         </td>
@@ -311,7 +393,7 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>پشتیبانی محصول</td>
+                                                        <td>سوخت</td>
                                                         <td>
                                                             <i class="bx bx-x text-secondary bx-sm"></i>
                                                         </td>
@@ -323,7 +405,7 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>پشتیبانی با ایمیل</td>
+                                                        <td>حجم باک</td>
                                                         <td>
                                                             <i class="bx bx-x text-secondary bx-sm"></i>
                                                         </td>
@@ -337,7 +419,7 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>یکپارچه سازی</td>
+                                                        <td>مواد مخدر</td>
                                                         <td>
                                                             <i class="bx bx-x text-secondary bx-sm"></i>
                                                         </td>
@@ -407,10 +489,10 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                         <!--/ Plans Comparison -->
                         <!-- FAQS -->
-                        <div class="pricing-faqs bg-alt-pricing rounded-bottom">
+                        {{-- <div class="pricing-faqs bg-alt-pricing rounded-bottom">
                             <div class="container py-5 px-lg-5">
                                 <div class="row mt-0 mt-md-4">
                                     <div class="col-12 text-center mb-4">
@@ -512,10 +594,48 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                         <!--/ FAQS -->
                     </div>
+                    <br>
+                    <div class="card">
+                        <h5 class="card-header heading-color">جزئیات مغایرت بارنامه BR9654</h5>
+                        <!--Search Form -->
+                        <div class="card-datatable table-responsive">
+                            <table class="dt-advanced-search table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>#</th>
+                                        <th>QR_Code</th>
+                                        <th>X_Ray</th>
+                                        <th>رفتار سگ</th>
+                                        <th>مشاهدات‌ کاربر</th>
+                                        <th>نتیجه</th>
+                                        <th>توضیحات</th>
+                                        <th>نمایش جزئیات</th>
+
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                        <th></th>
+                                        <th>#</th>
+                                        <th>QR_Code</th>
+                                        <th>X_Ray</th>
+                                        <th>رفتار سگ</th>
+                                        <th>مشاهدات‌ کاربر</th>
+                                        <th>نتیجه</th>
+                                        <th>توضیحات</th>
+                                        <th>نمایش جزئیات</th>
+
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
                 </div>
+
                 <!-- / Content -->
                 {{-- <!-- Multiple slides -->
                 <div class="col-12 mb-4">
@@ -568,14 +688,29 @@
                 </div> --}}
 
 
-
             </div>
+
         </div>
-        <!-- / Content -->
-        <div class="content-backdrop fade"></div>
+
+    </div>
+    <!-- / Content -->
+    <div class="content-backdrop fade"></div>
     </div>
 @endsection
 @section('scripts')
     <script src="../../assets/vendor/libs/swiper/swiper.js"></script>
     <script src="../../assets/js/ui-carousel.js"></script>
+    <script src="../../assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
+    <script src="../../assets/vendor/libs/datatables-bs5/i18n/fa.js"></script>
+    <!-- Flat Picker -->
+    <script src="../../assets/vendor/libs/moment/moment.js"></script>
+    <script src="../../assets/vendor/libs/jdate/jdate.js"></script>
+    <script src="../../assets/vendor/libs/flatpickr/flatpickr-jdate.js"></script>
+    <script src="../../assets/vendor/libs/flatpickr/l10n/fa-jdate.js"></script>
+
+    <!-- Main JS -->
+    <script src="../../assets/js/main.js"></script>
+
+    <!-- Page JS -->
+    <script src="../../assets/js/tables-datatables-compaire.js"></script>
 @endsection
