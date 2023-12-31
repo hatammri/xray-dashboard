@@ -24,7 +24,7 @@
                                     width="54">
                                 <div class="card-title mb-0">
                                     <h5 class="mb-0">گزارش مغایرت در بارنامه گمرک میرجاوه </h5>
-                                    <small class="text-muted primary-font">جلال صادقی اپراتور اسکنر بهیار 1</small>
+                                    <small class="text-muted primary-font">جلال صادقی اپراتور اسکنر صاپا 1</small>
                                 </div>
                             </div>
                             <div class="dropdown btn-pinned primary-font">

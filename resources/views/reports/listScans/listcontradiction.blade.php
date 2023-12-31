@@ -35,7 +35,7 @@
                           <div class="user-profile-info">
                             <h4>پایانه مرزی گمرک میرجاوه</h4>
                             <ul class="list-inline mb-0 d-flex align-items-center flex-wrap justify-content-sm-start justify-content-center gap-2">
-                              <li class="list-inline-item fw-semibold"><i class="bx bx-pen"></i>دستگاه بهیار 1 </li>
+                              <li class="list-inline-item fw-semibold"><i class="bx bx-pen"></i>دستگاه صاپا 1 </li>
                               <li class="list-inline-item fw-semibold"><i class="bx bx-map"></i>استان سیستان و بلوچستان</li>
                               <li class="list-inline-item fw-semibold">
                                 <i class="bx bx-calendar-alt"></i> شروع فعالیت با اسکنر 1399/08/01
