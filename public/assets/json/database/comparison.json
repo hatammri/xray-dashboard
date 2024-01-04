@@ -24,11 +24,11 @@
         "id": 3,
         "item_attribute":"همگنی بار",
         "qr_code":"ندارد",
-        "x_ray": "ندارد",
+        "x_ray": "دارد",
         "dog_behavair": "--",
         "user_observations": "ندارد",
-        "description": "--",
-        "result":0
+        "description": "کشف اسلحه در بار",
+        "result":1
     },
       {
         "id": 4,

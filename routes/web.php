@@ -44,6 +44,7 @@ Route::group(['prefix' => '/', 'middleware' => 'auth'], function () {
     Route::get('/reports/show_contradiction_details', function () {
         return view('reports.listScans.showalldetails');
     })->name('reports.show_all_details');
+
     Route::get('/reports/show_all_details', function () {
         return view('reports.listScans.contradictiondetails');
     })->name('reports.contradictiondetails');

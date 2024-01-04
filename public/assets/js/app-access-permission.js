@@ -55,8 +55,8 @@ $(function () {
             var $assignedTo = full['assigned_to'],
               $output = '';
             var roleBadgeObj = {
-              'سرپرست': '<a href="' + userList + '"><span class="badge  bg-label-primary m-1">سرپرست</span></a>',
-              'مدیر': '<a href="' + userList + '"><span class="badge  bg-label-warning m-1">مدیر</span></a>',
+              'مدیر': '<a href="' + userList + '"><span class="badge  bg-label-primary m-1">مدیر</span></a>',
+              'اپراتور': '<a href="' + userList + '"><span class="badge  bg-label-warning m-1">اپراتور</span></a>',
               'کاربران': '<a href="' + userList + '"><span class="badge  bg-label-success m-1">کاربران</span></a>',
               'پشتیبانی': '<a href="' + userList + '"><span class="badge  bg-label-info m-1">پشتیبانی</span></a>',
               'محدود شده':

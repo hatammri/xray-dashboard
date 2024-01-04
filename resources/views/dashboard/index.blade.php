@@ -13,7 +13,7 @@
                 <div class="card-body">
                   <div class="d-flex align-items-start justify-content-between">
                     <div class="content-left">
-                      <span class="secondary-font fw-medium">تعدا رانندگان متخلف</span>
+                      <span class="secondary-font fw-medium">تعداد رانندگان متخلف</span>
                       <div class="d-flex align-items-baseline mt-2">
                         <h4 class="mb-0 me-2">26</h4>
                         <small class="text-success">(+29%)</small>
@@ -85,6 +85,7 @@
               </div>
             </div>
           </div>
+
       <div class="row">
         <!-- Website Analytics-->
         <div class="col-lg-6 col-md-12 mb-4">
@@ -141,7 +142,7 @@
               <div class="card h-100">
                 <div class="card-body text-center">
                   <h2 class="mb-1">32,690</h2>
-                  <span class="text-muted">null 40%</span>
+                  <span class="text-muted">40٪ تردد مرز بازرگان</span>
                   <div id="referralLineChart"></div>
                 </div>
               </div>
@@ -151,7 +152,7 @@
               <div class="card h-100">
                 <div class="card-header d-flex justify-content-between pb-3">
                   <div class="conversion-title">
-                    <h5 class="card-title mb-1">null</h5>
+                    <h5 class="card-title mb-1">بیشترین تردد میرجاوه</h5>
                     <p class="mb-0 text-muted primary-font">
                       60%
                       <i class="bx bx-chevron-up text-success"></i>

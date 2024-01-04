@@ -190,9 +190,9 @@ $(function () {
                             '<div class="d-inline-block">' +
                             '<a href="javascript:;" class="btn btn-sm btn-icon dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="bx bx-dots-vertical-rounded"></i></a>' +
                             '<div class="dropdown-menu dropdown-menu-end m-0">' +
-                            '<a href="/reports/list_contradiction" class="dropdown-item"></a>' +
-                            '<a href="/reports/list_personnel" class="dropdown-item"></a>' +
-                            '<a href="/reports/list_scans" class="dropdown-item"> </a>' +
+                            '<a href="/reports/itemdetail" class="dropdown-item"></a>' +
+                            '<a href="/reports/itemdetail" class="dropdown-item"></a>' +
+                            '<a href="/reports/itemdetail" class="dropdown-item"> </a>' +
                             '</div>' +
                             '</div>' +
                             '<a  href="/reports/itemdetail" class="btn btn-sm btn-icon item-edit"><i class="bx bxs-show"></i></a>'
