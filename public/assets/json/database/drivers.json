@@ -1,0 +1,17 @@
+{
+    "data": [
+      {
+        "id": 1,
+        "name_driver": "عباس مقارن عسگری",
+        "name_machine": "ولوو ۸۱۱",
+        "plate": "۱۴  ۵۶۱ ۱۲ ",
+        "date": "1402/09/01",
+        "Numberـtrips":"11",
+        "Nationality": "ایرانی",
+        "Religion":"اسلام -شیعه",
+        "licensenumber":"92705684772",
+        "Badcriminalrecord":1,
+        "status": 1
+      }
+    ]
+}

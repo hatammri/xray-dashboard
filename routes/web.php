@@ -7,6 +7,21 @@ use App\Http\Controllers\Auth\RegisterController;
 
 //require __DIR__ . '/auth.php';
 Route::group(['prefix' => '/', 'middleware' => 'auth'], function () {
+
+    Route::get('/reports/listscanOriginDestination/', function () {
+        return view('reports.listCompareOriginDestination.listcompare');
+    })->name('reports.listCompareOriginDestination.listcompare');
+
+    Route::get('/drivers/list', function () {
+        return view('drivers.list');
+    })->name('drivers.list');
+    Route::get('/drivers/create', function () {
+        return view('drivers.create');
+    })->name('drivers.create');
+    Route::get('/add/drivers', function () {
+        return view('drivers.add');
+    })->name('drivers.add');
+
     Route::get('', function () {
         return view('dashboard.index');
     })->name('dashboard');

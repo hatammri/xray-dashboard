@@ -49,8 +49,8 @@
               <div >لیست مغایرت‌های بارنامه</div>
             </a>
           </li>
-          <li class="menu-item">
-            <a href="#" class="menu-link">
+          <li class="menu-item {{ request()->is('reports/listscanOriginDestination') ? 'active' : '' }}">
+            <a href="{{ route('reports.listCompareOriginDestination.listcompare')}}" class="menu-link">
               <div >گزارش مغایرت های بارنامه در مبدا و مقصد</div>
             </a>
           </li>
@@ -111,17 +111,6 @@
               <div >اضافه کردن رانندگان</div>
             </a>
           </li>
-          <li class="menu-item">
-            <a href="#" class="menu-link">
-              <div >ویرایش کردن اطلاعات رانندگان</div>
-            </a>
-          </li>
-          <li class="menu-item">
-            <a href="#" class="menu-link">
-              <div >بارکدخوان</div>
-            </a>
-          </li>
-
         </ul>
       </li>
       <li class="menu-item" >

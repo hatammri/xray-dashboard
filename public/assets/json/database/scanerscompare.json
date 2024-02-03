@@ -1,0 +1,16 @@
+{
+    "data": [
+      {
+        "id": 1,
+        "avatar": "10.png",
+        "nameOrigin": "میرجاوه",
+        "nameDestination":"ایستگاه تهران",
+        "Scanning_device_Origin":"صاپا1",
+        "Scanning_device_Destination":"صاپا2",
+        "date": "1402/09/01",
+        "driver_name": "علی نادری",
+        "driver_code": "zpx3452",
+        "confilict":1,
+        "status": 1
+      }]
+}
