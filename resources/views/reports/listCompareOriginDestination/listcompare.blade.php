@@ -11,12 +11,12 @@
 
         <div class="container-xxl flex-grow-1 container-p-y">
             <h4 class="py-3 breadcrumb-wrapper mb-4">
-                <span class="text-muted fw-light">جدول‌داده /</span> دوره‌های اسکن شده
+                <span class="text-muted fw-light">جدول‌داده /</span> گزارش مغایرت‌های بارنامه
             </h4>
 
                    <!-- Column Search -->
                    <div class="card">
-                    <h5 class="card-header heading-color">لیست دوره های اسکن شده</h5>
+                    <h5 class="card-header heading-color">گزارش مغایرت‌های بارنامه</h5>
                     <div class="card-datatable text-nowrap">
                       <table class="dt-column-search table table-bordered">
 

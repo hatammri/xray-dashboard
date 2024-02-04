@@ -12,6 +12,10 @@ Route::group(['prefix' => '/', 'middleware' => 'auth'], function () {
         return view('reports.listCompareOriginDestination.listcompare');
     })->name('reports.listCompareOriginDestination.listcompare');
 
+    Route::get('/reports/showdetailsOriginDestination', function () {
+        return view('reports.listCompareOriginDestination.contradictiondetails');
+    })->name('reports.listCompareOriginDestination.contradictiondetails');
+
     Route::get('/drivers/list', function () {
         return view('drivers.list');
     })->name('drivers.list');
