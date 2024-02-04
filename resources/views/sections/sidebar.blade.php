@@ -56,11 +56,6 @@
           </li>
           <li class="menu-item">
             <a href="#" class="menu-link">
-              <div >گزارش  عملکرد سگ های موادیاب</div>
-            </a>
-          </li>
-          <li class="menu-item">
-            <a href="#" class="menu-link">
               <div >گزارش خودروهای متخلف</div>
             </a>
           </li>
