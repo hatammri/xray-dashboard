@@ -25,7 +25,7 @@
 
         <div class="container-xxl flex-grow-1 container-p-y">
             <h4 class="py-3 breadcrumb-wrapper mb-4">
-                <span class="text-muted fw-light">جدول‌داده /</span>  لیست گزارشات پرسنل مراکز
+                <span class="text-muted fw-light">جدول‌داده /</span>  مشاهده کامیون‌ها در نقشه
             </h4>
 
             <div id="map"></div>
@@ -76,27 +76,29 @@
                         popupAnchor: [1, -34],
                         shadowSize: [41, 41]
                     });
-
+                    var redMarker = L.marker([37.12199,47.45561], { icon: greenIcon, title: "توضیحات مد نظر شما" }).addTo(neshanMap).on('click', function(e) {
+                        location.href = 'http://127.0.0.1:8000/map/carlocationsdetails/';
+});
                     // add custom marker
-                    var redMarker = L.marker([35.699756, 51.338076], { icon: redIcon, title: "توضیحات مد نظر شما" }).addTo(neshanMap).on('click', function(e) {
+                    var redMarker = L.marker([36.28760, 57.12888], { icon: redIcon, title: "توضیحات مد نظر شما" }).addTo(neshanMap).on('click', function(e) {
       alert("hi. you clicked the marker at " + e.latlng);
 });;
-                    var aMarker = L.marker([35.699756, 51.338076], { icon: redIcon, title: "توضیحات مد نظر شما" }).addTo(neshanMap).on('click', function(e) {
+                    var aMarker = L.marker([28.99969, 58.57414], { icon: redIcon, title: "توضیحات مد نظر شما" }).addTo(neshanMap).on('click', function(e) {
       alert("hi. you clicked the marker at " + e.latlng);
 });;
-                    var aMarker = L.marker([35.599756, 51.338076], { icon: redIcon, title: "توضیحات مد نظر شما" }).addTo(neshanMap).on('click', function(e) {
+                    var aMarker = L.marker([30.47594, 51.66924], { icon: redIcon, title: "توضیحات مد نظر شما" }).addTo(neshanMap).on('click', function(e) {
       alert("hi. you clicked the marker at " + e.latlng);
 });;
-                    var aMarker = L.marker([35.299756, 51.338076], { icon: redIcon, title: "توضیحات مد نظر شما" }).addTo(neshanMap).on('click', function(e) {
+                    var aMarker = L.marker([32.41452, 48.28249], { icon: redIcon, title: "توضیحات مد نظر شما" }).addTo(neshanMap).on('click', function(e) {
       alert("hi. you clicked the marker at " + e.latlng);
 });;
-                    var aMarker = L.marker([35.399756, 51.338076], { icon: redIcon, title: "توضیحات مد نظر شما" }).addTo(neshanMap).on('click', function(e) {
+                    var aMarker = L.marker([29.15089, 54.70083], { icon: redIcon, title: "توضیحات مد نظر شما" }).addTo(neshanMap).on('click', function(e) {
       alert("hi. you clicked the marker at " + e.latlng);
 });;
-                    var aMarker = L.marker([35.499756, 51.338076], { icon: redIcon, title: "توضیحات مد نظر شما" }).addTo(neshanMap).on('click', function(e) {
+                    var aMarker = L.marker([34.12774, 54.46891], { icon: redIcon, title: "توضیحات مد نظر شما" }).addTo(neshanMap).on('click', function(e) {
       alert("hi. you clicked the marker at " + e.latlng);
 });;
-                    var aMarker = L.marker([35.899756, 51.338076], { icon: redIcon, title: "توضیحات مد نظر شما" }).addTo(neshanMap).on('click', function(e) {
+                    var aMarker = L.marker([37.15081, 49.60749], { icon: redIcon, title: "توضیحات مد نظر شما" }).addTo(neshanMap).on('click', function(e) {
       alert("hi. you clicked the marker at " + e.latlng);
 });;
 

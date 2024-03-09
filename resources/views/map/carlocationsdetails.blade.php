@@ -20,20 +20,119 @@
         }
     </style>
 @endsection
-@section('content')
-    <!-- Content wrapper -->
-    <div class="content-wrapper">
 
-        <div class="container-xxl flex-grow-1 container-p-y">
-            <h4 class="py-3 breadcrumb-wrapper mb-4">
-                <span class="text-muted fw-light">جدول‌داده /</span> لیست گزارشات پرسنل مراکز
-            </h4>
+@section('content')
+
+   <!-- Content wrapper -->
+   <div class="content-wrapper">
+    <!-- Content -->
+
+    <div class="container-xxl flex-grow-1 container-p-y">
+      <h4 class="py-3 breadcrumb-wrapper mb-4">
+        <span class="text-muted fw-light">راننده / مشاهده /</span> موقعیت
+      </h4>
+      <div class="row gy-4">
+        <!-- User Sidebar -->
+        <div class="col-xl-4 col-lg-5 col-md-5 order-1 order-md-0">
+          <!-- User Card -->
+          <div class="card mb-4">
+            <div class="card-body">
+              <div class="user-avatar-section">
+                <div class="d-flex align-items-center flex-column">
+                  <img class="img-fluid rounded my-4" src="../../assets/img/drivers/1.jpg" height="170" width="170" alt="User avatar">
+                  <div class="user-info text-center">
+                    <h5 class="mb-2">رسول محمدی</h5>
+                    <span class="badge bg-label-secondary">راننده</span>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-around flex-wrap my-4 py-3">
+                <div class="d-flex align-items-center me-4 mt-3 gap-3">
+                  <span class="badge bg-label-primary p-2 rounded mt-1"><i class="bx bx-check bx-sm"></i></span>
+                  <div>
+                    <h5 class="mb-0">1.23k</h5>
+                    <span>وظیفه انجام شده</span>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center me-4 mt-3 gap-3">
+                    <span class="badge bg-label-primary p-2 rounded mt-1"><i class="bx bx-check bx-sm"></i></span>
+                    <div>
+                      <h5 class="mb-0">1.23k</h5>
+                      <span>وظیفه انجام شده</span>
+                    </div>
+                  </div>
+               
+              </div>
+              <h5 class="pb-2 border-bottom mb-4 secondary-font">جزئیات</h5>
+              <div class="info-container">
+                <ul class="list-unstyled">
+                  <li class="mb-3">
+                    <span class="fw-bold me-2">نام کاربری:</span>
+                    <span>violet.dev</span>
+                  </li>
+                  <li class="mb-3">
+                    <span class="fw-bold me-2">ایمیل:</span>
+                    <span>vafgot@gmail.com</span>
+                  </li>
+                  <li class="mb-3">
+                    <span class="fw-bold me-2">وضعیت:</span>
+                    <span class="badge bg-label-success">فعال</span>
+                  </li>
+                  <li class="mb-3">
+                    <span class="fw-bold me-2">نقش:</span>
+                    <span>راننده</span>
+                  </li>
+                  <li class="mb-3">
+                    <span class="fw-bold me-2">شماره بارنامه:</span>
+                    <span>Tax-8965</span>
+                  </li>
+                  <li class="mb-3">
+                    <span class="fw-bold me-2">تماس:</span>
+                    <span class="d-inline-block" dir="ltr">09154569857</span>
+                  </li>
+                  <li class="mb-3">
+                    <span class="fw-bold me-2">مبدا:</span>
+                    <span>ایستگاه تهران</span>
+                  </li>
+                  <li class="mb-3">
+                    <span class="fw-bold me-2">مقصد:</span>
+                    <span>گمرک بازرگان</span>
+                  </li>
+                </ul>
+                <div class="d-flex justify-content-center pt-3">
+                  <a href="javascript:;" class="btn btn-primary me-3" data-bs-target="#editUser" data-bs-toggle="modal">ویرایش</a>
+                  <a href="javascript:;" class="btn btn-label-danger suspend-user">تعلیق</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /User Card -->
+
+        </div>
+        <!--/ User Sidebar -->
+
+        <!-- User Content -->
+        <div class="col-xl-8 col-lg-7 col-md-7 order-0 order-md-1">
 
             <div id="map"></div>
 
         </div>
+        <!--/ User Content -->
+      </div>
+
+
+
+
+      <!-- /Modal -->
     </div>
-@endsection
+    <!-- / Content -->
+
+    <div class="content-backdrop fade"></div>
+  </div>
+  <!-- Content wrapper -->
+  @endsection
+
+
 @section('scripts')
     <script src="../../assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
     <script src="../../assets/vendor/libs/datatables-bs5/i18n/fa.js"></script>
@@ -867,6 +966,7 @@
       ]
     }
   ]
+  
 }
 
         // Create a Leaflet map
@@ -875,10 +975,20 @@
             maptype: "standard-day",
             poi: false,
             traffic: false,
-            center: [35.700936, 51.391194],
-            zoom: 16,
+            center: [23.700936, 51.391194],
+            zoom: 5,
         })
 
+        var greenIcon = new L.Icon({
+                        iconUrl: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAACXBIWXMAAAsSAAALEgHS3X78AAABZVBMVEUAAAD+xGPxV3b9w2JeSSX0WHgOAwX/xWP/x2X/xmQAAACs9PoTCAj8jksAAACsxeMAAAAWEQgEAwPGR2HiGEQdCg7frVe8RFxrUykAAABml8UfGAyrEzPSo1IJDQ/9qVcAAABqJjT2i0pIKRYfLTKUczozEBegfD6yiUXFmk35wWFMPB6CZjP/x2TOoFH3vmBHNxy7GDtc6u43VWLhUW4tP03sVXSRNEcAAADfF0Kv9/3vUHFUc5DiI0wAAABGGSKFu8AAAAAAAACtxuSf4eYbEAgUGyGhvNt9lqmTsdNWHyr///4AAAD/5r1fjLcAAABxnckAAACvyOZbNhx0iaEAAAAAAADBRV6CqdGsPlSJ8PX+0oYAAAAAAACvyOeux+YAAAD/+/NQtrjPdj54XS7st1x/YzH+zHf+0IFg2dzxV3bClkz+2Zipg0L7qFfqOF7/oFSU0dYAgABpAAAAAGNHcExHcEzuIr97AAAAd3RSTlP/////////////6f///y//lv////8D////pv///////5D//////////////////////////////77//////w7//9z3//9Y//////v/Qf//nv8k////Fn7//////5Vi//8B///7////////tP//////PP9+nv8AAAU0DKwAAAVeSURBVHja7ZrrW9pIFIcDFNSIYoNooJaaLqa3vSFEUNNYoAgiglAudRUv24uue//Sv3/nTBJzIQihhDz7dH6fdDI5eZM55wxzZqgvLosiAASAABAAAkAACAABIAAEgAAQAAJAABadUeNyVADaGS1FRgVwSNH/FcDDd0gPJqdXjE2A754uPP3L45uUZh4/tA+w8GTGMynNfcMAfxwdHV1rAMUlC/UkBwGODg8PT313AOtW4ZFflxwFuBoGgC41jJkwH3hnApiZmTH9YdFkcc1zdHVlBgiYBATZRcNcUPzwYUEPMPucZdnHc8jwykeWfeZDTb4Nlv38CfWYe4Gu/Q7XPn1m2Y2X0P9Plv24gu/2XZ+e3sx6DABra2vJVZ04lCOoXFU/G/6zsGAE+J6imOez6Gk/IkMPAODlK5StVtBzZ5+h2zdmAe4RRf38E/RnKSr44gf5XpQFPAaAwNry8utdv6YtDj4C3YvYBngkAzC2AbZf73r1ygTBFTvS4CEYH+D65sY0BBYA3hMeCJbad9Nx0OiE4wP4+p3QCsDf5XXB0B+GX/EF+sPQCsDrT1dwMFSdADi0AEj3KYwJcsVJA+BUbAZYTu7xZu3xEI04GCYK4Jmb8/SHYTIw8GcL3ZgwgHE2VAGCAwHy1WkBxBP92kfP6U0LQPgN6a1RZWSrMy2A1Obm5i/zBu28iVPU0qV7APP/ojHIRlwEeJtAAG0XAeYFlIsabgKkUCKougkgokTQcxFgB8fhNAF2jM/HcRidViL6FemNSWUEkJ3WXBC3EkzJ7k5GyAunARAYVkxwFmA7yQ1ScDoAfb8JVW3tfTsAWyDXAJJcBevEBgA15trw3ijI+EcEGHt1PCEAWO9bFANGqQ8MAOCDWCMDTKxIpTphWFba6xaAUh8wrg+hYWoA/SkgnAHxrgH4M/fMBe4AOFArjkRMANgL/FYATlTLc9F6PacH8KdPMlyFy4QhJfuNPgBiGEe2De4AtjI85COGCnJhJQi0KHBQKkC6or0gf2LOA0wgEJCTldyLwb/W4Ha5VUmlTFy5HLQhXCf0ykUh1ULwxATAryWTSchVuIQXF8RWWUzAhQrOYF3cL5ESW61UHN8fHlnd9O4u+gCc0QIfNgFsLy//DWMC/fbF2HGp2TxIIdhgGIaqi7AYoRZ7HzoPtdCKluK8/pEl1+V0FsrYwpYeIKAChKGUIcZQv1CoWUJLxwAHNgBLiCGsQih03orDC4z4ZBUUW6jJFi5gNSC/mW4IcEW5qzwpBv1CTejIr66uQmFTxUJCK0om010dKvjKYfnPfguUbOEuDJETxpVaugivCt0KpYRSbYfhQ1gHBXx7i5G9dpg4BMBpNfpETbXQBAtyGd8i9AH0WAYNCVqzcAeAP8woqtze3lbsWxgKcFEeLWMxdZSL69r/2jc8NwFo20lnsFBMqUNwcYDcla6fndVpFBo1dQSbIlR5z5aGCsqw8q7V/Rb02/fVvG6sCiJ61Tqa0yJoBR1PKR+mcJCAsoa9HXqwwKgWmmAhX7U8P9DOKuESKlxcQLzm4TW+9BicHRBXoVkCF85KNs8IFPODLRgOMPTykDDE2vvSgQh1TLkf5tpP1Y5LpbLAqFh2JCkWYhYWDAAS9pp4QhD28d6SsrtVpcGr9hNCArvPesT2MYlqzmDhLDLoCEc7qnNPbW+rSCuujd1bGuOgRjGnt9AefIZE6tBq5UC/u1fN5lWqjjTWURHNAm20YD7EcrnYyeZoOhctGrpJxSi0ZjuL4x5W0SxcDjtFIzUWG+2+cY60UbP0NedlrC2Qc0QEgAAQAAJAAAgAASAABIAAEAACQABcB/gPZkMsVva3wOAAAAAASUVORK5CYII=',
+                        iconSize: [25, 41],
+                        iconAnchor: [12, 41],
+                        popupAnchor: [1, -34],
+                        shadowSize: [41, 41]
+                    });
+                    var redMarker = L.marker([37.12199,47.45561], { icon: greenIcon, title: "توضیحات مد نظر شما" }).addTo(neshanMap).on('click', function(e) {
+                        alert("hi. you clicked the marker at " + e.latlng);
+});
         // iterate through response steps
         for (let k = 0; k < Object.keys(exampleResponse.routes).length; k++) {
 
