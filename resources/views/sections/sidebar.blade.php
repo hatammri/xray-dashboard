@@ -59,13 +59,9 @@
               <div >گزارش خودروهای متخلف</div>
             </a>
           </li>
+
           <li class="menu-item">
-            <a href="#" class="menu-link">
-              <div >لیست پراکندگی خودرو</div>
-            </a>
-          </li>
-          <li class="menu-item">
-            <a href="#" class="menu-link">
+            <a href="{{ route('reports.listPersonnel.listPersonnel') }}" class="menu-link">
               <div >لیست گزارشات پرسنل</div>
             </a>
           </li>
@@ -112,6 +108,12 @@
         <a href="#" class="menu-link">
           <i class="menu-icon tf-icons bx bx-cog"></i>
           <div >تنظیمات</div>
+        </a>
+      </li>
+      <li class="menu-item" >
+        <a href="{{ route('map.carlocations')}}" class="menu-link">
+          <i class="menu-icon tf-icons bx bx-map-alt"></i>
+          <div >نقشه</div>
         </a>
       </li>
       <li class="menu-header small text-uppercase"><span class="menu-header-text">اطلاعات ایستگاه و مراکز اسکن</span></li>
@@ -175,7 +177,7 @@
         </a>
       </li>
       <li class="menu-item">
-        <a href="#" target="_blank" class="menu-link">
+        <a href="{{ asset('/assets/pdf/perposal.pdf')}}" target="_blank" class="menu-link">
           <i class="menu-icon tf-icons bx bx-file"></i>
           <div data-i18n="Documentation">مستندات</div>
         </a>
