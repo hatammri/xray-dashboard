@@ -130,7 +130,7 @@ $(function () {
         data: [
           {
             text: 'میرجاوه',
-            
+
             children: [
               {
                 text: 'سرور',
@@ -149,7 +149,7 @@ $(function () {
           },
           {
             text: 'بازرگان',
-            
+
             children: [
               {
                 text: 'سرور',
@@ -168,7 +168,7 @@ $(function () {
           },
           {
             text: 'لطف‌آباد',
-            
+
             children: [
               {
                 text: 'سرور',
@@ -182,7 +182,7 @@ $(function () {
           },
           {
             text: 'جلفا',
-            
+
             children: [
               {
                 text: 'سرور',
@@ -193,10 +193,10 @@ $(function () {
                 type: 'xray'
               }
             ]
-          },       
+          },
           {
             text: 'پرویزخان',
-            
+
             children: [
               {
                 text: 'سرور',
@@ -210,7 +210,7 @@ $(function () {
           },
           {
             text: 'چابهار',
-            
+
             children: [
               {
                 text: 'سرور',
@@ -224,7 +224,7 @@ $(function () {
           },
           {
             text: 'شهید رجایی بندرعباس',
-            
+
             children: [
               {
                 text: 'سرور',
@@ -238,7 +238,7 @@ $(function () {
           },
           {
             text: 'شهریار تهران',
-            
+
             children: [
               {
                 text: 'سرور',
@@ -252,7 +252,7 @@ $(function () {
           },
           {
             text: 'پیرانشهر',
-            
+
             children: [
               {
                 text: 'سرور',
@@ -266,7 +266,7 @@ $(function () {
           },
           {
             text: 'سرخس',
-            
+
             children: [
               {
                 text: 'سرور',
@@ -280,7 +280,7 @@ $(function () {
           },
           {
             text: 'کوهک',
-            
+
             children: [
               {
                 text: 'سرور',
@@ -294,7 +294,7 @@ $(function () {
           },
           {
             text: 'گیله سردشت',
-            
+
             children: [
               {
                 text: 'سرور',
@@ -308,7 +308,7 @@ $(function () {
           },
           {
             text: 'یزدان',
-            
+
             children: [
               {
                 text: 'سرور',
@@ -322,7 +322,7 @@ $(function () {
           },
           {
             text: 'شوشمی',
-            
+
             children: [
               {
                 text: 'سرور',
@@ -336,7 +336,7 @@ $(function () {
           },
           {
             text: 'میلک',
-            
+
             children: [
               {
                 text: 'سرور',
@@ -350,7 +350,7 @@ $(function () {
           },
           {
             text: 'باجیگیران',
-            
+
             children: [
               {
                 text: 'سرور',
@@ -364,7 +364,7 @@ $(function () {
           },
           {
             text: 'دوکوهه',
-            
+
             children: [
               {
                 text: 'سرور',
@@ -378,7 +378,7 @@ $(function () {
           },
           {
             text: 'میل',
-            
+
             children: [
               {
                 text: 'سرور',
@@ -392,7 +392,7 @@ $(function () {
           },
           {
             text: 'پیشین',
-            
+
             children: [
               {
                 text: 'سرور',
@@ -406,7 +406,7 @@ $(function () {
           },
           {
             text: 'سیف سقز',
-            
+
             children: [
               {
                 text: 'سرور',
@@ -420,7 +420,7 @@ $(function () {
           },
           {
             text: 'رازی',
-            
+
             children: [
               {
                 text: 'سرور',
@@ -434,7 +434,7 @@ $(function () {
           },
           {
             text: 'بیله سوار',
-            
+
             children: [
               {
                 text: 'سرور',
@@ -476,7 +476,7 @@ $(function () {
       contextmenu: {
         items: function(n) {
             var items = $.jstree.defaults.contextmenu.items();
-            items.create.label = 'ایجاد';
+            items.create.label = 'اتصال';
             items.rename.label = 'تغییر نام';
             items.remove.label = 'حذف';
             items.ccp.label = 'ویرایش';
