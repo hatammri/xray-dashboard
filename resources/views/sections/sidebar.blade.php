@@ -104,12 +104,12 @@
           </li>
         </ul>
       </li>
-      <li class="menu-item" >
+      {{-- <li class="menu-item" >
         <a href="#" class="menu-link">
           <i class="menu-icon tf-icons bx bx-cog"></i>
           <div >تنظیمات</div>
         </a>
-      </li>
+      </li> --}}
       <li class="menu-item" >
         <a href="{{ route('map.carlocations')}}" class="menu-link">
           <i class="menu-icon tf-icons bx bx-map-alt"></i>
@@ -123,8 +123,8 @@
           <div >لیست مراکز و گمرک</div>
         </a>
         <ul class="menu-sub">
-          <li class="menu-item  {{ request()->is('personnels/list_centers') ? 'active' : '' }}">
-            <a href="#" class="menu-link ">
+          <li class="menu-item  {{ request()->is('/list/treegomrok') ? 'active' : '' }}">
+            <a href="{{ route('treelist.listgomrok')}}" class="menu-link ">
               <div >لیست مراکز </div>
             </a>
           </li>

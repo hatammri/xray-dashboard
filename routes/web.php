@@ -7,6 +7,9 @@ use App\Http\Controllers\Auth\RegisterController;
 
 //require __DIR__ . '/auth.php';
 Route::group(['prefix' => '/', 'middleware' => 'auth'], function () {
+    Route::get('/list/treegomrok/', function () {
+        return view('treelist.listgomrok');
+    })->name('treelist.listgomrok');
 
     Route::get('/map/carslocation/', function () {
         return view('map.carlocations');

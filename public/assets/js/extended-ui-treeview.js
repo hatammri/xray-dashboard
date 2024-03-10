@@ -129,66 +129,323 @@ $(function () {
         check_callback: true,
         data: [
           {
-            text: 'css',
+            text: 'میرجاوه',
+            
             children: [
               {
-                text: 'app.css',
-                type: 'css'
+                text: 'سرور',
+                type: 'db'
               },
               {
-                text: 'style.css',
-                type: 'css'
+                text: 'صاپا1',
+                type: 'xray'
+              }
+              ,
+              {
+                text: 'ناک تک1',
+                type: 'xray'
               }
             ]
           },
           {
-            text: 'img',
-            state: {
-              opened: true
-            },
+            text: 'بازرگان',
+            
             children: [
               {
-                text: 'bg.jpg',
-                type: 'img'
+                text: 'سرور',
+                type: 'db'
               },
               {
-                text: 'logo.png',
-                type: 'img'
-              },
+                text: 'صاپا2',
+                type: 'xray'
+              }
+              ,
               {
-                text: 'avatar.png',
-                type: 'img'
+                text: 'ناک تک1',
+                type: 'xray'
               }
             ]
           },
           {
-            text: 'js',
-            state: {
-              opened: true
-            },
+            text: 'لطف‌آباد',
+            
             children: [
               {
-                text: 'jquery.js',
-                type: 'js'
+                text: 'سرور',
+                type: 'db'
               },
               {
-                text: 'app.js',
-                type: 'js'
+                text: 'صاپا2',
+                type: 'xray'
               }
             ]
           },
           {
-            text: 'index.html',
-            type: 'html'
+            text: 'جلفا',
+            
+            children: [
+              {
+                text: 'سرور',
+                type: 'db'
+              },
+              {
+                text: 'صاپا2',
+                type: 'xray'
+              }
+            ]
+          },       
+          {
+            text: 'پرویزخان',
+            
+            children: [
+              {
+                text: 'سرور',
+                type: 'db'
+              },
+              {
+                text: 'صاپا2',
+                type: 'xray'
+              }
+            ]
           },
           {
-            text: 'page-one.html',
-            type: 'html'
+            text: 'چابهار',
+            
+            children: [
+              {
+                text: 'سرور',
+                type: 'db'
+              },
+              {
+                text: 'صاپا2',
+                type: 'xray'
+              }
+            ]
           },
           {
-            text: 'page-two.html',
-            type: 'html'
-          }
+            text: 'شهید رجایی بندرعباس',
+            
+            children: [
+              {
+                text: 'سرور',
+                type: 'db'
+              },
+              {
+                text: 'صاپا2',
+                type: 'xray'
+              }
+            ]
+          },
+          {
+            text: 'شهریار تهران',
+            
+            children: [
+              {
+                text: 'سرور',
+                type: 'db'
+              },
+              {
+                text: 'صاپا2',
+                type: 'xray'
+              }
+            ]
+          },
+          {
+            text: 'پیرانشهر',
+            
+            children: [
+              {
+                text: 'سرور',
+                type: 'db'
+              },
+              {
+                text: 'صاپا2',
+                type: 'xray'
+              }
+            ]
+          },
+          {
+            text: 'سرخس',
+            
+            children: [
+              {
+                text: 'سرور',
+                type: 'db'
+              },
+              {
+                text: 'صاپا2',
+                type: 'xray'
+              }
+            ]
+          },
+          {
+            text: 'کوهک',
+            
+            children: [
+              {
+                text: 'سرور',
+                type: 'db'
+              },
+              {
+                text: 'صاپا2',
+                type: 'xray'
+              }
+            ]
+          },
+          {
+            text: 'گیله سردشت',
+            
+            children: [
+              {
+                text: 'سرور',
+                type: 'db'
+              },
+              {
+                text: 'صاپا2',
+                type: 'xray'
+              }
+            ]
+          },
+          {
+            text: 'یزدان',
+            
+            children: [
+              {
+                text: 'سرور',
+                type: 'db'
+              },
+              {
+                text: 'صاپا2',
+                type: 'xray'
+              }
+            ]
+          },
+          {
+            text: 'شوشمی',
+            
+            children: [
+              {
+                text: 'سرور',
+                type: 'db'
+              },
+              {
+                text: 'صاپا2',
+                type: 'xray'
+              }
+            ]
+          },
+          {
+            text: 'میلک',
+            
+            children: [
+              {
+                text: 'سرور',
+                type: 'db'
+              },
+              {
+                text: 'صاپا2',
+                type: 'xray'
+              }
+            ]
+          },
+          {
+            text: 'باجیگیران',
+            
+            children: [
+              {
+                text: 'سرور',
+                type: 'db'
+              },
+              {
+                text: 'صاپا2',
+                type: 'xray'
+              }
+            ]
+          },
+          {
+            text: 'دوکوهه',
+            
+            children: [
+              {
+                text: 'سرور',
+                type: 'db'
+              },
+              {
+                text: 'صاپا2',
+                type: 'xray'
+              }
+            ]
+          },
+          {
+            text: 'میل',
+            
+            children: [
+              {
+                text: 'سرور',
+                type: 'db'
+              },
+              {
+                text: 'صاپا2',
+                type: 'xray'
+              }
+            ]
+          },
+          {
+            text: 'پیشین',
+            
+            children: [
+              {
+                text: 'سرور',
+                type: 'db'
+              },
+              {
+                text: 'صاپا2',
+                type: 'xray'
+              }
+            ]
+          },
+          {
+            text: 'سیف سقز',
+            
+            children: [
+              {
+                text: 'سرور',
+                type: 'db'
+              },
+              {
+                text: 'صاپا2',
+                type: 'xray'
+              }
+            ]
+          },
+          {
+            text: 'رازی',
+            
+            children: [
+              {
+                text: 'سرور',
+                type: 'db'
+              },
+              {
+                text: 'صاپا2',
+                type: 'xray'
+              }
+            ]
+          },
+          {
+            text: 'بیله سوار',
+            
+            children: [
+              {
+                text: 'سرور',
+                type: 'db'
+              },
+              {
+                text: 'صاپا2',
+                type: 'xray'
+              }
+            ]
+          },
         ]
       },
       plugins: ['types', 'contextmenu'],
@@ -207,7 +464,14 @@ $(function () {
         },
         js: {
           icon: 'bx bxl-nodejs text-warning'
-        }
+        },
+        db:{
+            icon:'bx bx-server'
+        },
+        xray:{
+            icon:'bx bxs-inbox'
+        },
+
       },
       contextmenu: {
         items: function(n) {
