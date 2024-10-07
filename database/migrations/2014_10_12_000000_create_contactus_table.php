@@ -12,20 +12,22 @@ return new class extends Migration
     public function up(): void
     {
         Schema::defaultStringLength(191);
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('contactus', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('customer_id');
+            $table->foreign('customer_id')->references('id')->on('customer');
+            $table->foreignId('operator_id');
+            $table->foreign('operator_id')->references('id')->on('operator');
+            $table->foreignId('driver_id');
+            $table->foreign('driver_id')->references('id')->on('driver');
             $table->string('name');
-            $table->string('cellphone')->unique();
-            $table->string('avatar')->default('defult.png');
-            $table->integer('status')->default(1);
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->string('provider_name')->nullable();
-            $table->string('login_token')->nullable();
-            $table->integer('otp')->nullable();
-            $table->string('role')->nullable();
-            $table->string('position')->nullable();
+            $table->string('subject');
+            $table->string('text');
+            $table->string('is_active');
+            $table->string('created_at');
+            $table->string('updated_at');
             $table->rememberToken();
             $table->timestamps();
 
