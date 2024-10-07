@@ -14,18 +14,16 @@ return new class extends Migration
         Schema::defaultStringLength(191);
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('cellphone')->unique();
-            $table->string('avatar')->default('defult.png');
-            $table->integer('status')->default(1);
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->string('provider_name')->nullable();
-            $table->string('login_token')->nullable();
-            $table->integer('otp')->nullable();
-            $table->string('role')->nullable();
-            $table->string('position')->nullable();
+            $table->foreignId('load_id');
+            $table->foreign('load_id')->references('id')->on('load');
+            $table->foreignId('dog_port_id');
+            $table->foreign('dog_port_id')->references('id')->on('dog_port');
+            $table->foreignId('operator_id');
+            $table->foreign('operator_id')->references('id')->on('operator_id');
+            $table->string('behavior');
+            $table->string('Description')->unique();
+            $table->timestamp('created_at')->nullable();
+            $table->timestamp('updated_at')->nullable();
             $table->rememberToken();
             $table->timestamps();
 
