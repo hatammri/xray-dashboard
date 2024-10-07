@@ -12,20 +12,12 @@ return new class extends Migration
     public function up(): void
     {
         Schema::defaultStringLength(191);
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('brands', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('cellphone')->unique();
-            $table->string('avatar')->default('defult.png');
-            $table->integer('status')->default(1);
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->string('provider_name')->nullable();
-            $table->string('login_token')->nullable();
-            $table->integer('otp')->nullable();
-            $table->string('role')->nullable();
-            $table->string('position')->nullable();
+            $table->string('slug')->unique();
+            $table->timestamp('created_at')->nullable();
+            $table->string('updated_at')->nullable();
             $table->rememberToken();
             $table->timestamps();
 
@@ -37,6 +29,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('brands');
     }
 };
