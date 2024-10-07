@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::defaultStringLength(191);
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('dogdata', function (Blueprint $table) {
             $table->id();
             $table->foreignId('load_id');
             $table->foreign('load_id')->references('id')->on('load');
@@ -35,6 +35,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('dogdata');
     }
 };
