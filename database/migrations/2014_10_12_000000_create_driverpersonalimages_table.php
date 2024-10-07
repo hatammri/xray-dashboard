@@ -12,20 +12,15 @@ return new class extends Migration
     public function up(): void
     {
         Schema::defaultStringLength(191);
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('driverpersonalimages', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('cellphone')->unique();
-            $table->string('avatar')->default('defult.png');
-            $table->integer('status')->default(1);
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->string('provider_name')->nullable();
-            $table->string('login_token')->nullable();
-            $table->integer('otp')->nullable();
-            $table->string('role')->nullable();
-            $table->string('position')->nullable();
+            $table->foreignId('driver_id');
+            $table->foreign('driver_id')->references('id')->on('driver');
+            $table->string('image')->default('defult.png');
+            $table->string('is_active');
+            $table->string('is_document');
+            $table->timestamp('created_at')->nullable();
+            $table->timestamp('updated_at')->nullable();
             $table->rememberToken();
             $table->timestamps();
 
