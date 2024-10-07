@@ -86,7 +86,7 @@
 
         </ul>
       </li>
-      <li class="menu-item">
+      {{-- <li class="menu-item">
         <a href="#" class="menu-link menu-toggle">
           <i class="menu-icon tf-icons bx bx-group"></i>
           <div >اطلاعات رانندگان</div>
@@ -103,7 +103,7 @@
             </a>
           </li>
         </ul>
-      </li>
+      </li> --}}
       {{-- <li class="menu-item" >
         <a href="#" class="menu-link">
           <i class="menu-icon tf-icons bx bx-cog"></i>
@@ -128,15 +128,15 @@
               <div >لیست مراکز </div>
             </a>
           </li>
-          <li class="menu-item  {{ request()->is('personnels/list_personnels') ? 'active' : '' }}">
+          {{-- <li class="menu-item  {{ request()->is('personnels/list_personnels') ? 'active' : '' }}">
             <a href="#" class="menu-link">
               <div >لسیت پرسنل</div>
             </a>
-          </li>
+          </li> --}}
 
         </ul>
       </li>
-      <li class="menu-item {{ request()->is('personnels/list_centers') ? 'active open' : '' }} {{ request()->is('personnels/list_personnels') ? 'active open' : '' }} ">
+      {{-- <li class="menu-item {{ request()->is('personnels/list_centers') ? 'active open' : '' }} {{ request()->is('personnels/list_personnels') ? 'active open' : '' }} ">
         <a href="javascript:void(0);" class="menu-link menu-toggle">
           <i class="menu-icon tf-icons bx bx-group"></i>
           <div >پرسنل</div>
@@ -154,20 +154,20 @@
           </li>
 
         </ul>
-      </li>
-      <li class="menu-item">
+      </li> --}}
+      {{-- <li class="menu-item">
         <a href="#" class="menu-link">
           <i class="menu-icon tf-icons bx bx-detail"></i>
           <div >تخصص</div>
         </a>
-      </li>
+      </li> --}}
 
-      <li class="menu-item">
+      {{-- <li class="menu-item">
         <a href="#" class="menu-link">
           <i class="menu-icon tf-icons bx bx-detail"></i>
           <div >سگ‌های‌ موادیاب</div>
         </a>
-      </li>
+      </li> --}}
 
       <li class="menu-header small text-uppercase"><span class="menu-header-text">متفرقه</span></li>
       <li class="menu-item">
