@@ -12,20 +12,23 @@ return new class extends Migration
     public function up(): void
     {
         Schema::defaultStringLength(191);
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('qrcode', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('cellphone')->unique();
-            $table->string('avatar')->default('defult.png');
-            $table->integer('status')->default(1);
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->string('provider_name')->nullable();
-            $table->string('login_token')->nullable();
-            $table->integer('otp')->nullable();
-            $table->string('role')->nullable();
-            $table->string('position')->nullable();
+            $table->foreignId('load_id');
+            $table->foreign('load_id')->references('id')->on('load');
+            $table->foreignId('port_id');
+            $table->foreign('port_id')->references('id')->on('port');
+            $table->foreignId('operator_id');
+            $table->foreign('operator_id')->references('id')->on('operator');
+            $table->string('qrcode_type');
+            $table->string('qrcode_serial_number');
+            $table->string('weight_load');
+            $table->string('vehicle_id');
+            $table->string('load_homogeneity');
+            $table->string('description');
+            $table->string('description');
+            $table->timestamp('created_at')->nullable();
+            $table->timestamp('updated_at')->nullable();
             $table->rememberToken();
             $table->timestamps();
 
@@ -37,6 +40,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('qrcode');
     }
 };
